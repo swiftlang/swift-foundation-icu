@@ -88,7 +88,7 @@ let package = Package(
             name: "ICUStubData",
             dependencies: ["ICUCommon"],
             path: "icuSources/stubdata",
-            publicHeadersPath: "include",
+            publicHeadersPath: ".",
             cxxSettings: stubDataBuildSettings),
     ],
     cxxLanguageStandard: .cxx11
