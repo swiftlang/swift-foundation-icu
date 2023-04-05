@@ -10,9 +10,9 @@
 //
 //===----------------------------------------------------------------------===/
 
-#ifndef CFBUNDLE_H
-#define CFBUNDLE_H
+#ifndef PACKAGE_RESOURCE_ACCESSOR_H
+#define PACKAGE_RESOURCE_ACCESSOR_H
 
 const char* getPackageICUDataPath();
 
-#endif /* cfbundle_h */
+#endif /* PACKAGE_RESOURCE_ACCESSOR_H */

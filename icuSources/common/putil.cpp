@@ -82,7 +82,7 @@
 
 /* Swift Package Manager Support */
 #if defined(USE_PACKAGE_DATA)
-#include "cfbundle.h"
+#include "package_resource_accessor.h"
 #endif
 
 #ifndef U_COMMON_IMPLEMENTATION

@@ -13,7 +13,7 @@
 // First, the platform type. Need this for U_PLATFORM.
 #include "unicode/platform.h"
 
-#include "cfbundle.h"
+#include "package_resource_accessor.h"
 #include "cmemory.h"
 
 /* Include standard headers. */
@@ -41,14 +41,14 @@ static const char *__CFBundleCopyAppendingPathComponent(const char *path, const 
     size_t componentLen = strnlen(pathComponent, PATH_MAX + 1);
 
     if (pathLen + componentLen >= PATH_MAX) {
-        return strdup(path);
+        return strndup(path, PATH_MAX);
     }
     char result[PATH_MAX + 1];
     strncpy(result, path, PATH_MAX);
     // Append the resource bundle name
-    strcat(result, "/");
-    strncat(result, pathComponent, PATH_MAX);
-    return strdup(result);
+    strlcat(result, "/", PATH_MAX);
+    strlcat(result, pathComponent, PATH_MAX);
+    return strndup(result, PATH_MAX);
 }
 
 static const char *__CFBundleGetLastPathComponent(char *path) {
@@ -95,7 +95,7 @@ static char * __CFBundleCopyBundlePathForExecutablePath(const char *executablePa
     char path[PATH_MAX + 1];
     size_t executablePathLen = strnlen(executablePath, PATH_MAX + 1);
     if (executablePathLen > PATH_MAX) {
-        return strdup(executablePath);
+        return strndup(executablePath, executablePathLen);
     }
     strncpy(path, executablePath, PATH_MAX);
     // First remove the executable name
@@ -103,15 +103,15 @@ static char * __CFBundleCopyBundlePathForExecutablePath(const char *executablePa
     // Check if the executable is contained within
     // platform executable subdirectory. If so,
     // remove those
-    if (strcmp(__CFBundleGetLastPathComponent(path),
-        __CFBundleGetPlatformExecutablesSubdirectoryName()) == 0) {
+    if (strncmp(__CFBundleGetLastPathComponent(path),
+        __CFBundleGetPlatformExecutablesSubdirectoryName(), PATH_MAX) == 0) {
         // Remove platform folder (e.g. "MacOS")
         __CFBundleRemoveLastPathComponent(path);
         // Remove the support files folder (e.g. "Contents")
         __CFBundleRemoveLastPathComponent(path);
     }
 
-    return strdup(path);
+    return strndup(path, PATH_MAX);
 }
 
 static const char * __CFBundleSearchDirectoryForResourceBundle(const char *directory) {
