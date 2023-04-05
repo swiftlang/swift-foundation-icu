@@ -80,6 +80,11 @@
 #include <locale.h>
 #include <float.h>
 
+/* Swift Package Manager Support */
+#if defined(USE_PACKAGE_DATA)
+#include "cfbundle.h"
+#endif
+
 #ifndef U_COMMON_IMPLEMENTATION
 #error U_COMMON_IMPLEMENTATION not set - must be set for all ICU source files in common/ - see https://unicode-org.github.io/icu/userguide/howtouseicu
 #endif
@@ -1408,28 +1413,6 @@ static BOOL U_CALLCONV getIcuDataDirectoryUnderWindowsDirectory(char* directoryB
     }
 
     return FALSE;
-}
-#endif
-
-#if defined(USE_PACKAGE_DATA)
-const char* getPackageICUDataPath() {
-    Dl_info dl_info;
-    dladdr(reinterpret_cast<const void*>(getPackageICUDataPath), &dl_info);
-    const char* libraryFilename = dl_info.dli_fname;
-    if (libraryFilename != NULL && libraryFilename[0] != 0) {
-        // Remove the executable name
-        char path[PATH_MAX + 1];
-        strncpy(path, libraryFilename, PATH_MAX);
-        char *lastSlash = strrchr(path, '/');
-        if (lastSlash) {
-            // Terminate the string at /
-            *lastSlash = 0;
-        }
-        // Append the resource bundle path
-        strcat(path, "/FoundationICU_FoundationICU.resources");
-        return strdup(path);
-    }
-    return "";
 }
 #endif
 

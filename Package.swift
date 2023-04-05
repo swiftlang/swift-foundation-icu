@@ -20,7 +20,7 @@ let buildSettings: [CXXSetting] = [
     // Where data are stored
     .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
     .define("U_TIMEZONE_FILES_DIR", to: "\"/var/db/timezone/icutz\""),
-    .define("USE_PACKAGE_DATA", to: "1", .when(platforms: [.linux]))
+    .define("USE_PACKAGE_DATA", to: "1")
 ]
 
 let commonBuildSettings: [CXXSetting] = buildSettings.appending([
@@ -66,6 +66,7 @@ let package = Package(
             path: "swift/FoundationICU",
             resources: [
                 .copy("icudt70l.dat"),
+                .copy("icutz44l.dat"),
             ]),
         .target(
             name: "ICUCommon",
