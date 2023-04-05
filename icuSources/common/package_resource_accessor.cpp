@@ -29,14 +29,14 @@
 #define BUNDLE_RESOURCES_DIRECTORY_NAME "Resources"
 
 
-static void __CFBundleRemoveLastPathComponent(char *path) {
+static void _removeLastPathComponent(char *path) {
     char *lastSlash = strrchr(path, '/');
     if (lastSlash) {
         *lastSlash = 0;
     }
 }
 
-static const char *__CFBundleCopyAppendingPathComponent(const char *path, const char *pathComponent) {
+static const char *_copyAppendingPathComponent(const char *path, const char *pathComponent) {
     size_t pathLen = strnlen(path, PATH_MAX + 1);
     size_t componentLen = strnlen(pathComponent, PATH_MAX + 1);
 
@@ -51,7 +51,7 @@ static const char *__CFBundleCopyAppendingPathComponent(const char *path, const 
     return strndup(result, PATH_MAX);
 }
 
-static const char *__CFBundleGetLastPathComponent(char *path) {
+static const char *_getLastPathComponent(char *path) {
     char *nullTerminator = strrchr(path, 0);
     long pathLength = nullTerminator - path;
     if (pathLength <= 0) {
@@ -70,10 +70,10 @@ static const char *__CFBundleGetLastPathComponent(char *path) {
     // with `/`. Remove it and try again
     char *newPath = (char *)uprv_malloc(sizeof(char) * (pathLength - 1));
     strncpy(newPath, path, pathLength - 2);
-    return __CFBundleGetLastPathComponent(newPath);
+    return _getLastPathComponent(newPath);
 }
 
-static const char * __CFBundleGetPlatformExecutablesSubdirectoryName() {
+static const char * _getPlatformExecutablesSubdirectoryName() {
 #if U_PLATFORM_IS_DARWIN_BASED
     return "MacOS";
 #elif U_PLATFORM_IS_LINUX_BASED
@@ -91,7 +91,7 @@ static const char * __CFBundleGetPlatformExecutablesSubdirectoryName() {
 #endif
 }
 
-static char * __CFBundleCopyBundlePathForExecutablePath(const char *executablePath) {
+static char * _copyBundlePathForExecutablePath(const char *executablePath) {
     char path[PATH_MAX + 1];
     size_t executablePathLen = strnlen(executablePath, PATH_MAX + 1);
     if (executablePathLen > PATH_MAX) {
@@ -99,33 +99,33 @@ static char * __CFBundleCopyBundlePathForExecutablePath(const char *executablePa
     }
     strncpy(path, executablePath, PATH_MAX);
     // First remove the executable name
-    __CFBundleRemoveLastPathComponent(path);
+    _removeLastPathComponent(path);
     // Check if the executable is contained within
     // platform executable subdirectory. If so,
     // remove those
-    if (strncmp(__CFBundleGetLastPathComponent(path),
-        __CFBundleGetPlatformExecutablesSubdirectoryName(), PATH_MAX) == 0) {
+    if (strncmp(_getLastPathComponent(path),
+        _getPlatformExecutablesSubdirectoryName(), PATH_MAX) == 0) {
         // Remove platform folder (e.g. "MacOS")
-        __CFBundleRemoveLastPathComponent(path);
+        _removeLastPathComponent(path);
         // Remove the support files folder (e.g. "Contents")
-        __CFBundleRemoveLastPathComponent(path);
+        _removeLastPathComponent(path);
     }
 
     return strndup(path, PATH_MAX);
 }
 
-static const char * __CFBundleSearchDirectoryForResourceBundle(const char *directory) {
+static const char * _searchDirectoryForResourceBundle(const char *directory) {
     struct dirent *dirEntry;
     DIR *dir = opendir(directory);
     while ((dirEntry = readdir(dir)) != NULL) {
         if (strcasestr(dirEntry->d_name, RESOURCE_BUNDLE_NAME)) {
             // Found!
-            return __CFBundleCopyAppendingPathComponent(directory, dirEntry->d_name);
+            return _copyAppendingPathComponent(directory, dirEntry->d_name);
         }
         // If the current item is the "Contents" or "Resources" folder, dig down
         if (strcasestr(dirEntry->d_name, BUNDLE_CONTENTS_DIRECTORY_NAME) || strcasestr(dirEntry->d_name, BUNDLE_RESOURCES_DIRECTORY_NAME)) {
-            const char *newPath = __CFBundleCopyAppendingPathComponent(directory, dirEntry->d_name);
-            const char *result = __CFBundleSearchDirectoryForResourceBundle(newPath);
+            const char *newPath = _copyAppendingPathComponent(directory, dirEntry->d_name);
+            const char *result = _searchDirectoryForResourceBundle(newPath);
             uprv_free((void *)newPath);
             return result;
         }
@@ -142,14 +142,14 @@ const char* getPackageICUDataPath() {
     if (libraryFilename == 0 || libraryFilename[0] == 0) {
         return "";
     }
-    char *mainBundlePath = __CFBundleCopyBundlePathForExecutablePath(libraryFilename);
+    char *mainBundlePath = _copyBundlePathForExecutablePath(libraryFilename);
     // First search the bundle to see if the resource bundle
     // is embedded within the main bundle
-    const char *result = __CFBundleSearchDirectoryForResourceBundle(mainBundlePath);
+    const char *result = _searchDirectoryForResourceBundle(mainBundlePath);
     if (!result) {
         // Now search sibling bundles
-        __CFBundleRemoveLastPathComponent(mainBundlePath);
-        result = __CFBundleSearchDirectoryForResourceBundle(mainBundlePath);
+        _removeLastPathComponent(mainBundlePath);
+        result = _searchDirectoryForResourceBundle(mainBundlePath);
     }
     uprv_free((void *)mainBundlePath);
     if (!result) {
@@ -162,7 +162,7 @@ const char* getPackageICUDataPath() {
     while ((dirEntry = readdir(dir)) != NULL) {
         // If the current item is the "Contents" folder, dig down
         if (strcasestr(dirEntry->d_name, BUNDLE_CONTENTS_DIRECTORY_NAME)) {
-            const char *innerResult = __CFBundleCopyAppendingPathComponent(result, "Contents/Resources");
+            const char *innerResult = _copyAppendingPathComponent(result, "Contents/Resources");
             uprv_free((void *)result);
             return innerResult;
         }
