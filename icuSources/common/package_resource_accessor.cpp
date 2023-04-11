@@ -46,8 +46,8 @@ static const char *_copyAppendingPathComponent(const char *path, const char *pat
     char result[PATH_MAX + 1];
     strncpy(result, path, PATH_MAX);
     // Append the resource bundle name
-    strlcat(result, "/", PATH_MAX);
-    strlcat(result, pathComponent, PATH_MAX);
+    strncat(result, "/", PATH_MAX - pathLen);
+    strncat(result, pathComponent, PATH_MAX - pathLen - 1);
     return strndup(result, PATH_MAX);
 }
 
