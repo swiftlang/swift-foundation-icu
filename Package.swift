@@ -48,14 +48,6 @@ let stubDataBuildSettings: [CXXSetting] = buildSettings.appending([
     .headerSearchPath("."),
 ])
 
-// Windows requires C++14 or newer as the C++ standard library is implemented
-// with the newer standard since MSVC defaults to that version currently.
-#if os(Windows)
-let CXXStandard: CXXLanguageStandard = .cxx14
-#else
-let CXXStandard: CXXLanguageStandard = .cxx11
-#endif
-
 let package = Package(
     name: "FoundationICU",
     products: [
@@ -101,7 +93,7 @@ let package = Package(
             publicHeadersPath: ".",
             cxxSettings: stubDataBuildSettings),
     ],
-    cxxLanguageStandard: CXXStandard
+    cxxLanguageStandard: .cxx14
 )
 
 fileprivate extension Array {
