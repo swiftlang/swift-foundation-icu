@@ -27,6 +27,7 @@ var buildSettings: [CXXSetting] = [
 #if os(Windows)
 buildSettings.append(contentsOf: [
     .define("_CRT_SECURE_NO_DEPRECATE"),
+    .define("U_PLATFORM_USES_ONLY_WIN32_API"),
 ])
 #endif
 
