@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let buildSettings: [CXXSetting] = [
+var buildSettings: [CXXSetting] = [
     .define("DEBUG", to: "1", .when(configuration: .debug)),
     .define("U_SHOW_CPLUSPLUS_API", to: "1"),
     .define("U_SHOW_INTERNAL_API", to: "1"),
@@ -23,6 +23,12 @@ let buildSettings: [CXXSetting] = [
     .define("U_TIMEZONE_FILES_DIR", to: "\"/var/db/timezone/icutz\""),
     .define("USE_PACKAGE_DATA", to: "1")
 ]
+
+#if os(Windows)
+buildSettings.append(contentsOf: [
+    .define("_CRT_SECURE_NO_DEPRECATE"),
+])
+#endif
 
 let commonBuildSettings: [CXXSetting] = buildSettings.appending([
     .headerSearchPath("."),
