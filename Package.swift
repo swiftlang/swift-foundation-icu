@@ -99,7 +99,7 @@ let package = Package(
             publicHeadersPath: ".",
             cxxSettings: stubDataBuildSettings),
     ],
-    cxxLanguageStandard: .cxx11
+    cxxLanguageStandard: .cxx14
 )
 
 fileprivate extension Array {
