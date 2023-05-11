@@ -21,7 +21,6 @@
 #include <unistd.h>
 #include <glob.h>
 #include <strings.h>
-#include <NSSystemDirectories.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
