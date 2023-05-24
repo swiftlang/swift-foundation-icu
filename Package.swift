@@ -72,11 +72,7 @@ let package = Package(
                 "ICUIO",
                 "ICUStubData"
             ],
-            path: "swift/FoundationICU",
-            resources: [
-                .copy("icudt70l.dat"),
-                .copy("icutz44l.dat"),
-            ]),
+            path: "swift/FoundationICU"),
         .target(
             name: "ICUCommon",
             path: "icuSources/common",
