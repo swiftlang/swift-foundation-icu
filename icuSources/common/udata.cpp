@@ -42,6 +42,11 @@ might have to #include some other header
 #include "umapfile.h"
 #include "umutex.h"
 
+/* Swift Package Manager Support */
+#if defined(USE_PACKAGE_DATA)
+#include "icu_packaged_data.h"
+#endif
+
 /***********************************************************************
 *
 *   Notes on the organization of the ICU data implementation
@@ -107,6 +112,7 @@ static UDataMemory *udata_findCachedData(const char *path, UErrorCode &err);
  * of this.
  */
 static UDataMemory *gCommonICUDataArray[10] = { NULL };   // Access protected by icu global mutex.
+static icu::UInitOnce gCommonICUDataInitOnce = U_INITONCE_INITIALIZER;
 
 static u_atomic_int32_t gHaveTriedToLoadCommonData = ATOMIC_INT32_T_INITIALIZER(0);  //  See extendICUData().
 
@@ -758,6 +764,15 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
     if (dataToReturn != NULL || U_FAILURE(*pErrorCode)) {
         return dataToReturn;
     }
+#if defined(USE_PACKAGE_DATA)
+    // If we are loading timezone data, use the bundled version directly.
+    if (uprv_strcmp(inBasename, U_TIMEZONE_PACKAGE) == 0) {
+        // Use the prepackaged data directly
+        UDataMemory_setData(&tData, &_ICUPackagedTimeZoneData);
+        udata_checkCommonData(&tData, pErrorCode);
+        return udata_cacheDataItem(inBasename, &tData, pErrorCode);
+    }
+#endif
 
     /* Requested item is not in the cache.
      * Hunt it down, trying all the path locations
@@ -1125,6 +1140,16 @@ static UBool isTimeZoneFile(const char *name, const char *type) {
              uprv_strcmp(name, "metaZones") == 0));
 }
 
+
+#if defined(USE_PACKAGE_DATA)
+// Point commonData to the packaged data
+static void U_CALLCONV packagedDataPointerInitFn() {
+    udata_setFileAccess(UDATA_PACKAGES_FIRST, NULL);
+    UErrorCode error = U_ZERO_ERROR;
+    udata_setCommonData(&_ICUPackagedMainData, &error);
+}
+#endif // defined(USE_PACKAGE_DATA)
+
 /*
  *  A note on the ownership of Mapped Memory
  *
@@ -1162,6 +1187,13 @@ doOpenChoice(const char *path, const char *type, const char *name,
              UDataMemoryIsAcceptable *isAcceptable, void *context,
              UErrorCode *pErrorCode)
 {
+#if defined(USE_PACKAGE_DATA)
+    // Conventionally this method should be called at an app's main
+    // Since SwiftFoundationICU doesn't have a main, initialize the
+    // data pointers once when doOpenChoice is first called.
+    umtx_initOnce(gCommonICUDataInitOnce, &packagedDataPointerInitFn);
+#endif
+
     UDataMemory         *retVal = NULL;
 
     const char         *dataPath;

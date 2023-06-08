@@ -80,11 +80,6 @@
 #include <locale.h>
 #include <float.h>
 
-/* Swift Package Manager Support */
-#if defined(USE_PACKAGE_DATA)
-#include "package_resource_accessor.h"
-#endif
-
 #ifndef U_COMMON_IMPLEMENTATION
 #error U_COMMON_IMPLEMENTATION not set - must be set for all ICU source files in common/ - see https://unicode-org.github.io/icu/userguide/howtouseicu
 #endif
@@ -1424,11 +1419,6 @@ static void U_CALLCONV dataDirectoryInitFn() {
         return;
     }
 
-#if defined(USE_PACKAGE_DATA)
-    u_setDataDirectory(getPackageICUDataPath());
-    return;
-#endif
-
     const char *path = NULL;
 #if defined(ICU_DATA_DIR_PREFIX_ENV_VAR)
     char datadir_path_buffer[PATH_MAX];
@@ -1557,10 +1547,6 @@ static void U_CALLCONV TimeZoneDataDirInitFn(UErrorCode &status) {
 #else
     dir = getenv("ICU_TIMEZONE_FILES_DIR");
 #endif // U_PLATFORM_HAS_WINUWP_API
-
-#if defined(USE_PACKAGE_DATA)
-    dir = getPackageICUDataPath();
-#endif
 
 #if defined(U_TIMEZONE_FILES_DIR)
     if (dir == NULL) {
