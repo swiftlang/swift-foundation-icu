@@ -7,7 +7,13 @@ This version of the [ICU4C](https://icu.unicode.org/) project contains customize
 
 ## Versioning
 
-FoundationICU follows the same version number as the upstream ICU4C project that it contains. The oldest version that this package supports is `ICU 70.1`.
+See the following version matrix:
+
+| `FoundationICU` version | `ICU` version |
+| --- | --- |
+| `0.0.2` and below | `70.1` |
+| `0.0.3` and above | `72.1` |
+
 
 ## Adding FoundationICU as a Dependency
 
@@ -16,7 +22,7 @@ FoundationICU follows the same version number as the upstream ICU4C project that
 To use the `FoundationICU` library in a SwiftPM project, add the following lines to the dependencies in your `Package.swift` file:
 
 ```swift
-.package(url: "https://github.com/apple/swift-foundation-icu", from: "70.1"),
+.package(url: "https://github.com/apple/swift-foundation-icu", from: "0.0.3"),
 ```
 
 Include `"FoundationICU"` as a dependency for your target:
@@ -41,4 +47,4 @@ extension UCalendarAttribute {
 
 ## Future Improvements
 
-- **Data file handling**: currently, a pre-built data file is checked in as a binary file. In the future, we would like to check in the source files instead and build the data as a shared library to avoid the need to maintain and load a separate data file.
+- **Data file handling**: currently, the data file is embedded in the embedded in the binary itself as `[uint8_t]` (see `icu_packaged_data.h`). In the future, we would like to check in the source files instead and build the data as a shared library to avoid the need to maintain and load a separate data file.
