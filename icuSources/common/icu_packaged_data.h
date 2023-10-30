@@ -27,14 +27,14 @@ uint8_t const _ICUPackagedMainData[] __attribute__ ((aligned (8))) = {
     __ICU_PACKAGED_MAIN_DATA_CHUNK_0,
     __ICU_PACKAGED_MAIN_DATA_CHUNK_1,
     __ICU_PACKAGED_MAIN_DATA_CHUNK_2,
-    __ICU_PACKAGED_MAIN_DATA_CHUNK_3
+    __ICU_PACKAGED_MAIN_DATA_CHUNK_3,
 };
 
 uint8_t const _ICUPackagedTimeZoneData[] __attribute__ ((aligned (8))) = {
     __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_0,
     __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_1,
     __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_2,
-    __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_3
+    __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_3,
 };
 
 #endif // ifndef ICU_PACKAGED_DATA_H

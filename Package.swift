@@ -21,8 +21,8 @@ var buildSettings: [CXXSetting] = [
     .define("U_COMMON_IMPLEMENTATION"),
     // Where data are stored
     .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
-    .define("U_TIMEZONE_FILES_DIR", to: "\"/var/db/timezone/icutz\""),
-    .define("USE_PACKAGE_DATA", to: "1")
+    .define("USE_PACKAGE_DATA", to: "1"),
+    .define("APPLE_ICU_CHANGES", to: "1")
 ]
 
 #if os(Windows)
