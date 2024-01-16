@@ -682,7 +682,7 @@ ubidi_getRuns(UBiDi *pBiDi, UErrorCode*) {
 
     /* handle insert LRM/RLM BEFORE/AFTER run */
     if(pBiDi->insertPoints.size>0) {
-        Point *point, *start=pBiDi->insertPoints.points,
+        _Point *point, *start=pBiDi->insertPoints.points,
                       *limit=start+pBiDi->insertPoints.size;
         int32_t runIndex;
         for(point=start; point<limit; point++) {
