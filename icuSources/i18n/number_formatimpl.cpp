@@ -133,10 +133,16 @@ NumberFormatterImpl::macrosToMicroGenerator(const MacroProps& macros, bool safe,
     // TODO: Accept currency symbols from DecimalFormatSymbols?
 
     // Pre-compute a few values for efficiency.
-    bool isCurrency = utils::unitIsCurrency(macros.unit);
-    bool isBaseUnit = utils::unitIsBaseUnit(macros.unit);
-    bool isPercent = utils::unitIsPercent(macros.unit);
-    bool isPermille = utils::unitIsPermille(macros.unit);
+
+    // SwiftFoundationICU temporary changes begin:
+    // Capture macros.unit to ensure we are loading
+    // the "correct" MeasureUnit object from the package.
+    auto unit = macros.unit;
+    bool isCurrency = utils::unitIsCurrency(unit);
+    bool isBaseUnit = utils::unitIsBaseUnit(unit);
+    bool isPercent = utils::unitIsPercent(unit);
+    bool isPermille = utils::unitIsPermille(unit);
+    // SwiftFoundationICU temporary changes end
     bool isCompactNotation = macros.notation.fType == Notation::NTN_COMPACT;
     bool isAccounting =
             macros.sign == UNUM_SIGN_ACCOUNTING ||
