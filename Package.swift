@@ -20,12 +20,16 @@ var buildSettings: [CXXSetting] = [
                 .driverKit,
                 .android,
                 .linux,
-                .wasi
             ])),
     .define("U_TIMEZONE_PACKAGE", to: "\"icutz44l\""),
+    .define("U_HAVE_TZSET", to: "0", .when(platforms: [.wasi])),
+    .define("U_HAVE_TZNAME", to: "0", .when(platforms: [.wasi])),
+    .define("U_HAVE_TIMEZONE", to: "0", .when(platforms: [.wasi])),
     .define("FORTIFY_SOURCE", to: "2"),
     .define("STD_INSPIRED"),
     .define("MAC_OS_X_VERSION_MIN_REQUIRED", to: "101500"),
+    .define("_WASI_EMULATED_SIGNAL", .when(platforms: [.wasi])),
+    .define("_WASI_EMULATED_MMAN", .when(platforms: [.wasi])),
     .define("U_HAVE_STRTOD_L", to: "1"),
     .define("U_HAVE_XLOCALE_H", to: "1"),
     .define("U_HAVE_STRING_VIEW", to: "1"),
@@ -67,6 +71,11 @@ let stubDataBuildSettings: [CXXSetting] = buildSettings.appending([
     .headerSearchPath("../i18n"),
     .headerSearchPath("."),
 ])
+
+let linkerSettings: [LinkerSetting] = [
+    .linkedLibrary("wasi-emulated-signal", .when(platforms: [.wasi])),
+    .linkedLibrary("wasi-emulated-mman", .when(platforms: [.wasi])),
+]
 
 let package = Package(
     name: "FoundationICU",
@@ -111,6 +120,10 @@ let package = Package(
     ],
     cxxLanguageStandard: .cxx14
 )
+
+for target in package.targets {
+    target.linkerSettings = linkerSettings
+}
 
 fileprivate extension Array {
     func appending(_ other: Self) -> Self {
