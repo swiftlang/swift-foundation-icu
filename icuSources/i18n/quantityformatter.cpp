@@ -8,20 +8,20 @@
 * quantityformatter.cpp
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/simpleformatter.h"
+#include <_foundation_unicode/simpleformatter.h>
 #include "quantityformatter.h"
 #include "uassert.h"
-#include "unicode/unistr.h"
-#include "unicode/decimfmt.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/decimfmt.h>
 #include "cstring.h"
-#include "unicode/plurrule.h"
+#include <_foundation_unicode/plurrule.h>
 #include "charstr.h"
-#include "unicode/fmtable.h"
-#include "unicode/fieldpos.h"
+#include <_foundation_unicode/fmtable.h>
+#include <_foundation_unicode/fieldpos.h>
 #include "standardplural.h"
 #include "uassert.h"
 #include "number_decimalquantity.h"

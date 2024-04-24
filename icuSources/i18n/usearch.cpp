@@ -9,14 +9,14 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION && !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/usearch.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/usearch.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/utf16.h>
 #include "normalizer2impl.h"
 #include "usrchimp.h"
 #include "cmemory.h"

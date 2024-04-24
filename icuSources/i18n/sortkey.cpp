@@ -29,11 +29,11 @@
 //                             than the other
 //===============================================================================
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/sortkey.h"
+#include <_foundation_unicode/sortkey.h>
 #include "cmemory.h"
 #include "uelement.h"
 #include "ustr_imp.h"

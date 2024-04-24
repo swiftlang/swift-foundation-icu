@@ -24,13 +24,13 @@
 *   This file contains only the runtime and enumeration code, for read-only access.
 *   See utrie2_builder.c for the builder code.
 */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #ifdef UCPTRIE_DEBUG
-#include "unicode/umutablecptrie.h"
+#include <_foundation_unicode/umutablecptrie.h>
 #endif
-#include "unicode/utf.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "utrie2.h"
 #include "utrie2_impl.h"

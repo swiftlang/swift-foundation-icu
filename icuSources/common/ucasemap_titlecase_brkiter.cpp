@@ -17,14 +17,14 @@
 *   were moved here to break dependency cycles among parts of the common library.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/brkiter.h"
-#include "unicode/ubrk.h"
-#include "unicode/casemap.h"
-#include "unicode/ucasemap.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/casemap.h>
+#include <_foundation_unicode/ucasemap.h>
 #include "cmemory.h"
 #include "ucase.h"
 #include "ucasemap_imp.h"

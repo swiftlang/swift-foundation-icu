@@ -1,20 +1,20 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "cstring.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/ures.h>
 #include "uresimp.h"
 #include "charstr.h"
 #include "number_formatimpl.h"
-#include "unicode/numfmt.h"
+#include <_foundation_unicode/numfmt.h>
 #include "number_patternstring.h"
 #include "number_utils.h"
-#include "unicode/numberformatter.h"
-#include "unicode/dcfmtsym.h"
+#include <_foundation_unicode/numberformatter.h>
+#include <_foundation_unicode/dcfmtsym.h>
 #include "number_scientific.h"
 #include "number_compact.h"
 #include "uresimp.h"

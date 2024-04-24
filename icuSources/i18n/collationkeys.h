@@ -14,12 +14,12 @@
 #ifndef __COLLATIONKEYS_H__
 #define __COLLATIONKEYS_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/bytestream.h"
-#include "unicode/ucol.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/ucol.h>
 #include "charstr.h"
 #include "collation.h"
 

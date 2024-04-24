@@ -7,10 +7,10 @@
  ********************************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
-#include "unicode/ucsdet.h"
+#include <_foundation_unicode/ucsdet.h>
 #include "csdetect.h"
 #include "csmatch.h"
 #include "csrsbcs.h"

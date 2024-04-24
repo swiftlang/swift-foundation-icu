@@ -16,12 +16,12 @@
 #ifndef SMPDTFST_H
 #define SMPDTFST_H
 
-#include "unicode/uobject.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/udat.h"
+#include <_foundation_unicode/udat.h>
 
 U_NAMESPACE_BEGIN
 

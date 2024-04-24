@@ -15,16 +15,16 @@
 * 03/12/2004  weiv      Creation
 */
 
-#include "unicode/ustring.h"
-#include "unicode/udata.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/utf16.h>
 #include "utracimp.h"
 #include "ucol_imp.h"
 #include "cmemory.h"
 #include "cstring.h"
 #include "uresimp.h"
-#include "unicode/coll.h"
-#include "unicode/stringpiece.h"
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/stringpiece.h>
 #include "charstr.h"
 
 U_NAMESPACE_USE
@@ -35,7 +35,7 @@ U_NAMESPACE_USE
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/tblcoll.h"
+#include <_foundation_unicode/tblcoll.h>
 
 enum OptionsList {
     UCOL_SIT_LANGUAGE = 0,

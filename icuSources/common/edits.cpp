@@ -4,9 +4,9 @@
 // edits.cpp
 // created: 2017feb08 Markus W. Scherer
 
-#include "unicode/edits.h"
-#include "unicode/unistr.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include "uassert.h"
 #include "util.h"

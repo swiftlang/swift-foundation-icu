@@ -12,12 +12,12 @@
 #ifndef TRIDPARS_H
 #define TRIDPARS_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
 
 U_NAMESPACE_BEGIN
 

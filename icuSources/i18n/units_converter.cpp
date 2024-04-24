@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -11,9 +11,9 @@
 #include "measunit_impl.h"
 #include "putilimp.h"
 #include "uassert.h"
-#include "unicode/errorcode.h"
-#include "unicode/localpointer.h"
-#include "unicode/stringpiece.h"
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/stringpiece.h>
 #include "units_converter.h"
 #include <algorithm>
 #include <cmath>

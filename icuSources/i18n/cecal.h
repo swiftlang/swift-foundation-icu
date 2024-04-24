@@ -10,11 +10,11 @@
 #ifndef CECAL_H
 #define CECAL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
+#include <_foundation_unicode/calendar.h>
 
 U_NAMESPACE_BEGIN
 

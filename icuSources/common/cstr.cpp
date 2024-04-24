@@ -7,9 +7,9 @@
 *******************************************************************************
 *   file name:  charstr.cpp
 */
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/unistr.h>
 
 #include "cstr.h"
 

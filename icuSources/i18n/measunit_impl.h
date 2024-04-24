@@ -4,11 +4,11 @@
 #ifndef __MEASUNIT_IMPL_H__
 #define __MEASUNIT_IMPL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/measunit.h"
+#include <_foundation_unicode/measunit.h>
 #include "cmemory.h"
 #include "charstr.h"
 

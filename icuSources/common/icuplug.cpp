@@ -15,7 +15,7 @@
 ******************************************************************************
 */
 
-#include "unicode/icuplug.h"
+#include <_foundation_unicode/icuplug.h>
 
 
 #if UCONFIG_ENABLE_PLUGINS

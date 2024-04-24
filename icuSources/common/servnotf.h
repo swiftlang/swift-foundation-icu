@@ -9,7 +9,7 @@
 #ifndef ICUNOTIF_H
 #define ICUNOTIF_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if UCONFIG_NO_SERVICE
 
@@ -25,8 +25,8 @@ U_NAMESPACE_END
 
 #else
 
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
 
 #include "mutex.h"
 #include "uvector.h"

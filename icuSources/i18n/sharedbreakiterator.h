@@ -11,7 +11,7 @@
 #ifndef __SHARED_BREAKITERATOR_H__
 #define __SHARED_BREAKITERATOR_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "sharedobject.h"
 
 #if !UCONFIG_NO_BREAK_ITERATION

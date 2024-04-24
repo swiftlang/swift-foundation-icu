@@ -1,0 +1,85 @@
+##===----------------------------------------------------------------------===##
+##
+## This source file is part of the Swift open source project
+##
+## Copyright (c) 2024 Apple Inc. and the Swift project authors
+## Licensed under Apache License v2.0
+##
+## See LICENSE.txt for license information
+## See CONTRIBUTORS.md for the list of Swift project authors
+##
+## SPDX-License-Identifier: Apache-2.0
+##
+##===----------------------------------------------------------------------===##
+
+cmake_minimum_required(VERSION 3.24)
+
+project(SwiftFoundationICU
+    LANGUAGES CXX Swift)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_Swift_MODULE_DIRECTORY ${CMAKE_BINARY_DIR}/swift)
+
+# Build flags
+add_compile_definitions(
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_ATTRIBUTE_DEPRECATED="">
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_SHOW_CPLUSPLUS_API=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_SHOW_INTERNAL_API=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_STATIC_IMPLEMENTATION>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE_PACKAGE="icutz44l">
+    $<$<COMPILE_LANGUAGE:C,CXX>:FORTIFY_SOURCE=2>
+    $<$<COMPILE_LANGUAGE:C,CXX>:STD_INSPIRED>
+    $<$<COMPILE_LANGUAGE:C,CXX>:MAC_OS_X_VERSION_MIN_REQUIRED=101500>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_STRTOD_L=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_XLOCALE_H=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_STRING_VIEW=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_DISABLE_RENAMING=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_COMMON_IMPLEMENTATION>
+    $<$<COMPILE_LANGUAGE:C,CXX>:ICU_DATA_DIR="/usr/share/icu">
+    $<$<COMPILE_LANGUAGE:C,CXX>:USE_PACKAGE_DATA=1>
+    $<$<COMPILE_LANGUAGE:C,CXX>:APPLE_ICU_CHANGES=1>)
+
+# Window specific settings
+if(CMAKE_SYSTEM_NAME STREQUAL Windows)
+    add_compile_definitions(
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=_timezone>
+        $<$<COMPILE_LANGUAGE:C,CXX>:_CRT_SECURE_NO_DEPRECATE>
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_PLATFORM_USES_ONLY_WIN32_API>)
+else()
+    add_compile_definitions(
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=timezone>)
+endif()
+# WASI specific settings
+if(CMAKE_SYSTEM_NAME STREQUAL WASI)
+    add_compile_definitions(
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TZSET=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TZNAME=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TIMEZONE=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:_WASI_EMULATED_SIGNAL>
+        $<$<COMPILE_LANGUAGE:C,CXX>:_WASI_EMULATED_MMAN>)
+    add_link_options("-Lwasi-emulated-signal")
+    add_link_options("-Lwasi-emulated-mman")
+endif()
+
+if(BUILD_SHARED_LIBS)
+    set(install_directory swift)
+else()
+    set(install_directory swift_static)
+endif()
+
+if(NOT SWIFT_SYSTEM_NAME)
+  if(CMAKE_SYSTEM_NAME STREQUAL Darwin)
+    set(SWIFT_SYSTEM_NAME macosx)
+  else()
+    set(SWIFT_SYSTEM_NAME "$<LOWER_CASE:${CMAKE_SYSTEM_NAME}>")
+  endif()
+endif()
+
+add_subdirectory(icuSources)
+add_subdirectory(cmake/modules)

@@ -19,12 +19,12 @@
 #ifndef TAIWNCAL_H
 #define TAIWNCAL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
-#include "unicode/gregocal.h"
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/gregocal.h>
 
 U_NAMESPACE_BEGIN
 

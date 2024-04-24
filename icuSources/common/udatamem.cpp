@@ -19,9 +19,9 @@
  *
  *----------------------------------------------------------------------------------*/
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/udata.h>
 
 #include "udatamem.h"
 

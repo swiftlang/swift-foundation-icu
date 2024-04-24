@@ -7,7 +7,7 @@
  *******************************************************************************
  */
 
-#include "unicode/currpinf.h"
+#include <_foundation_unicode/currpinf.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -17,11 +17,11 @@
 #include <iostream>
 #endif
 
-#include "unicode/locid.h"
-#include "unicode/plurrule.h"
-#include "unicode/strenum.h"
-#include "unicode/ures.h"
-#include "unicode/numsys.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/numsys.h>
 #include "cstring.h"
 #include "hash.h"
 #include "uresimp.h"

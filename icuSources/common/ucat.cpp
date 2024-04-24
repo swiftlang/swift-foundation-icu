@@ -10,8 +10,8 @@
 * Since: ICU 2.6
 **********************************************************************
 */
-#include "unicode/ucat.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ucat.h>
+#include <_foundation_unicode/ustring.h>
 #include "cstring.h"
 #include "uassert.h"
 

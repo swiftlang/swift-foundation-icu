@@ -10,11 +10,11 @@
 //             miscellaneous implementation functions.
 //
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 #include "regeximp.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utf16.h>
 
 U_NAMESPACE_BEGIN
 

@@ -27,7 +27,7 @@
 #ifndef CSTRING_H
 #define CSTRING_H 1
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include <string.h>
 #include <stdlib.h>

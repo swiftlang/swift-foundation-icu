@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -9,13 +9,13 @@
 // Other independent implementations should go into their own cpp file for
 // better dependency modularization.
 
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ustring.h>
 #include "formattedval_impl.h"
 #include "number_types.h"
 #include "formatted_string_builder.h"
 #include "number_utils.h"
 #include "static_unicode_sets.h"
-#include "unicode/listformatter.h"
+#include <_foundation_unicode/listformatter.h>
 
 U_NAMESPACE_BEGIN
 

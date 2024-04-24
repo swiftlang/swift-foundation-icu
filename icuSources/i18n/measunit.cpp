@@ -12,12 +12,12 @@
 */
 #include "utypeinfo.h" // for 'typeid' to work
 
-#include "unicode/measunit.h"
+#include <_foundation_unicode/measunit.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uenum.h"
-#include "unicode/errorcode.h"
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/errorcode.h>
 #include "ustrenum.h"
 #include "cstring.h"
 #include "uassert.h"

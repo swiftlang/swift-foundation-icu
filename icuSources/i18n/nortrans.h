@@ -12,12 +12,12 @@
 #ifndef NORTRANS_H
 #define NORTRANS_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
-#include "unicode/normalizer2.h"
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/normalizer2.h>
 
 U_NAMESPACE_BEGIN
 

@@ -29,12 +29,12 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/udata.h>
 
 #include "umutex.h"
 #include "uarrsort.h"

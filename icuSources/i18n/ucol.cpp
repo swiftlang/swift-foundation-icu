@@ -19,16 +19,16 @@
 * 2012-2014   markus    Rewritten in C++ again.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/coll.h"
-#include "unicode/tblcoll.h"
-#include "unicode/bytestream.h"
-#include "unicode/coleitr.h"
-#include "unicode/ucoleitr.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/coleitr.h>
+#include <_foundation_unicode/ucoleitr.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "cstring.h"

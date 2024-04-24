@@ -13,8 +13,8 @@
 #ifndef _USTRENUM_H_
 #define _USTRENUM_H_
 
-#include "unicode/uenum.h"
-#include "unicode/strenum.h"
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/strenum.h>
 
 //----------------------------------------------------------------------
 U_NAMESPACE_BEGIN

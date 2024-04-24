@@ -10,13 +10,13 @@
 * Since: ICU 3.0
 **********************************************************************
 */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "currfmt.h"
-#include "unicode/numfmt.h"
-#include "unicode/curramt.h"
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/curramt.h>
 
 U_NAMESPACE_BEGIN
 

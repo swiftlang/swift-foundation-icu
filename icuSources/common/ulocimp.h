@@ -10,8 +10,8 @@
 #ifndef ULOCIMP_H
 #define ULOCIMP_H
 
-#include "unicode/bytestream.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/uloc.h>
 
 #include "charstr.h"
 

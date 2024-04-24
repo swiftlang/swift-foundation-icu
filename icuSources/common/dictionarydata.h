@@ -14,15 +14,15 @@
 #ifndef __DICTIONARYDATA_H__
 #define __DICTIONARYDATA_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/utext.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utext.h>
+#include <_foundation_unicode/udata.h>
 #include "udataswp.h"
-#include "unicode/uobject.h"
-#include "unicode/ustringtrie.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/ustringtrie.h>
 
 U_NAMESPACE_BEGIN
 
@@ -152,7 +152,7 @@ udict_swap(const UDataSwapper *ds, const void *inData, int32_t length, void *out
  * transforming Unicode strings into byte sequences.
  *
  * A .dict file begins with a standard ICU data file header
- * (DataHeader, see ucmndata.h and unicode/udata.h).
+ * (DataHeader, see ucmndata.h and _foundation_unicode/udata.h).
  * The UDataInfo.dataVersion field is currently unused (set to 0.0.0.0).
  *
  * After the header, the file contains the following parts.

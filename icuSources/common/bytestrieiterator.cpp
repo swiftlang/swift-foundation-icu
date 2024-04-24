@@ -14,9 +14,9 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/bytestrie.h"
-#include "unicode/stringpiece.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/stringpiece.h>
 #include "charstr.h"
 #include "uvectr32.h"
 

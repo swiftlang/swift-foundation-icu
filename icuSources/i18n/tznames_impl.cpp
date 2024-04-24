@@ -11,14 +11,14 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/strenum.h"
-#include "unicode/ustring.h"
-#include "unicode/timezone.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/utf16.h>
 
 #include "tznames_impl.h"
 #include "bytesinkutil.h"

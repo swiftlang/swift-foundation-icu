@@ -18,8 +18,8 @@
 *   Character conversion functions moved here from resbund.cpp
 */
 
-#include "unicode/utypes.h"
-#include "unicode/resbund.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/resbund.h>
 #include "uinvchar.h"
 
 U_NAMESPACE_BEGIN

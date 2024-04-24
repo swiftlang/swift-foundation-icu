@@ -21,14 +21,14 @@
  *   06/29/2000  helena      Major rewrite of the callback interface.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/putil.h"
-#include "unicode/udata.h"
-#include "unicode/ucnv.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/uloc.h>
 #include "mutex.h"
 #include "putilimp.h"
 #include "uassert.h"

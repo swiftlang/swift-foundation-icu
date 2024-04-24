@@ -7,27 +7,27 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/rbnf.h"
+#include <_foundation_unicode/rbnf.h>
 
 #if U_HAVE_RBNF
 
-#include "unicode/normlzr.h"
-#include "unicode/plurfmt.h"
-#include "unicode/tblcoll.h"
-#include "unicode/uchar.h"
-#include "unicode/ucol.h"
-#include "unicode/uloc.h"
-#include "unicode/unum.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
-#include "unicode/udata.h"
-#include "unicode/udisplaycontext.h"
-#include "unicode/brkiter.h"
-#include "unicode/ucasemap.h"
+#include <_foundation_unicode/normlzr.h>
+#include <_foundation_unicode/plurfmt.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/udisplaycontext.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/ucasemap.h>
 
 #include "cmemory.h"
 #include "cstring.h"

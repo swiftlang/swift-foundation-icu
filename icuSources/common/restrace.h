@@ -4,7 +4,7 @@
 #ifndef __RESTRACE_H__
 #define __RESTRACE_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if U_ENABLE_TRACING
 

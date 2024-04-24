@@ -14,9 +14,9 @@
 #ifndef CHARSTRING_H
 #define CHARSTRING_H
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 
 U_NAMESPACE_BEGIN

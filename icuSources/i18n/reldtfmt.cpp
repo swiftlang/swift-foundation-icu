@@ -7,20 +7,20 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include <stdlib.h>
 
-#include "unicode/datefmt.h"
-#include "unicode/reldatefmt.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/udisplaycontext.h"
-#include "unicode/uchar.h"
-#include "unicode/brkiter.h"
-#include "unicode/ucasemap.h"
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/reldatefmt.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/udisplaycontext.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/ucasemap.h>
 #include "reldtfmt.h"
 #include "cmemory.h"
 #include "uresimp.h"

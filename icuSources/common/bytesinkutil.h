@@ -7,9 +7,9 @@
 #ifndef BYTESINKUTIL_H
 #define BYTESINKUTIL_H
 
-#include "unicode/utypes.h"
-#include "unicode/bytestream.h"
-#include "unicode/edits.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/edits.h>
 #include "cmemory.h"
 #include "uassert.h"
 

@@ -21,9 +21,9 @@
 ******************************************************************************
 */
 
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucnv.h>
 #include "charstr.h"
 #include "uresimp.h"
 #include "ustr_imp.h"
@@ -33,7 +33,7 @@
 #include "cstring.h"
 #include "mutex.h"
 #include "uhash.h"
-#include "unicode/uenum.h"
+#include <_foundation_unicode/uenum.h>
 #include "uenumimp.h"
 #include "ulocimp.h"
 #include "umutex.h"

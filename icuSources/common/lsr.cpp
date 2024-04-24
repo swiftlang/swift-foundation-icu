@@ -4,7 +4,7 @@
 // lsr.cpp
 // created: 2019may08 Markus W. Scherer
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"

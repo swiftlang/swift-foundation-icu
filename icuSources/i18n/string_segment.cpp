@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -12,8 +12,8 @@
 #include "numparse_types.h"
 #include "string_segment.h"
 #include "putilimp.h"
-#include "unicode/utf16.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/uniset.h>
 
 U_NAMESPACE_BEGIN
 

@@ -12,13 +12,13 @@
 #ifndef BRKTRANS_H
 #define BRKTRANS_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION && !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/translit.h"
+#include <_foundation_unicode/translit.h>
 
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/localpointer.h>
 
 
 U_NAMESPACE_BEGIN

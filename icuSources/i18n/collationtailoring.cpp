@@ -11,15 +11,15 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/udata.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
-#include "unicode/uversion.h"
-#include "unicode/uvernum.h"
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/uversion.h>
+#include <_foundation_unicode/uvernum.h>
 #include "cmemory.h"
 #include "collationdata.h"
 #include "collationsettings.h"

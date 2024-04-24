@@ -11,7 +11,7 @@
 #ifndef __SHARED_PLURALRULES_H__
 #define __SHARED_PLURALRULES_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "sharedobject.h"
 #include "unifiedcache.h"
 

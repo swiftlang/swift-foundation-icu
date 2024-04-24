@@ -4,12 +4,12 @@
 #ifndef ERARULES_H_
 #define ERARULES_H_
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/localpointer.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 
 U_NAMESPACE_BEGIN

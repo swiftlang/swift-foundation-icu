@@ -6,16 +6,16 @@
 * Corporation and others.  All Rights Reserved.
 **********************************************************************
 */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/scientificnumberformatter.h"
-#include "unicode/dcfmtsym.h"
-#include "unicode/fpositer.h"
-#include "unicode/utf16.h"
-#include "unicode/uniset.h"
-#include "unicode/decimfmt.h"
+#include <_foundation_unicode/scientificnumberformatter.h>
+#include <_foundation_unicode/dcfmtsym.h>
+#include <_foundation_unicode/fpositer.h>
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/decimfmt.h>
 #include "static_unicode_sets.h"
 
 U_NAMESPACE_BEGIN

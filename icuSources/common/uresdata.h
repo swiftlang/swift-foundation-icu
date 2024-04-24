@@ -18,9 +18,9 @@
 #ifndef __RESDATA_H__
 #define __RESDATA_H__
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ures.h>
 #include "putilimp.h"
 #include "udataswp.h"
 
@@ -327,7 +327,7 @@ enum {
  * Most resources have their values stored at four-byte offsets from the start
  * of the resource data. These values are at least 4-aligned.
  * Some resource values are stored directly in the offset field of the Resource itself.
- * See UResType in unicode/ures.h for enumeration constants for Resource types.
+ * See UResType in _foundation_unicode/ures.h for enumeration constants for Resource types.
  *
  * Some resources have their values stored as sequences of 16-bit units,
  * at 2-byte offsets from the start of a contiguous 16-bit-unit array between

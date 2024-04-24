@@ -20,13 +20,13 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/ustdio.h"
-#include "unicode/ustring.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/ustdio.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/putil.h>
 
 #include "uprintf.h"
 #include "locbund.h"

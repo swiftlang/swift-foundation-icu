@@ -4,7 +4,7 @@
 // Extra functions for MeasureUnit not needed for all clients.
 // Separate .o file so that it can be removed for modularity.
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -21,13 +21,13 @@
 #include "uassert.h"
 #include "ucln_in.h"
 #include "umutex.h"
-#include "unicode/bytestrie.h"
-#include "unicode/bytestriebuilder.h"
-#include "unicode/localpointer.h"
-#include "unicode/stringpiece.h"
-#include "unicode/stringtriebuilder.h"
-#include "unicode/ures.h"
-#include "unicode/ustringtrie.h"
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/bytestriebuilder.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/stringtriebuilder.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustringtrie.h>
 #include "uresimp.h"
 #include "util.h"
 #include <cstdlib>

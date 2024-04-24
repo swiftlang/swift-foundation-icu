@@ -7,11 +7,11 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/utmscale.h"
+#include <_foundation_unicode/utmscale.h>
 
 #define ticks        INT64_C(1)
 #define microseconds (ticks * 10)

@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -12,7 +12,7 @@
 #include "number_decimalquantity.h"
 #include "number_roundingutils.h"
 #include "resource.h"
-#include "unicode/measure.h"
+#include <_foundation_unicode/measure.h>
 #include "units_data.h"
 #include "units_router.h"
 #include <cmath>

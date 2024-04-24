@@ -25,13 +25,13 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/choicfmt.h"
-#include "unicode/numfmt.h"
-#include "unicode/locid.h"
+#include <_foundation_unicode/choicfmt.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/locid.h>
 #include "cpputils.h"
 #include "cstring.h"
 #include "messageimpl.h"

@@ -14,11 +14,11 @@
 #ifndef __COLLATIONSETS_H__
 #define __COLLATIONSETS_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/uniset.h"
+#include <_foundation_unicode/uniset.h>
 #include "collation.h"
 
 U_NAMESPACE_BEGIN

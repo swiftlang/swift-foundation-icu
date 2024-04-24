@@ -1,7 +1,7 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_COMPACT_H__
@@ -9,7 +9,7 @@
 
 #include "standardplural.h"
 #include "number_types.h"
-#include "unicode/unum.h"
+#include <_foundation_unicode/unum.h>
 #include "uvector.h"
 #include "resource.h"
 #include "number_patternmodifier.h"

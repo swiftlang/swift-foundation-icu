@@ -9,21 +9,21 @@
 //  This file contains class RegexStaticSets
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "unicode/regex.h"
+//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
 //
 //  RegexStaticSets groups together the common UnicodeSets that are needed
 //   for compiling or executing RegularExpressions.  This grouping simplifies
 //   the thread safe lazy creation and sharing of these sets across
 //   all instances of regular expressions.
 //
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
-#include "unicode/uchar.h"
-#include "unicode/regex.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/regex.h>
 #include "uprops.h"
 #include "cmemory.h"
 #include "cstring.h"

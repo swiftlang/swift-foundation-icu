@@ -7,8 +7,8 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localpointer.h>
 
 #if !UCONFIG_NO_SERVICE
 

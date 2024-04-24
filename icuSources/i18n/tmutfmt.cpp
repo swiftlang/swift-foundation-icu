@@ -7,12 +7,12 @@
  *******************************************************************************
  */
 
-#include "unicode/tmutfmt.h"
+#include <_foundation_unicode/tmutfmt.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/decimfmt.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/localpointer.h>
 #include "plurrule_impl.h"
 #include "uvector.h"
 #include "charstr.h"
@@ -21,7 +21,7 @@
 #include "hash.h"
 #include "uresimp.h"
 #include "ureslocs.h"
-#include "unicode/msgfmt.h"
+#include <_foundation_unicode/msgfmt.h>
 #include "uassert.h"
 
 #define LEFT_CURLY_BRACKET  ((UChar)0x007B)

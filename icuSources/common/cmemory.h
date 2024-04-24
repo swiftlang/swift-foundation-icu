@@ -26,11 +26,11 @@
 #ifndef CMEMORY_H
 #define CMEMORY_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #include <stddef.h>
 #include <string.h>
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/localpointer.h>
 #include "uassert.h"
 
 #if U_DEBUG && defined(UPRV_MALLOC_COUNT)
@@ -172,7 +172,7 @@ uprv_deleteUObject(void *obj);
 #ifdef __cplusplus
 
 #include <utility>
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 
 U_NAMESPACE_BEGIN
 

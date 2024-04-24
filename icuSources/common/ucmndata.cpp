@@ -22,8 +22,8 @@
  *
  */
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
 #include "cstring.h"
 #include "ucmndata.h"
 #include "udatamem.h"

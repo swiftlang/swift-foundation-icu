@@ -19,8 +19,8 @@
 *   moved here from ustrtrns.c for better modularization.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
 #include "cstring.h"
 #include "cwchar.h"
 #include "cmemory.h"

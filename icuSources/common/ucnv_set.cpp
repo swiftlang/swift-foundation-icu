@@ -20,9 +20,9 @@
 *   implementation functions on the USet implementation.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uset.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/ucnv.h>
 #include "ucnv_bld.h"
 #include "uset_imp.h"
 

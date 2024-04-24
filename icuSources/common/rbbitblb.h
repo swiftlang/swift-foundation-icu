@@ -14,12 +14,12 @@
 #ifndef RBBITBLB_H
 #define RBBITBLB_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/rbbi.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/rbbi.h>
 #include "rbbidata.h"
 #include "rbbirb.h"
 #include "rbbinode.h"

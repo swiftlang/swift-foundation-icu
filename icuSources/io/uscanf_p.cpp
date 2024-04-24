@@ -18,15 +18,15 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/unum.h"
-#include "unicode/udat.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/udat.h>
+#include <_foundation_unicode/uset.h>
 #include "uscanf.h"
 #include "ufmt_cmn.h"
 #include "ufile.h"

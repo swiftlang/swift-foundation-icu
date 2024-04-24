@@ -16,11 +16,11 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uniset.h"
-#include "unicode/ustring.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "uvector.h"
 #include "unisetspan.h"

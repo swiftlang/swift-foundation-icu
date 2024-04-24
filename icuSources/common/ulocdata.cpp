@@ -17,10 +17,10 @@
 */
 
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/ures.h"
-#include "unicode/uloc.h"
-#include "unicode/ulocdata.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ulocdata.h>
 #include "uresimp.h"
 #include "ureslocs.h"
 #include "ulocimp.h"

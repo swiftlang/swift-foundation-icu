@@ -21,10 +21,10 @@
 *   code also builds UnicodeSets from patterns and needs uniset_props.
 */
 
-#include "unicode/brkiter.h"
-#include "unicode/locid.h"
-#include "unicode/parsepos.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/uniset.h>
 #include "cmemory.h"
 #include "ruleiter.h"
 #include "ucase.h"

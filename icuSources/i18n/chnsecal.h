@@ -18,12 +18,12 @@
 #ifndef CHNSECAL_H
 #define CHNSECAL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
-#include "unicode/timezone.h"
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/timezone.h>
 
 U_NAMESPACE_BEGIN
 

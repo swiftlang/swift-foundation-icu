@@ -11,7 +11,7 @@
 //  This file contains utility code for supporting UText in the regular expression engine.
 //
 
-#include "unicode/utf.h"
+#include <_foundation_unicode/utf.h>
 #include "regextxt.h"
 
 U_NAMESPACE_BEGIN

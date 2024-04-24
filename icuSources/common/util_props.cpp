@@ -10,8 +10,8 @@
 **********************************************************************
 */
 
-#include "unicode/uchar.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/utf16.h>
 #include "patternprops.h"
 #include "util.h"
 

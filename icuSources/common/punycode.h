@@ -27,7 +27,7 @@ http://www.nicemice.net/amc/
 #ifndef __PUNYCODE_H__
 #define __PUNYCODE_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_IDNA
 

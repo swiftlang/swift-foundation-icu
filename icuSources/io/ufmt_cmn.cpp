@@ -23,8 +23,8 @@
 #include "cstring.h"
 #include "cmemory.h"
 #include "ufmt_cmn.h"
-#include "unicode/uchar.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucnv.h>
 #include "ustr_cnv.h"
 
 #if !UCONFIG_NO_CONVERSION

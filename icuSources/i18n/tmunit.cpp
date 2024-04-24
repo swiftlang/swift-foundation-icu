@@ -7,7 +7,7 @@
  *******************************************************************************
  */
 
-#include "unicode/tmunit.h"
+#include <_foundation_unicode/tmunit.h>
 #include "uassert.h"
 
 #if !UCONFIG_NO_FORMATTING

@@ -30,15 +30,15 @@
      l = lang, C = ctry, M = charmap, V = variant
 */
 
-#include "unicode/bytestream.h"
-#include "unicode/errorcode.h"
-#include "unicode/stringpiece.h"
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uloc.h>
 #if APPLE_ICU_CHANGES
 // rdar://74314220 #189 Add ualoc_canonicalForm, C wrapper for Locale::createCanonical
-#include "unicode/locid.h"
+#include <_foundation_unicode/locid.h>
 #endif // APPLE_ICU_CHANGES
 
 #include "bytesinkutil.h"

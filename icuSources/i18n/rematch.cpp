@@ -13,21 +13,21 @@
 //         which is one of the main API classes for the ICU regular expression package.
 //
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if APPLE_ICU_CHANGES && U_PLATFORM_IS_DARWIN_BASED
-// Logging for rdar://79977677; include must be after unicode/utypes.h
+// Logging for rdar://79977677; include must be after _foundation_unicode/utypes.h
 #include <os/log.h>
 #endif  // APPLE_ICU_CHANGES && U_PLATFORM_IS_DARWIN_BASED
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/regex.h"
-#include "unicode/uniset.h"
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/rbbi.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/regex.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/rbbi.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "uassert.h"
 #include "cmemory.h"
 #include "cstr.h"

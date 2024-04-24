@@ -12,18 +12,18 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/dtitvfmt.h"
+#include <_foundation_unicode/dtitvfmt.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 //TODO: put in compilation
 //#define DTITVFMT_DEBUG 1
 
-#include "unicode/calendar.h"
-#include "unicode/dtptngen.h"
-#include "unicode/dtitvinf.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/udisplaycontext.h"
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/dtptngen.h>
+#include <_foundation_unicode/dtitvinf.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/udisplaycontext.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "dtitv_impl.h"
@@ -33,7 +33,7 @@
 #if APPLE_ICU_CHANGES
 // rdar:/
 // Apple addition
-#include "unicode/udateintervalformat.h"
+#include <_foundation_unicode/udateintervalformat.h>
 #endif  // APPLE_ICU_CHANGES
 
 #ifdef DTITVFMT_DEBUG

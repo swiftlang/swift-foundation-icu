@@ -19,7 +19,7 @@
 #ifndef __UENUMIMP_H
 #define __UENUMIMP_H
 
-#include "unicode/uenum.h"
+#include <_foundation_unicode/uenum.h>
 
 U_CDECL_BEGIN
 

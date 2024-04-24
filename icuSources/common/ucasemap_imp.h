@@ -7,9 +7,9 @@
 #ifndef __UCASEMAP_IMP_H__
 #define __UCASEMAP_IMP_H__
 
-#include "unicode/utypes.h"
-#include "unicode/ucasemap.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ucasemap.h>
+#include <_foundation_unicode/uchar.h>
 #include "ucase.h"
 
 /**
@@ -64,9 +64,9 @@ u_caseInsensitivePrefixMatch(const UChar *s1, int32_t length1,
 
 U_NAMESPACE_BEGIN
 
-class BreakIterator;        // unicode/brkiter.h
+class BreakIterator;        // _foundation_unicode/brkiter.h
 class ByteSink;
-class Locale;               // unicode/locid.h
+class Locale;               // _foundation_unicode/locid.h
 
 /** Returns true if the options are valid. Otherwise false, and sets an error. */
 inline UBool ustrcase_checkTitleAdjustmentOptions(uint32_t options, UErrorCode &errorCode) {
@@ -100,7 +100,7 @@ BreakIterator *ustrcase_getTitleBreakIterator(
 
 U_NAMESPACE_END
 
-#include "unicode/unistr.h"  // for UStringCaseMapper
+#include <_foundation_unicode/unistr.h>  // for UStringCaseMapper
 
 /*
  * Internal string casing functions implementing

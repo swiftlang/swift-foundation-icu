@@ -5,7 +5,7 @@
 // originally added per rdar://4448220 Add user dictionary support
 //
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 

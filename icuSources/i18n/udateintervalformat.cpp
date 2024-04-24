@@ -7,18 +7,18 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/udateintervalformat.h"
-#include "unicode/dtitvfmt.h"
-#include "unicode/dtintrv.h"
-#include "unicode/localpointer.h"
-#include "unicode/timezone.h"
-#include "unicode/locid.h"
-#include "unicode/unistr.h"
-#include "unicode/udisplaycontext.h"
+#include <_foundation_unicode/udateintervalformat.h>
+#include <_foundation_unicode/dtitvfmt.h>
+#include <_foundation_unicode/dtintrv.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/udisplaycontext.h>
 #include "formattedval_impl.h"
 
 U_NAMESPACE_USE

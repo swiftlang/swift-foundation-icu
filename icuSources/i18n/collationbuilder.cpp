@@ -17,20 +17,20 @@
 #include <stdio.h>
 #endif
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/caniter.h"
-#include "unicode/normalizer2.h"
-#include "unicode/tblcoll.h"
-#include "unicode/parseerr.h"
-#include "unicode/uchar.h"
-#include "unicode/ucol.h"
-#include "unicode/unistr.h"
-#include "unicode/usetiter.h"
-#include "unicode/utf16.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/caniter.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/uversion.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "collationbuilder.h"

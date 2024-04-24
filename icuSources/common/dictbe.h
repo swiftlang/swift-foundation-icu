@@ -10,9 +10,9 @@
 #ifndef DICTBE_H
 #define DICTBE_H
 
-#include "unicode/utypes.h"
-#include "unicode/uniset.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utext.h>
 
 #include "brkeng.h"
 #include "hash.h"

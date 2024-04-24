@@ -22,7 +22,7 @@
 
 #include "umutex.h"
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "uassert.h"
 #include "ucln_cmn.h"
 #include "cmemory.h"

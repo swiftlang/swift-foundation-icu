@@ -1,12 +1,12 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "uassert.h"
-#include "unicode/numberformatter.h"
+#include <_foundation_unicode/numberformatter.h>
 #include "number_decimalquantity.h"
 #include "number_formatimpl.h"
 #include "umutex.h"

@@ -42,16 +42,16 @@
 *                             macros to ucnvmbcs.h file
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_NO_LEGACY_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_cb.h"
-#include "unicode/udata.h"
-#include "unicode/uset.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_cb.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "ucnv_bld.h"
 #include "ucnvmbcs.h"
 #include "ucnv_ext.h"

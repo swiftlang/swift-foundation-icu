@@ -1,21 +1,21 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_TYPES_H__
 #define __NUMBER_TYPES_H__
 
 #include <cstdint>
-#include "unicode/decimfmt.h"
-#include "unicode/unum.h"
-#include "unicode/numsys.h"
-#include "unicode/numberformatter.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/numberformatter.h>
+#include <_foundation_unicode/utf16.h>
 #include "uassert.h"
-#include "unicode/platform.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/platform.h>
+#include <_foundation_unicode/uniset.h>
 #include "standardplural.h"
 #include "formatted_string_builder.h"
 

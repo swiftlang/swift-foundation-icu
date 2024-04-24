@@ -14,7 +14,7 @@
 #ifndef __STANDARDPLURAL_H__
 #define __STANDARDPLURAL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 

@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMPARSE_IMPL_H__
@@ -11,11 +11,11 @@
 #include "numparse_decimal.h"
 #include "numparse_symbols.h"
 #include "numparse_scientific.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/uniset.h>
 #include "numparse_currency.h"
 #include "numparse_affixes.h"
 #include "number_decimfmtprops.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/localpointer.h>
 #include "numparse_validators.h"
 #include "number_multiplier.h"
 #include "string_segment.h"

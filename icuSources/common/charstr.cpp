@@ -16,8 +16,8 @@
 
 #include <cstdlib>
 
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"

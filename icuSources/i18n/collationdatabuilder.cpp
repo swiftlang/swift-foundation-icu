@@ -13,18 +13,18 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/localpointer.h"
-#include "unicode/uchar.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/ucharstriebuilder.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/usetiter.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/ucharstriebuilder.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "collationdata.h"

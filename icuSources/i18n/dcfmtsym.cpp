@@ -19,19 +19,19 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/dcfmtsym.h"
-#include "unicode/ures.h"
-#include "unicode/decimfmt.h"
-#include "unicode/ucurr.h"
-#include "unicode/choicfmt.h"
-#include "unicode/unistr.h"
-#include "unicode/numsys.h"
-#include "unicode/unum.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/dcfmtsym.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/ucurr.h>
+#include <_foundation_unicode/choicfmt.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/utf16.h>
 #include "ucurrimp.h"
 #include "cstring.h"
 #include "locbased.h"
@@ -62,7 +62,7 @@ static const char gNumberElementsLatnSymbols[] = "NumberElements/latn/symbols";
 static const UChar INTL_CURRENCY_SYMBOL_STR[] = {0xa4, 0xa4, 0};
 
 // List of field names to be loaded from the data files.
-// These are parallel with the enum ENumberFormatSymbol in unicode/dcfmtsym.h.
+// These are parallel with the enum ENumberFormatSymbol in _foundation_unicode/dcfmtsym.h.
 static const char *gNumberElementKeys[DecimalFormatSymbols::kFormatSymbolCount] = {
     "decimal",
     "group",

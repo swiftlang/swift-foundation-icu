@@ -21,14 +21,14 @@
 #ifndef UFILE_H
 #define UFILE_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
 #include <stdio.h>
 
-#include "unicode/ucnv.h"
-#include "unicode/utrans.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/utrans.h>
 #include "locbund.h"
 
 /* The buffer size for fromUnicode calls */

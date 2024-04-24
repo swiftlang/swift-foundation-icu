@@ -10,7 +10,7 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
@@ -20,12 +20,12 @@
 #include "transreg.h"
 #include "uassert.h"
 #include "ucln_in.h"
-#include "unicode/parsepos.h"
-#include "unicode/translit.h"
-#include "unicode/uchar.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/utrans.h"
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utrans.h>
 #include "util.h"
 #include "uvector.h"
 

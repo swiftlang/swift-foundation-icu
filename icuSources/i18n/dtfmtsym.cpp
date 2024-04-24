@@ -24,16 +24,16 @@
 
 #include <utility>
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
-#include "unicode/ustring.h"
-#include "unicode/localpointer.h"
-#include "unicode/dtfmtsym.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/msgfmt.h"
-#include "unicode/numsys.h"
-#include "unicode/tznames.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/dtfmtsym.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/msgfmt.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/tznames.h>
 #include "cpputils.h"
 #include "umutex.h"
 #include "cmemory.h"
@@ -48,7 +48,7 @@
 #include "ureslocs.h"
 #include "uvector.h"
 #include "shareddateformatsymbols.h"
-#include "unicode/calendar.h"
+#include <_foundation_unicode/calendar.h>
 #include "unifiedcache.h"
 
 // *****************************************************************************

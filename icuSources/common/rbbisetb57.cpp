@@ -33,11 +33,11 @@
 //  urbtok57 interfaces for access via RBT, and better tests
 //********************************************************************
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/uniset.h"
+#include <_foundation_unicode/uniset.h>
 #include "utrie.h"
 #include "uvector.h"
 #include "uassert.h"

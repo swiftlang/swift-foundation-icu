@@ -23,7 +23,7 @@
 #ifndef __UELEMENT_H__
 #define __UELEMENT_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 U_CDECL_BEGIN
 

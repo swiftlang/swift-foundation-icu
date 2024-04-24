@@ -22,11 +22,11 @@
 #ifndef UCNV_IMP_H
 #define UCNV_IMP_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/uloc.h"
+#include <_foundation_unicode/uloc.h>
 #include "ucnv_bld.h"
 
 /*

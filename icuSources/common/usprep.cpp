@@ -16,16 +16,16 @@
  *   created by: Ram Viswanadha
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_IDNA
 
-#include "unicode/usprep.h"
+#include <_foundation_unicode/usprep.h>
 
-#include "unicode/normalizer2.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uversion.h>
 #include "umutex.h"
 #include "cmemory.h"
 #include "sprpimpl.h"

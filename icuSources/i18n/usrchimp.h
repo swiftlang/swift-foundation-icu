@@ -11,14 +11,14 @@
 #ifndef USRCHIMP_H
 #define USRCHIMP_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/normalizer2.h"
-#include "unicode/ucol.h"
-#include "unicode/ucoleitr.h"
-#include "unicode/ubrk.h"
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/ucoleitr.h>
+#include <_foundation_unicode/ubrk.h>
 
 /* mask off anything but primary order */
 #define UCOL_PRIMARYORDERMASK 0xffff0000

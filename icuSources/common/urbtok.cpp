@@ -10,14 +10,14 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/urbtok.h"
+#include <_foundation_unicode/urbtok.h>
 
-#include "unicode/ustring.h"
-#include "unicode/rbbi.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/rbbi.h>
 #include "rbbirb.h"
 #include "rbbidata.h"
 #include "rbbidata57.h"

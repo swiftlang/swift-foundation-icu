@@ -10,11 +10,11 @@
 *******************************************************************************
 */
 
-#include "unicode/decimfmt.h"
-#include "unicode/messagepattern.h"
-#include "unicode/plurfmt.h"
-#include "unicode/plurrule.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/messagepattern.h>
+#include <_foundation_unicode/plurfmt.h>
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include "messageimpl.h"
 #include "nfrule.h"

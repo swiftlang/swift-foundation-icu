@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_MAPPER_H__
@@ -9,7 +9,7 @@
 
 #include <atomic>
 #include "number_types.h"
-#include "unicode/currpinf.h"
+#include <_foundation_unicode/currpinf.h>
 #include "standardplural.h"
 #include "number_patternstring.h"
 #include "number_currencysymbols.h"

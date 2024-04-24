@@ -14,9 +14,9 @@
 *   created by: George Rhoten
 */
 
-#include "unicode/utypes.h"
-#include "unicode/icuplug.h"
-#include "unicode/uclean.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/icuplug.h>
+#include <_foundation_unicode/uclean.h>
 #include "cmemory.h"
 #include "icuplugimp.h"
 #include "ucln_cmn.h"

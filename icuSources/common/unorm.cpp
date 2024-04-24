@@ -25,15 +25,15 @@
 * 2009-nov..2010-jan  Markus Scherer  total rewrite, new Normalizer2 API & code
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/udata.h"
-#include "unicode/ustring.h"
-#include "unicode/uiter.h"
-#include "unicode/unorm.h"
-#include "unicode/unorm2.h"
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uiter.h>
+#include <_foundation_unicode/unorm.h>
+#include <_foundation_unicode/unorm2.h>
 #include "normalizer2impl.h"
 #include "unormimp.h"
 #include "uprops.h"

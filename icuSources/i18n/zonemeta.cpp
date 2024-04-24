@@ -7,17 +7,17 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "zonemeta.h"
 
-#include "unicode/timezone.h"
-#include "unicode/ustring.h"
-#include "unicode/putil.h"
-#include "unicode/simpletz.h"
-#include "unicode/strenum.h"
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/strenum.h>
 #include "umutex.h"
 #include "uvector.h"
 #include "cmemory.h"

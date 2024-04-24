@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -11,14 +11,14 @@
 #include "number_microprops.h"
 #include "number_roundingutils.h"
 #include "number_skeletons.h"
-#include "unicode/char16ptr.h"
-#include "unicode/currunit.h"
-#include "unicode/fmtable.h"
-#include "unicode/measure.h"
-#include "unicode/numberformatter.h"
-#include "unicode/platform.h"
-#include "unicode/unum.h"
-#include "unicode/urename.h"
+#include <_foundation_unicode/char16ptr.h>
+#include <_foundation_unicode/currunit.h>
+#include <_foundation_unicode/fmtable.h>
+#include <_foundation_unicode/measure.h>
+#include <_foundation_unicode/numberformatter.h>
+#include <_foundation_unicode/platform.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/urename.h>
 #include "units_data.h"
 
 using namespace icu;

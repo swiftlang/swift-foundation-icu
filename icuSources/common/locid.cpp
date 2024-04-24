@@ -33,13 +33,13 @@
 
 #include <utility>
 
-#include "unicode/bytestream.h"
-#include "unicode/locid.h"
-#include "unicode/localebuilder.h"
-#include "unicode/strenum.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/localebuilder.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
 
 #include "bytesinkutil.h"
 #include "charstr.h"

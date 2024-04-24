@@ -18,20 +18,20 @@
 
 // #define UCPTRIE_DEBUG
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/bytestream.h"
-#include "unicode/edits.h"
-#include "unicode/normalizer2.h"
-#include "unicode/stringoptions.h"
-#include "unicode/ucptrie.h"
-#include "unicode/udata.h"
-#include "unicode/umutablecptrie.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
-#include "unicode/utf8.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/umutablecptrie.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/utf8.h>
 #include "bytesinkutil.h"
 #include "cmemory.h"
 #include "mutex.h"

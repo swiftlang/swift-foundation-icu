@@ -1,13 +1,13 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "number_affixutils.h"
-#include "unicode/utf16.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/uniset.h>
 
 using namespace icu;
 using namespace icu::number;

@@ -4,15 +4,15 @@
 // characterproperties.cpp
 // created: 2018sep03 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/localpointer.h"
-#include "unicode/uchar.h"
-#include "unicode/ucpmap.h"
-#include "unicode/ucptrie.h"
-#include "unicode/umutablecptrie.h"
-#include "unicode/uniset.h"
-#include "unicode/uscript.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucpmap.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/umutablecptrie.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/uset.h>
 #include "cmemory.h"
 #include "emojiprops.h"
 #include "mutex.h"

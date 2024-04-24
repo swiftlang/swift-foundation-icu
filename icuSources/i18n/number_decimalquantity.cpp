@@ -1,7 +1,7 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -10,7 +10,7 @@
 #include <limits>
 #include <stdlib.h>
 
-#include "unicode/plurrule.h"
+#include <_foundation_unicode/plurrule.h>
 #include "cmemory.h"
 #include "number_decnum.h"
 #include "putilimp.h"

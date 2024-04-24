@@ -13,11 +13,11 @@
 
 #ifndef GREGOIMP_H
 #define GREGOIMP_H
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ures.h"
-#include "unicode/locid.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/locid.h>
 #include "putilimp.h"
 
 U_NAMESPACE_BEGIN

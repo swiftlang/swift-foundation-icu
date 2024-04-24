@@ -16,16 +16,16 @@
 *   created by: Umesh P. Nair
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "cmemory.h"
-#include "unicode/fpositer.h"  // FieldPositionIterator
-#include "unicode/listformatter.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/ulistformatter.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/fpositer.h>  // FieldPositionIterator
+#include <_foundation_unicode/listformatter.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/ulistformatter.h>
+#include <_foundation_unicode/uscript.h>
 #include "fphdlimp.h"
 #include "mutex.h"
 #include "hash.h"

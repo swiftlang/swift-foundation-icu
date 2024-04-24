@@ -21,11 +21,11 @@
 #ifndef LOCBUND_H
 #define LOCBUND_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/unum.h"
+#include <_foundation_unicode/unum.h>
 
 #define ULOCALEBUNDLE_NUMBERFORMAT_COUNT ((int32_t)UNUM_SPELLOUT)
 

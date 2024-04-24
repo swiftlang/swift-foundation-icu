@@ -13,7 +13,7 @@
 *
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #if U_PLATFORM_HAS_WINUWP_API == 0
@@ -32,7 +32,7 @@
 #include "cmemory.h"
 #include "erarules.h"
 #include "japancal.h"
-#include "unicode/gregocal.h"
+#include <_foundation_unicode/gregocal.h>
 #include "umutex.h"
 #include "uassert.h"
 #include "ucln_in.h"

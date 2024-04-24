@@ -17,15 +17,15 @@
 #include <string>
 #endif
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/ucol.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/uscript.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "collationdata.h"

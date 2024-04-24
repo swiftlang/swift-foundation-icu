@@ -14,9 +14,9 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/appendable.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/appendable.h>
+#include <_foundation_unicode/utf16.h>
 
 U_NAMESPACE_BEGIN
 

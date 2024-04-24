@@ -1,13 +1,13 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMPARSE_TYPES_H__
 #define __NUMPARSE_TYPES_H__
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "number_decimalquantity.h"
 #include "string_segment.h"
 

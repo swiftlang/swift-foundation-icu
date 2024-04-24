@@ -10,14 +10,14 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unifilt.h"
-#include "unicode/uchar.h"
-#include "unicode/uniset.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "name2uni.h"
 #include "patternprops.h"

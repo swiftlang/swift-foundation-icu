@@ -24,18 +24,18 @@
 * 2012-2014   markus    Rewritten in C++ again.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/coll.h"
-#include "unicode/localpointer.h"
-#include "unicode/locid.h"
-#include "unicode/tblcoll.h"
-#include "unicode/ucol.h"
-#include "unicode/uloc.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"

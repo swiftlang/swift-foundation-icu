@@ -19,13 +19,13 @@
 #ifndef UCNV_CNV_H
 #define UCNV_CNV_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_err.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_err.h>
+#include <_foundation_unicode/uset.h>
 #include "uset_imp.h"
 
 U_CDECL_BEGIN

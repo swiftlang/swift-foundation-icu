@@ -10,8 +10,8 @@
 #ifndef URESIMP_H
 #define URESIMP_H
 
-#include "unicode/ures.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/utypes.h>
 
 #include "uresdata.h"
 

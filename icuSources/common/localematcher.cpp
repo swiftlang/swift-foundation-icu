@@ -4,13 +4,13 @@
 // localematcher.cpp
 // created: 2019may08 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/localebuilder.h"
-#include "unicode/localematcher.h"
-#include "unicode/locid.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uloc.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localebuilder.h>
+#include <_foundation_unicode/localematcher.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/uobject.h>
 #include "cstring.h"
 #include "localeprioritylist.h"
 #include "loclikelysubtags.h"

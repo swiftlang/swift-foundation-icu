@@ -10,28 +10,28 @@
 ******************************************************************************
 */
 
-#include "unicode/reldatefmt.h"
+#include <_foundation_unicode/reldatefmt.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_BREAK_ITERATION
 
 #include <cmath>
 #include <functional>
-#include "unicode/calendar.h"
-#include "unicode/datefmt.h"
-#include "unicode/dtfmtsym.h"
-#include "unicode/ucasemap.h"
-#include "unicode/ureldatefmt.h"
-#include "unicode/udisplaycontext.h"
-#include "unicode/unum.h"
-#include "unicode/localpointer.h"
-#include "unicode/plurrule.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/decimfmt.h"
-#include "unicode/numfmt.h"
-#include "unicode/brkiter.h"
-#include "unicode/simpleformatter.h"
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/dtfmtsym.h>
+#include <_foundation_unicode/ucasemap.h>
+#include <_foundation_unicode/ureldatefmt.h>
+#include <_foundation_unicode/udisplaycontext.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/simpleformatter.h>
 #include "uresimp.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/ures.h>
 #include "cstring.h"
 #include "ucln_in.h"
 #include "mutex.h"

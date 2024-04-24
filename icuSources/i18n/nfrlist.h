@@ -18,11 +18,11 @@
 #ifndef NFRLIST_H
 #define NFRLIST_H
 
-#include "unicode/rbnf.h"
+#include <_foundation_unicode/rbnf.h>
 
 #if U_HAVE_RBNF
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "nfrule.h"
 
 #include "cmemory.h"

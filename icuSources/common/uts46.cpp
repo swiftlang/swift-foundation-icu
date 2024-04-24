@@ -14,15 +14,15 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_IDNA
 
-#include "unicode/idna.h"
-#include "unicode/normalizer2.h"
-#include "unicode/uscript.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/idna.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "punycode.h"

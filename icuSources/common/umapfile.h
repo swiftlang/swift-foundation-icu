@@ -25,8 +25,8 @@
 #ifndef __UMAPFILE_H__
 #define __UMAPFILE_H__
 
-#include "unicode/putil.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/udata.h>
 #include "putilimp.h"
 
 U_CAPI  UBool U_EXPORT2 uprv_mapFile(UDataMemory *pdm, const char *path, UErrorCode *status);

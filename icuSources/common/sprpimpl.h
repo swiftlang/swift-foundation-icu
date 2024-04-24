@@ -19,14 +19,14 @@
 #ifndef SPRPIMPL_H
 #define SPRPIMPL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_IDNA
 
-#include "unicode/ustring.h"
-#include "unicode/parseerr.h"
-#include "unicode/usprep.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/usprep.h>
+#include <_foundation_unicode/udata.h>
 #include "utrie.h"
 #include "udataswp.h"
 #include "ubidi_props.h"

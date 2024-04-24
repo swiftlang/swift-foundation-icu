@@ -14,7 +14,7 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "patternprops.h"
 
 U_NAMESPACE_BEGIN

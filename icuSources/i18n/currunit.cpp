@@ -10,13 +10,13 @@
 * Since: ICU 3.0
 **********************************************************************
 */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/currunit.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/currunit.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
 #include "cstring.h"
 #include "uinvchar.h"
 #include "charstr.h"

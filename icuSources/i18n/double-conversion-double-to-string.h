@@ -31,7 +31,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // ICU PATCH: ifdef around UCONFIG_NO_FORMATTING
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_FORMATTING
 
 #ifndef DOUBLE_CONVERSION_DOUBLE_TO_STRING_H_

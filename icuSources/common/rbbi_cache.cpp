@@ -3,12 +3,12 @@
 
 // file: rbbi_cache.cpp
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/ubrk.h"
-#include "unicode/rbbi.h"
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/rbbi.h>
 
 #include "rbbi_cache.h"
 

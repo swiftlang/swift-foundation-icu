@@ -1,14 +1,14 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_DECIMALQUANTITY_H__
 #define __NUMBER_DECIMALQUANTITY_H__
 
 #include <cstdint>
-#include "unicode/umachine.h"
+#include <_foundation_unicode/umachine.h>
 #include "standardplural.h"
 #include "plurrule_impl.h"
 #include "number_types.h"

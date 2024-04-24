@@ -20,15 +20,15 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/ustdio.h"
-#include "unicode/ustring.h"
-#include "unicode/unum.h"
-#include "unicode/udat.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/ustdio.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/udat.h>
+#include <_foundation_unicode/putil.h>
 
 #include "cmemory.h"
 #include "locbund.h"

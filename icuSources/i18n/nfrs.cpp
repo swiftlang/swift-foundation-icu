@@ -19,7 +19,7 @@
 
 #if U_HAVE_RBNF
 
-#include "unicode/uchar.h"
+#include <_foundation_unicode/uchar.h>
 #include "nfrule.h"
 #include "nfrlist.h"
 #include "patternprops.h"

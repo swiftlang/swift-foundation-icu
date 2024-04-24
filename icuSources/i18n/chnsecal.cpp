@@ -23,7 +23,7 @@
 #include <float.h>
 #include "gregoimp.h" // Math
 #include "astro.h" // CalendarAstronomer
-#include "unicode/simpletz.h"
+#include <_foundation_unicode/simpletz.h>
 #include "uhash.h"
 #include "ucln_in.h"
 

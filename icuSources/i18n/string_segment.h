@@ -1,14 +1,14 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMPARSE_STRINGSEGMENT_H__
 #define __NUMPARSE_STRINGSEGMENT_H__
 
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
 
 U_NAMESPACE_BEGIN
 

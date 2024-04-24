@@ -15,13 +15,13 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/gender.h"
-#include "unicode/ugender.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/gender.h>
+#include <_foundation_unicode/ugender.h>
+#include <_foundation_unicode/ures.h>
 
 #include "cmemory.h"
 #include "cstring.h"

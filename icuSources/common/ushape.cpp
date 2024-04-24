@@ -18,10 +18,10 @@
  *   Arabic letter shaping implemented by Ayman Roshdy
  */
 
-#include "unicode/utypes.h"
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/ushape.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ushape.h>
 #include "cmemory.h"
 #include "putilimp.h"
 #include "ustr_imp.h"

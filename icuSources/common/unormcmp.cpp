@@ -20,12 +20,12 @@
 *   Allows unorm.cpp to not depend on any character properties code.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/unorm.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/unorm.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "normalizer2impl.h"
 #include "ucase.h"

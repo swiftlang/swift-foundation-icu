@@ -14,7 +14,7 @@
 #ifndef __COLLATIONFASTLATIN_H__
 #define __COLLATIONFASTLATIN_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 

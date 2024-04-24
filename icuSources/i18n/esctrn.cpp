@@ -10,11 +10,11 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utf16.h>
 #include "esctrn.h"
 #include "util.h"
 

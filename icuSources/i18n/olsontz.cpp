@@ -17,9 +17,9 @@
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ures.h"
-#include "unicode/simpletz.h"
-#include "unicode/gregocal.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/gregocal.h>
 #include "gregoimp.h"
 #include "cmemory.h"
 #include "uassert.h"

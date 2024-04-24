@@ -19,13 +19,13 @@
 
 #if U_HAVE_RBNF
 
-#include "unicode/localpointer.h"
-#include "unicode/rbnf.h"
-#include "unicode/tblcoll.h"
-#include "unicode/plurfmt.h"
-#include "unicode/upluralrules.h"
-#include "unicode/coleitr.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/rbnf.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/plurfmt.h>
+#include <_foundation_unicode/upluralrules.h>
+#include <_foundation_unicode/coleitr.h>
+#include <_foundation_unicode/uchar.h>
 #include "nfrs.h"
 #include "nfrlist.h"
 #include "nfsubs.h"

@@ -24,21 +24,21 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/numfmt.h"
-#include "unicode/locid.h"
-#include "unicode/dcfmtsym.h"
-#include "unicode/decimfmt.h"
-#include "unicode/ustring.h"
-#include "unicode/ucurr.h"
-#include "unicode/curramt.h"
-#include "unicode/numsys.h"
-#include "unicode/rbnf.h"
-#include "unicode/localpointer.h"
-#include "unicode/udisplaycontext.h"
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/dcfmtsym.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucurr.h>
+#include <_foundation_unicode/curramt.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/rbnf.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/udisplaycontext.h>
 #include "charstr.h"
 #include "winnmfmt.h"
 #include "uresimp.h"

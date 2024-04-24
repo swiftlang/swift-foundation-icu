@@ -7,13 +7,13 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/unumsys.h"
-#include "unicode/numsys.h"
-#include "unicode/uenum.h"
+#include <_foundation_unicode/unumsys.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/uenum.h>
 
 U_NAMESPACE_USE
 

@@ -17,7 +17,7 @@
 #ifndef __UCLN_CMN_H__
 #define __UCLN_CMN_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "ucln.h"
 
 /* These are the cleanup functions for various APIs. */

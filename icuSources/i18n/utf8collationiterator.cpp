@@ -11,11 +11,11 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/utf8.h"
+#include <_foundation_unicode/utf8.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "collation.h"

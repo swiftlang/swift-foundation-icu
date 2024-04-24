@@ -14,10 +14,10 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/uscript.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_imp.h"
 #include "cmemory.h"
 

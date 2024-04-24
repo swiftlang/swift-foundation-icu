@@ -7,27 +7,27 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/udat.h"
+#include <_foundation_unicode/udat.h>
 
-#include "unicode/uloc.h"
-#include "unicode/datefmt.h"
-#include "unicode/timezone.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/fieldpos.h"
-#include "unicode/parsepos.h"
-#include "unicode/calendar.h"
-#include "unicode/numfmt.h"
-#include "unicode/dtfmtsym.h"
-#include "unicode/ustring.h"
-#include "unicode/udisplaycontext.h"
-#include "unicode/ufieldpositer.h"
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/fieldpos.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/dtfmtsym.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/udisplaycontext.h>
+#include <_foundation_unicode/ufieldpositer.h>
 #if APPLE_ICU_CHANGES
 // rdar://
-#include "unicode/ucasemap.h"
+#include <_foundation_unicode/ucasemap.h>
 #endif  // APPLE_ICU_CHANGES
 #include "cpputils.h"
 #include "reldtfmt.h"

@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -12,7 +12,7 @@
 #include "numparse_types.h"
 #include "numparse_currency.h"
 #include "ucurrimp.h"
-#include "unicode/errorcode.h"
+#include <_foundation_unicode/errorcode.h>
 #include "numparse_utils.h"
 #include "string_segment.h"
 

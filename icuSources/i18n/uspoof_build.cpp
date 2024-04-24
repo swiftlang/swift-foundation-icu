@@ -25,11 +25,11 @@
  *   The data tables for each are built separately, each from its own definitions
  */
 
-#include "unicode/utypes.h"
-#include "unicode/uspoof.h"
-#include "unicode/unorm.h"
-#include "unicode/uregex.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uspoof.h>
+#include <_foundation_unicode/unorm.h>
+#include <_foundation_unicode/uregex.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "uspoof_impl.h"
 #include "uhash.h"

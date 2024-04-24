@@ -7,19 +7,19 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "tzgnames.h"
 
-#include "unicode/basictz.h"
-#include "unicode/locdspnm.h"
-#include "unicode/rbtz.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/simpletz.h"
-#include "unicode/strenum.h"
-#include "unicode/vtzone.h"
+#include <_foundation_unicode/basictz.h>
+#include <_foundation_unicode/locdspnm.h>
+#include <_foundation_unicode/rbtz.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/vtzone.h>
 
 #include "bytesinkutil.h"
 #include "charstr.h"

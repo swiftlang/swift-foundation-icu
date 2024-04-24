@@ -21,7 +21,7 @@
 #ifndef __UPROPSVEC_H__
 #define __UPROPSVEC_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "utrie.h"
 #include "utrie2.h"
 

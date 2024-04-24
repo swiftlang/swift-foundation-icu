@@ -12,10 +12,10 @@
 * created by: Andy Heninger
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
-#include "unicode/uchar.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/unistr.h>
 
 #include "scriptset.h"
 #include "uassert.h"

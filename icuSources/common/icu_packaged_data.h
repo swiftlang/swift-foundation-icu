@@ -13,22 +13,10 @@
 #ifndef ICU_PACKAGED_DATA_H
 #define ICU_PACKAGED_DATA_H
 
-#include "icu_packaged_main_data.0.inc.h"
-#include "icu_packaged_main_data.1.inc.h"
-#include "icu_packaged_main_data.2.inc.h"
-#include "icu_packaged_main_data.3.inc.h"
-
 #include "icu_packaged_timezone_data.0.inc.h"
 #include "icu_packaged_timezone_data.1.inc.h"
 #include "icu_packaged_timezone_data.2.inc.h"
 #include "icu_packaged_timezone_data.3.inc.h"
-
-uint8_t const _ICUPackagedMainData[] __attribute__ ((aligned (8))) = {
-    __ICU_PACKAGED_MAIN_DATA_CHUNK_0,
-    __ICU_PACKAGED_MAIN_DATA_CHUNK_1,
-    __ICU_PACKAGED_MAIN_DATA_CHUNK_2,
-    __ICU_PACKAGED_MAIN_DATA_CHUNK_3,
-};
 
 uint8_t const _ICUPackagedTimeZoneData[] __attribute__ ((aligned (8))) = {
     __ICU_PACKAGED_TIMEZONE_DATA_CHUNK_0,

@@ -10,7 +10,7 @@
 #ifndef LOCALSVC_H
 #define LOCALSVC_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if defined(U_LOCAL_SERVICE_HOOK) && U_LOCAL_SERVICE_HOOK
 /**

@@ -14,10 +14,10 @@
 #ifndef _REGEXIMP_H
 #define _REGEXIMP_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/uniset.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utext.h>
 
 #include "cmemory.h"
 #include "ucase.h"

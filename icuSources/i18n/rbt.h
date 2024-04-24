@@ -12,14 +12,14 @@
 #ifndef RBT_H
 #define RBT_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
-#include "unicode/utypes.h"
-#include "unicode/parseerr.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/udata.h>
 
 #define U_ICUDATA_TRANSLIT U_ICUDATA_NAME U_TREE_SEPARATOR_STRING "translit"
 

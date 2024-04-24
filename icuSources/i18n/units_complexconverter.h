@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __UNITS_COMPLEXCONVERTER_H__
@@ -10,8 +10,8 @@
 #include "cmemory.h"
 #include "measunit_impl.h"
 #include "number_roundingutils.h"
-#include "unicode/errorcode.h"
-#include "unicode/measure.h"
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/measure.h>
 #include "units_converter.h"
 #include "units_data.h"
 

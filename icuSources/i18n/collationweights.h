@@ -19,11 +19,11 @@
 #ifndef __COLLATIONWEIGHTS_H__
 #define __COLLATIONWEIGHTS_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 
 U_NAMESPACE_BEGIN
 

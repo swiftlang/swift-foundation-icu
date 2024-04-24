@@ -20,15 +20,15 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/appendable.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/appendable.h>
+#include <_foundation_unicode/putil.h>
 #include "cstring.h"
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/unistr.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "uelement.h"
 #include "ustr_imp.h"
 #include "umutex.h"

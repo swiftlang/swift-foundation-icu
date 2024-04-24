@@ -15,15 +15,15 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/localpointer.h"
-#include "unicode/uchar.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/uloc.h"
-#include "unicode/schriter.h"
-#include "unicode/numsys.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/numsys.h>
 #include "cstring.h"
 #include "uassert.h"
 #include "ucln_in.h"

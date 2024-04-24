@@ -14,8 +14,8 @@
 #ifndef __COLLATIONROOT_H__
 #define __COLLATIONROOT_H__
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
 
 #if !UCONFIG_NO_COLLATION
 

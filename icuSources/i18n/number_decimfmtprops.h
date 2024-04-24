@@ -1,18 +1,18 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_DECIMFMTPROPS_H__
 #define __NUMBER_DECIMFMTPROPS_H__
 
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 #include <cstdint>
-#include "unicode/plurrule.h"
-#include "unicode/currpinf.h"
-#include "unicode/unum.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/currpinf.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/localpointer.h>
 #include "number_types.h"
 
 U_NAMESPACE_BEGIN

@@ -13,7 +13,7 @@
 */
 
 #include "uhash.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ustring.h>
 #include "cstring.h"
 #include "cmemory.h"
 #include "uassert.h"

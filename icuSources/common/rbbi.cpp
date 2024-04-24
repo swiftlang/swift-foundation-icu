@@ -14,20 +14,20 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
 #include <cinttypes>
 
-#include "unicode/rbbi.h"
-#include "unicode/schriter.h"
-#include "unicode/uchriter.h"
-#include "unicode/uclean.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/rbbi.h>
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/uclean.h>
+#include <_foundation_unicode/udata.h>
 #if APPLE_ICU_CHANGES
 // rdar://51193810 for line break, remap locale delimiters that are QU to OP/CL as appropriate
-#include "unicode/ulocdata.h"
+#include <_foundation_unicode/ulocdata.h>
 #endif // APPLE_ICU_CHANGES
 
 #include "brkeng.h"

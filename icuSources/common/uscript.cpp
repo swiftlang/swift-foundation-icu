@@ -15,9 +15,9 @@
 ******************************************************************************
 */
 
-#include "unicode/uchar.h"
-#include "unicode/uscript.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/uloc.h>
 #include "bytesinkutil.h"
 #include "charstr.h"
 #include "cmemory.h"

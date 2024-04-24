@@ -10,8 +10,8 @@
 **********************************************************************
 */
 
-#include "unicode/unimatch.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/unimatch.h>
+#include <_foundation_unicode/utf16.h>
 #include "patternprops.h"
 #include "util.h"
 

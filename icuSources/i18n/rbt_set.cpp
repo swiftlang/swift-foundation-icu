@@ -10,13 +10,13 @@
  **********************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utf16.h>
 #include "rbt_set.h"
 #include "rbt_rule.h"
 #include "cmemory.h"

@@ -19,8 +19,8 @@
 #ifndef __UTRIE_H__
 #define __UTRIE_H__
 
-#include "unicode/utypes.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/utf16.h>
 
 U_CDECL_BEGIN
 

@@ -13,12 +13,12 @@
 *
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "buddhcal.h"
-#include "unicode/gregocal.h"
+#include <_foundation_unicode/gregocal.h>
 #include "umutex.h"
 #include <float.h>
 

@@ -20,7 +20,7 @@
 ******************************************************************************
 */
 
-#include "unicode/platform.h"
+#include <_foundation_unicode/platform.h>
 #if U_PLATFORM == U_PF_CYGWIN && defined(__STRICT_ANSI__)
 /* GCC on cygwin (not msys2) with -std=c++11 or newer has stopped defining fileno,
    unless gcc extensions are enabled (-std=gnu11).
@@ -36,18 +36,18 @@
 #endif
 
 #include "locmap.h"
-#include "unicode/ustdio.h"
+#include <_foundation_unicode/ustdio.h>
 
 #if !UCONFIG_NO_CONVERSION
 
 #include <stdlib.h>
 
 #include "ufile.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
-#include "unicode/ucnv.h"
-#include "unicode/ustring.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unistr.h>
 #include "cstring.h"
 #include "cmemory.h"
 

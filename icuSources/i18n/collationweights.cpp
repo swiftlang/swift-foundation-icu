@@ -20,7 +20,7 @@
 *   It is used only internally by the collation tailoring builder.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 

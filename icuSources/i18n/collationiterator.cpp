@@ -13,12 +13,12 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/ucharstrie.h"
-#include "unicode/ustringtrie.h"
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/ustringtrie.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "collation.h"

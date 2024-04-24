@@ -18,12 +18,12 @@
 *   Conversion extensions
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_NO_LEGACY_CONVERSION
 
-#include "unicode/uset.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/ustring.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "ucnv_ext.h"

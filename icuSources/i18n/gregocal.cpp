@@ -39,12 +39,12 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include <float.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/gregocal.h"
+#include <_foundation_unicode/gregocal.h>
 #include "gregoimp.h"
 #include "umutex.h"
 #include "uassert.h"

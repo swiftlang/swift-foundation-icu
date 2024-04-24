@@ -7,13 +7,13 @@
 **********************************************************************
 */
 
-#include "unicode/bytestream.h"
-#include "unicode/utypes.h"
-#include "unicode/ures.h"
-#include "unicode/localpointer.h"
-#include "unicode/putil.h"
-#include "unicode/uenum.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/uloc.h>
 #include "ustr_imp.h"
 #include "bytesinkutil.h"
 #include "charstr.h"

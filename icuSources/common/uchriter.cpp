@@ -9,9 +9,9 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/uchriter.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_imp.h"
 
 U_NAMESPACE_BEGIN

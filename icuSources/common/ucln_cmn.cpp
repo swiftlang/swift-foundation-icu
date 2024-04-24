@@ -14,8 +14,8 @@
 *   created by: George Rhoten
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uclean.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uclean.h>
 #include "cmemory.h"
 #include "mutex.h"
 #include "uassert.h"

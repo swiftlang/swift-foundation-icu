@@ -7,14 +7,14 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_BREAK_ITERATION && !UCONFIG_NO_FILTERED_BREAK_ITERATION
 
 #include "cmemory.h"
 
-#include "unicode/filteredbrk.h"
-#include "unicode/ucharstriebuilder.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/filteredbrk.h>
+#include <_foundation_unicode/ucharstriebuilder.h>
+#include <_foundation_unicode/ures.h>
 
 #include "uresimp.h" // ures_getByKeyWithFallback
 #include "ubrkimpl.h" // U_ICUDATA_BRKITR

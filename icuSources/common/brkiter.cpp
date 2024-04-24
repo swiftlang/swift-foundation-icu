@@ -20,16 +20,16 @@
 // This file was generated from the java source file BreakIterator.java
 // *****************************************************************************
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/rbbi.h"
-#include "unicode/brkiter.h"
-#include "unicode/udata.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/filteredbrk.h"
+#include <_foundation_unicode/rbbi.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/filteredbrk.h>
 #include "bytesinkutil.h"
 #include "ucln_cmn.h"
 #include "cstring.h"

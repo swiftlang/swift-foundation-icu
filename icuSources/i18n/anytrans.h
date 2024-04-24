@@ -12,12 +12,12 @@
 #ifndef _ANYTRANS_H_
 #define _ANYTRANS_H_
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/uscript.h>
 #include "uhash.h"
 
 U_NAMESPACE_BEGIN

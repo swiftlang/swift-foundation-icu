@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMPARSE_CURRENCY_H__
@@ -11,7 +11,7 @@
 #include "numparse_compositions.h"
 #include "charstr.h"
 #include "number_currencysymbols.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/uniset.h>
 
 U_NAMESPACE_BEGIN namespace numparse {
 namespace impl {

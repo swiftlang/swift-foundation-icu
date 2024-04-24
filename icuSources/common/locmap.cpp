@@ -33,7 +33,7 @@
 #include "cstring.h"
 #include "cmemory.h"
 #include "ulocimp.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/uloc.h>
 
 #if U_PLATFORM_HAS_WIN32_API && UCONFIG_USE_WINDOWS_LCID_MAPPING_API
 #include <windows.h>

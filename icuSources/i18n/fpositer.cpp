@@ -10,11 +10,11 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/fpositer.h"
+#include <_foundation_unicode/fpositer.h>
 #include "cmemory.h"
 #include "uvectr32.h"
 

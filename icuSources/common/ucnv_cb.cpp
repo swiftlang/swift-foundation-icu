@@ -20,11 +20,11 @@
  *
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv_cb.h"
+#include <_foundation_unicode/ucnv_cb.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "cmemory.h"

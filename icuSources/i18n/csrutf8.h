@@ -10,7 +10,7 @@
 #ifndef __CSRUTF8_H
 #define __CSRUTF8_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 

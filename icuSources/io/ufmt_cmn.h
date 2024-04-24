@@ -22,8 +22,8 @@
 #ifndef UFMT_CMN_H
 #define UFMT_CMN_H
 
-#include "unicode/utypes.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/utf16.h>
 
 #define UFMT_DEFAULT_BUFFER_SIZE 128
 #define MAX_UCHAR_BUFFER_SIZE(buffer) ((int32_t)(sizeof(buffer)/(U16_MAX_LENGTH*sizeof(UChar))))

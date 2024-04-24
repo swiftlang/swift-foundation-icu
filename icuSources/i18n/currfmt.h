@@ -13,11 +13,11 @@
 #ifndef CURRENCYFORMAT_H
 #define CURRENCYFORMAT_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/measfmt.h"
+#include <_foundation_unicode/measfmt.h>
 
 U_NAMESPACE_BEGIN
 

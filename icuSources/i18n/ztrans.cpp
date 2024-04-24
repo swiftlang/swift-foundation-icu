@@ -12,16 +12,16 @@
  * \brief C API: Time zone transition classes
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "ztrans.h"
-#include "unicode/tztrans.h"
+#include <_foundation_unicode/tztrans.h>
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/parsepos.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/parsepos.h>
 
 U_NAMESPACE_USE
 

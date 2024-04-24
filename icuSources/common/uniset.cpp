@@ -10,13 +10,13 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/parsepos.h"
-#include "unicode/symtable.h"
-#include "unicode/uniset.h"
-#include "unicode/ustring.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/symtable.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "ruleiter.h"
 #include "cmemory.h"
 #include "cstring.h"

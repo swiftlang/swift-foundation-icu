@@ -10,11 +10,11 @@
 #ifndef __CSDETECT_H
 #define __CSDETECT_H
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/uenum.h"
+#include <_foundation_unicode/uenum.h>
 
 U_NAMESPACE_BEGIN
 

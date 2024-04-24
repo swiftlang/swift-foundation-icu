@@ -12,14 +12,14 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "unicode/utypes.h"
-#include "unicode/localpointer.h"
-#include "unicode/plurrule.h"
-#include "unicode/upluralrules.h"
-#include "unicode/ures.h"
-#include "unicode/numfmt.h"
-#include "unicode/decimfmt.h"
-#include "unicode/numberrangeformatter.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/upluralrules.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/numberrangeformatter.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"

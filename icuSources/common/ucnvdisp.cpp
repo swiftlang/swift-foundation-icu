@@ -20,13 +20,13 @@
 *   09/08/2004  grhoten     split from ucnv.c
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ustring.h"
-#include "unicode/ures.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ucnv.h>
 #include "cstring.h"
 #include "ustr_imp.h"
 #include "ucnv_imp.h"

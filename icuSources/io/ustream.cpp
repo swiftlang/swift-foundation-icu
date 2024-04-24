@@ -14,15 +14,15 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/uobject.h"
-#include "unicode/ustream.h"
-#include "unicode/ucnv.h"
-#include "unicode/uchar.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/ustream.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_cnv.h"
 #include "cmemory.h"
 #include <string.h>

@@ -13,11 +13,11 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "rbbidata57.h"
 #include "rbbirb57.h"
 #include "utrie.h"

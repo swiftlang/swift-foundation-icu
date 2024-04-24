@@ -9,20 +9,20 @@
 //  This file contains declarations for the class RegexCompile
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "unicode/regex.h"
+//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
 //
 
 
 #ifndef RBBISCAN_H
 #define RBBISCAN_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/parseerr.h"
-#include "unicode/uniset.h"
-#include "unicode/uobject.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utext.h>
 #include "uhash.h"
 #include "uvector.h"
 #include "uvectr32.h"

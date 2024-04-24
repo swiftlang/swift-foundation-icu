@@ -21,13 +21,13 @@
 #ifndef __USPOOF_BUILDCONF_H__
 #define __USPOOF_BUILDCONF_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS 
 
-#include "unicode/uregex.h"
+#include <_foundation_unicode/uregex.h>
 #include "uhash.h"
 #include "uspoof_impl.h"
 

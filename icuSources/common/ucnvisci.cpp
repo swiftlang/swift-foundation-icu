@@ -17,13 +17,13 @@
 *   24/7/2001   Ram         Added support for EXT character handling
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_NO_LEGACY_CONVERSION && !UCONFIG_ONLY_HTML_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_cb.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_cb.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"

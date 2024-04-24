@@ -14,13 +14,13 @@
 #ifndef __COLLATIONTAILORING_H__
 #define __COLLATIONTAILORING_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/locid.h"
-#include "unicode/unistr.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uversion.h>
 #include "collationsettings.h"
 #include "uhash.h"
 #include "umutex.h"

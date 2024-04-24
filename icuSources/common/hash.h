@@ -13,8 +13,8 @@
 #ifndef HASH_H
 #define HASH_H
 
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 #include "uhash.h"
 

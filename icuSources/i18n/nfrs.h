@@ -18,13 +18,13 @@
 #ifndef NFRS_H
 #define NFRS_H
 
-#include "unicode/uobject.h"
-#include "unicode/rbnf.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/rbnf.h>
 
 #if U_HAVE_RBNF
 
-#include "unicode/utypes.h"
-#include "unicode/umisc.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/umisc.h>
 
 #include "nfrlist.h"
 

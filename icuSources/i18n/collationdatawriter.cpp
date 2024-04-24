@@ -11,13 +11,13 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/tblcoll.h"
-#include "unicode/udata.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uniset.h>
 #include "cmemory.h"
 #include "collationdata.h"
 #include "collationdatabuilder.h"

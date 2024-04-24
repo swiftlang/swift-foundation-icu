@@ -10,12 +10,12 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/normalizer2.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/utf16.h>
 #include "cstring.h"
 #include "nortrans.h"
 

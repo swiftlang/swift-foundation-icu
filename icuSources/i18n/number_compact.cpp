@@ -1,12 +1,12 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ustring.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ures.h>
 #include "cstring.h"
 #include "charstr.h"
 #include "resource.h"

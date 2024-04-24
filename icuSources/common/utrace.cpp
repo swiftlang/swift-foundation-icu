@@ -11,7 +11,7 @@
 *   indentation:4
 */
 
-#include "unicode/utrace.h"
+#include <_foundation_unicode/utrace.h>
 #include "utracimp.h"
 #include "cstring.h"
 #include "uassert.h"

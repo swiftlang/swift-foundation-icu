@@ -19,10 +19,10 @@
 *   06/24/02    weiv        Added support for resource sharing
 */
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "resource.h"

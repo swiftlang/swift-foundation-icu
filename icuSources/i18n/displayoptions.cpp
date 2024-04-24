@@ -1,12 +1,12 @@
 // © 2022 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/displayoptions.h"
-#include "unicode/udisplayoptions.h"
+#include <_foundation_unicode/displayoptions.h>
+#include <_foundation_unicode/udisplayoptions.h>
 #include "cstring.h"
 
 U_NAMESPACE_BEGIN

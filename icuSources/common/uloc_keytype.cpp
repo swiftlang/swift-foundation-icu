@@ -8,9 +8,9 @@
 */
 #include <algorithm>
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
 
 #include "charstr.h"
 #include "cmemory.h"

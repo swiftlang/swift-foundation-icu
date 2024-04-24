@@ -14,8 +14,8 @@
 #ifndef UVECTOR_H
 #define UVECTOR_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 #include "uarrsort.h"
 #include "uelement.h"

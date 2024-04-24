@@ -19,13 +19,13 @@
 *   in its MIME-friendly form as defined in http://www.unicode.org/notes/tn6/
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_ONLY_HTML_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_cb.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_cb.h>
+#include <_foundation_unicode/utf16.h>
 #include "putilimp.h"
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"

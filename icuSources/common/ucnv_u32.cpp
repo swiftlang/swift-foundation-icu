@@ -16,12 +16,12 @@
 *   UTF-32 converter implementation. Used to be in ucnv_utf.c.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_ONLY_HTML_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/utf.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/utf.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "cmemory.h"

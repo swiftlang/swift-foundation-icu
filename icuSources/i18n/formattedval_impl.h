@@ -4,7 +4,7 @@
 #ifndef __FORMVAL_IMPL_H__
 #define __FORMVAL_IMPL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_FORMATTING
 
 // This file contains compliant implementations of FormattedValue which can be
@@ -13,7 +13,7 @@
 // Each implementation is defined in its own cpp file in order to split
 // dependencies more modularly.
 
-#include "unicode/formattedvalue.h"
+#include <_foundation_unicode/formattedvalue.h>
 #include "capi_helper.h"
 #include "fphdlimp.h"
 #include "util.h"

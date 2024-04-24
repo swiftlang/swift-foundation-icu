@@ -9,11 +9,11 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/dtrule.h"
+#include <_foundation_unicode/dtrule.h>
 
 U_NAMESPACE_BEGIN
 

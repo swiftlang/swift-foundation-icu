@@ -10,10 +10,10 @@
 #ifndef _UCURR_IMP_H_
 #define _UCURR_IMP_H_
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/parsepos.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/uniset.h>
 
 /**
  * Internal method.  Given a currency ISO code and a locale, return

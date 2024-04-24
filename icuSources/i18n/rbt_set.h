@@ -12,12 +12,12 @@
 #ifndef RBT_SET_H
 #define RBT_SET_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/utrans.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utrans.h>
 #include "uvector.h"
 
 U_NAMESPACE_BEGIN

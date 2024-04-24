@@ -11,38 +11,38 @@
 **********************************************************************
 */
 #include "utypeinfo.h"  // for 'typeid' to work
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/measfmt.h"
-#include "unicode/numfmt.h"
+#include <_foundation_unicode/measfmt.h>
+#include <_foundation_unicode/numfmt.h>
 #include "currfmt.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/localpointer.h>
 #include "resource.h"
-#include "unicode/simpleformatter.h"
+#include <_foundation_unicode/simpleformatter.h>
 #include "quantityformatter.h"
-#include "unicode/plurrule.h"
-#include "unicode/decimfmt.h"
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/decimfmt.h>
 #include "uresimp.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
 #include "ureslocs.h"
 #include "cstring.h"
 #include "mutex.h"
 #include "ucln_in.h"
-#include "unicode/listformatter.h"
+#include <_foundation_unicode/listformatter.h>
 #include "charstr.h"
-#include "unicode/putil.h"
-#include "unicode/smpdtfmt.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/smpdtfmt.h>
 #include "uassert.h"
-#include "unicode/numberformatter.h"
+#include <_foundation_unicode/numberformatter.h>
 #include "number_longnames.h"
 #include "number_utypes.h"
 #if APPLE_ICU_CHANGES
 // rdar:/
 // Apple-specific
-#include "unicode/uameasureformat.h"
+#include <_foundation_unicode/uameasureformat.h>
 #include "fphdlimp.h"
 #endif  // APPLE_ICU_CHANGES
 

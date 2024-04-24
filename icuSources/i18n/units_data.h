@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __UNITS_DATA_H__
@@ -11,8 +11,8 @@
 
 #include "charstr.h"
 #include "cmemory.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uobject.h>
 
 U_NAMESPACE_BEGIN
 namespace units {

@@ -23,7 +23,7 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #ifndef U_I18N_IMPLEMENTATION
 #error U_I18N_IMPLEMENTATION not set - must be set for all ICU source files in i18n/ - see https://unicode-org.github.io/icu/userguide/howtouseicu
@@ -46,8 +46,8 @@ uprv_icuin_lib_dummy(int32_t i) {
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/format.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/format.h>
+#include <_foundation_unicode/ures.h>
 #include "cstring.h"
 #include "locbased.h"
 

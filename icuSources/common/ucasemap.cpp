@@ -18,23 +18,23 @@
 *   Case mapping service object and functions using it.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/brkiter.h"
-#include "unicode/bytestream.h"
-#include "unicode/casemap.h"
-#include "unicode/edits.h"
-#include "unicode/stringoptions.h"
-#include "unicode/stringpiece.h"
-#include "unicode/ubrk.h"
-#include "unicode/uloc.h"
-#include "unicode/ustring.h"
-#include "unicode/ucasemap.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/casemap.h>
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucasemap.h>
 #if !UCONFIG_NO_BREAK_ITERATION
-#include "unicode/utext.h"
+#include <_foundation_unicode/utext.h>
 #endif
-#include "unicode/utf.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "bytesinkutil.h"
 #include "cmemory.h"
 #include "cstring.h"
@@ -160,7 +160,7 @@ appendResult(int32_t cpLength, int32_t result, const UChar *s,
     return true;
 }
 
-// See unicode/utf8.h U8_APPEND_UNSAFE().
+// See _foundation_unicode/utf8.h U8_APPEND_UNSAFE().
 inline uint8_t getTwoByteLead(UChar32 c) { return (uint8_t)((c >> 6) | 0xc0); }
 inline uint8_t getTwoByteTrail(UChar32 c) { return (uint8_t)((c & 0x3f) | 0x80); }
 

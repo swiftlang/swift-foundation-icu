@@ -7,7 +7,7 @@
 **********************************************************************
 */
 
-#include "unicode/parsepos.h"
+#include <_foundation_unicode/parsepos.h>
 
 U_NAMESPACE_BEGIN
 

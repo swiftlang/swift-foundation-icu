@@ -4,7 +4,7 @@
 #ifndef __CAPI_HELPER_H__
 #define __CAPI_HELPER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 U_NAMESPACE_BEGIN
 

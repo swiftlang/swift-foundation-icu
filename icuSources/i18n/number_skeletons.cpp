@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -15,14 +15,14 @@
 #include "umutex.h"
 #include "ucln_in.h"
 #include "patternprops.h"
-#include "unicode/ucharstriebuilder.h"
+#include <_foundation_unicode/ucharstriebuilder.h>
 #include "number_utils.h"
 #include "number_decimalquantity.h"
-#include "unicode/numberformatter.h"
+#include <_foundation_unicode/numberformatter.h>
 #include "uinvchar.h"
 #include "charstr.h"
 #include "string_segment.h"
-#include "unicode/errorcode.h"
+#include <_foundation_unicode/errorcode.h>
 #include "util.h"
 #include "measunit_impl.h"
 

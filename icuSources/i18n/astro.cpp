@@ -11,10 +11,10 @@
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
+#include <_foundation_unicode/calendar.h>
 #include <math.h>
 #include <float.h>
-#include "unicode/putil.h"
+#include <_foundation_unicode/putil.h>
 #include "uhash.h"
 #include "umutex.h"
 #include "ucln_in.h"
@@ -40,8 +40,8 @@ static void debug_astro_msg(const char *pat, ...)
   vfprintf(stderr, pat, ap);
   fflush(stderr);
 }
-#include "unicode/datefmt.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/ustring.h>
 static const char * debug_astro_date(UDate d) {
   static char gStrBuf[1024];
   static DateFormat *df = NULL;

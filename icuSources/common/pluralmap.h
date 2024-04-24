@@ -13,7 +13,7 @@
 #ifndef __PLURAL_MAP_H__
 #define __PLURAL_MAP_H__
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 
 U_NAMESPACE_BEGIN

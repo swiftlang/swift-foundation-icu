@@ -1,15 +1,15 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_LONGNAMES_H__
 #define __NUMBER_LONGNAMES_H__
 
 #include "cmemory.h"
-#include "unicode/listformatter.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/listformatter.h>
+#include <_foundation_unicode/uversion.h>
 #include "number_utils.h"
 #include "number_modifiers.h"
 

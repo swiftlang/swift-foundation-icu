@@ -11,10 +11,10 @@
 **********************************************************************
 */
 #include "ruleiter.h"
-#include "unicode/parsepos.h"
-#include "unicode/symtable.h"
-#include "unicode/unistr.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/symtable.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utf16.h>
 #include "patternprops.h"
 
 /* \U87654321 or \ud800\udc00 */

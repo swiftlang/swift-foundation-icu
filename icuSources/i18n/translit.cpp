@@ -12,21 +12,21 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/putil.h"
-#include "unicode/translit.h"
-#include "unicode/locid.h"
-#include "unicode/msgfmt.h"
-#include "unicode/rep.h"
-#include "unicode/resbund.h"
-#include "unicode/unifilt.h"
-#include "unicode/uniset.h"
-#include "unicode/uscript.h"
-#include "unicode/strenum.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/msgfmt.h>
+#include <_foundation_unicode/rep.h>
+#include <_foundation_unicode/resbund.h>
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/utf16.h>
 #include "cpdtrans.h"
 #include "nultrans.h"
 #include "rbt_data.h"

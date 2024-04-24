@@ -16,8 +16,8 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/errorcode.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/errorcode.h>
 
 U_NAMESPACE_BEGIN
 

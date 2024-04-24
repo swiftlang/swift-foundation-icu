@@ -19,11 +19,11 @@
 * the core algorithm and core API to write reordered text.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
-#include "unicode/ubidi.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ubidi.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "ustr_imp.h"
 #include "ubidiimp.h"

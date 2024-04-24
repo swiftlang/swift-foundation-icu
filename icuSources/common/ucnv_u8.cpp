@@ -20,14 +20,14 @@
 *   UTF-8 converter, with a branch for converting supplementary code points.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/utf.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "uassert.h"
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"

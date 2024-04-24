@@ -10,7 +10,7 @@
 *******************************************************************************
 */
 
-#include "unicode/dtitvinf.h"
+#include <_foundation_unicode/dtitvinf.h>
 
 
 #if !UCONFIG_NO_FORMATTING
@@ -25,9 +25,9 @@
 
 #include "cmemory.h"
 #include "cstring.h"
-#include "unicode/msgfmt.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/msgfmt.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
 #include "dtitv_impl.h"
 #include "charstr.h"
 #include "hash.h"
