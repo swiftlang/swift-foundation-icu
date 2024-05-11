@@ -83,37 +83,46 @@ let package = Package(
         .library(
             name: "FoundationICU",
             targets: ["FoundationICU"]),
+        .library(
+            name: "FoundationICUCommon",
+            targets: ["FoundationICUCommon"]),
+        .library(
+            name: "FoundationICUI18N",
+            targets: ["FoundationICUI18N"]),
+        .library(
+            name: "FoundationICUIO",
+            targets: ["FoundationICUIO"]),
     ],
     targets: [
         .target(
             name: "FoundationICU",
             dependencies: [
-                "ICUCommon",
-                "ICUI18N",
-                "ICUIO",
-                "ICUStubData"
+                "FoundationICUCommon",
+                "FoundationICUI18N",
+                "FoundationICUIO",
+                "FoundationICUStubData"
             ],
             path: "swift/FoundationICU"),
         .target(
-            name: "ICUCommon",
+            name: "FoundationICUCommon",
             path: "icuSources/common",
             publicHeadersPath: "include",
             cxxSettings: commonBuildSettings),
         .target(
-            name: "ICUI18N",
-            dependencies: ["ICUCommon"],
+            name: "FoundationICUI18N",
+            dependencies: ["FoundationICUCommon"],
             path: "icuSources/i18n",
             publicHeadersPath: "include",
             cxxSettings: i18nBuildSettings),
         .target(
-            name: "ICUIO",
-            dependencies: ["ICUCommon", "ICUI18N"],
+            name: "FoundationICUIO",
+            dependencies: ["FoundationICUCommon", "FoundationICUI18N"],
             path: "icuSources/io",
             publicHeadersPath: "include",
             cxxSettings: ioBuildSettings),
         .target(
-            name: "ICUStubData",
-            dependencies: ["ICUCommon"],
+            name: "FoundationICUStubData",
+            dependencies: ["FoundationICUCommon"],
             path: "icuSources/stubdata",
             publicHeadersPath: ".",
             cxxSettings: stubDataBuildSettings),
