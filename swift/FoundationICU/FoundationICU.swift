@@ -10,6 +10,6 @@
 //
 //===----------------------------------------------------------------------===/
 
-@_exported import FoundationICUCommon
-@_exported import FoundationICUI18N
-@_exported import FoundationICUIO
+@_exported import _FoundationICUCommon
+@_exported import _FoundationICUI18N
+@_exported import _FoundationICUIO

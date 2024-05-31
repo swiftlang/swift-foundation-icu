@@ -81,48 +81,48 @@ let package = Package(
     name: "FoundationICU",
     products: [
         .library(
-            name: "FoundationICU",
-            targets: ["FoundationICU"]),
+            name: "_FoundationICU",
+            targets: ["_FoundationICU"]),
         .library(
-            name: "FoundationICUCommon",
-            targets: ["FoundationICUCommon"]),
+            name: "_FoundationICUCommon",
+            targets: ["_FoundationICUCommon"]),
         .library(
-            name: "FoundationICUI18N",
-            targets: ["FoundationICUI18N"]),
+            name: "_FoundationICUI18N",
+            targets: ["_FoundationICUI18N"]),
         .library(
-            name: "FoundationICUIO",
-            targets: ["FoundationICUIO"]),
+            name: "_FoundationICUIO",
+            targets: ["_FoundationICUIO"]),
     ],
     targets: [
         .target(
-            name: "FoundationICU",
+            name: "_FoundationICU",
             dependencies: [
-                "FoundationICUCommon",
-                "FoundationICUI18N",
-                "FoundationICUIO",
-                "FoundationICUStubData"
+                "_FoundationICUCommon",
+                "_FoundationICUI18N",
+                "_FoundationICUIO",
+                "_FoundationICUStubData"
             ],
             path: "swift/FoundationICU"),
         .target(
-            name: "FoundationICUCommon",
+            name: "_FoundationICUCommon",
             path: "icuSources/common",
             publicHeadersPath: "include",
             cxxSettings: commonBuildSettings),
         .target(
-            name: "FoundationICUI18N",
-            dependencies: ["FoundationICUCommon"],
+            name: "_FoundationICUI18N",
+            dependencies: ["_FoundationICUCommon"],
             path: "icuSources/i18n",
             publicHeadersPath: "include",
             cxxSettings: i18nBuildSettings),
         .target(
-            name: "FoundationICUIO",
-            dependencies: ["FoundationICUCommon", "FoundationICUI18N"],
+            name: "_FoundationICUIO",
+            dependencies: ["_FoundationICUCommon", "_FoundationICUI18N"],
             path: "icuSources/io",
             publicHeadersPath: "include",
             cxxSettings: ioBuildSettings),
         .target(
-            name: "FoundationICUStubData",
-            dependencies: ["FoundationICUCommon"],
+            name: "_FoundationICUStubData",
+            dependencies: ["_FoundationICUCommon"],
             path: "icuSources/stubdata",
             publicHeadersPath: ".",
             cxxSettings: stubDataBuildSettings),
