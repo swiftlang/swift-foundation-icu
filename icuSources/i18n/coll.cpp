@@ -42,12 +42,12 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work 
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/coll.h"
-#include "unicode/tblcoll.h"
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/tblcoll.h>
 #include "collationdata.h"
 #include "collationroot.h"
 #include "collationtailoring.h"

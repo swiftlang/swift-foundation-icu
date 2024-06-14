@@ -10,13 +10,13 @@
 #ifndef NFRULE_H
 #define NFRULE_H
 
-#include "unicode/rbnf.h"
+#include <_foundation_unicode/rbnf.h>
 
 #if U_HAVE_RBNF
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
 
 U_NAMESPACE_BEGIN
 

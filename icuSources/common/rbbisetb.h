@@ -12,13 +12,13 @@
 #ifndef RBBISETB_H
 #define RBBISETB_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/ucptrie.h"
-#include "unicode/umutablecptrie.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/umutablecptrie.h>
+#include <_foundation_unicode/uobject.h>
 #include "rbbirb.h"
 #include "uvector.h"
 

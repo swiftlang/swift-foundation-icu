@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __SOURCE_NUMBER_SKELETONS_H__
@@ -9,7 +9,7 @@
 
 #include "number_types.h"
 #include "numparse_types.h"
-#include "unicode/ucharstrie.h"
+#include <_foundation_unicode/ucharstrie.h>
 #include "string_segment.h"
 
 U_NAMESPACE_BEGIN

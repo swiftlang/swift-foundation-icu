@@ -21,7 +21,7 @@
 #ifndef __UARRSORT_H__
 #define __UARRSORT_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 U_CDECL_BEGIN
 /**

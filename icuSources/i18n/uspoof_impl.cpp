@@ -7,11 +7,11 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uspoof.h"
-#include "unicode/uchar.h"
-#include "unicode/uniset.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uspoof.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utf16.h>
 #include "utrie2.h"
 #include "cmemory.h"
 #include "cstring.h"

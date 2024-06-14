@@ -17,8 +17,8 @@
 #ifndef USTR_CNV_IMP_H
 #define USTR_CNV_IMP_H
 
-#include "unicode/utypes.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ucnv.h>
 
 #if !UCONFIG_NO_CONVERSION
 

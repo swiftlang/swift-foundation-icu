@@ -12,12 +12,12 @@
 #ifndef RBT_DATA_H
 #define RBT_DATA_H
 
-#include "unicode/utypes.h"
-#include "unicode/uclean.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uclean.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "rbt_set.h"
 #include "hash.h"
 

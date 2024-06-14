@@ -13,17 +13,17 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/normalizer2.h"
-#include "unicode/parseerr.h"
-#include "unicode/uchar.h"
-#include "unicode/ucol.h"
-#include "unicode/uloc.h"
-#include "unicode/unistr.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utf16.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "collation.h"

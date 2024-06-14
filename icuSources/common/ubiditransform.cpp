@@ -16,12 +16,12 @@
 */
 
 #include "cmemory.h"
-#include "unicode/ubidi.h"
-#include "unicode/ustring.h"
-#include "unicode/ushape.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ubidi.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ushape.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_imp.h"
-#include "unicode/ubiditransform.h"
+#include <_foundation_unicode/ubiditransform.h>
 
 /* Some convenience defines */
 #define LTR                     UBIDI_LTR

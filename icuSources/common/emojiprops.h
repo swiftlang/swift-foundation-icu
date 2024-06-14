@@ -7,10 +7,10 @@
 #ifndef __EMOJIPROPS_H__
 #define __EMOJIPROPS_H__
 
-#include "unicode/utypes.h"
-#include "unicode/ucptrie.h"
-#include "unicode/udata.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uobject.h>
 #include "uset_imp.h"
 
 U_NAMESPACE_BEGIN

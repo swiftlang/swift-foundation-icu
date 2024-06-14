@@ -10,7 +10,7 @@
 #ifndef ICUSERV_H
 #define ICUSERV_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if UCONFIG_NO_SERVICE
 
@@ -26,9 +26,9 @@ U_NAMESPACE_END
 
 #else
 
-#include "unicode/unistr.h"
-#include "unicode/locid.h"
-#include "unicode/umisc.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/umisc.h>
 
 #include "hash.h"
 #include "uvector.h"

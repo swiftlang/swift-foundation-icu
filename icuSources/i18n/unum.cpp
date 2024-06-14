@@ -12,23 +12,23 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/unum.h"
+#include <_foundation_unicode/unum.h>
 
-#include "unicode/uloc.h"
-#include "unicode/numfmt.h"
-#include "unicode/decimfmt.h"
-#include "unicode/rbnf.h"
-#include "unicode/compactdecimalformat.h"
-#include "unicode/ustring.h"
-#include "unicode/fmtable.h"
-#include "unicode/dcfmtsym.h"
-#include "unicode/curramt.h"
-#include "unicode/localpointer.h"
-#include "unicode/udisplaycontext.h"
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/rbnf.h>
+#include <_foundation_unicode/compactdecimalformat.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/fmtable.h>
+#include <_foundation_unicode/dcfmtsym.h>
+#include <_foundation_unicode/curramt.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/udisplaycontext.h>
 #include "uassert.h"
 #include "cpputils.h"
 #include "cstring.h"

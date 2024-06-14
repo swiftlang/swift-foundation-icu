@@ -8,11 +8,11 @@
  *
  *******************************************************************************
  */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_SERVICE
 
-#include "unicode/resbund.h"
+#include <_foundation_unicode/resbund.h>
 #include "uresimp.h"
 #include "cmemory.h"
 #include "servloc.h"

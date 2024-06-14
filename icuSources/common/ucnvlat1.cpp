@@ -14,13 +14,13 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/uset.h"
-#include "unicode/utf8.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/utf8.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "ustr_imp.h"

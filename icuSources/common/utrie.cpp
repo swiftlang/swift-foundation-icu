@@ -24,7 +24,7 @@
 #   include <stdio.h>
 #endif
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include "utrie.h"
 

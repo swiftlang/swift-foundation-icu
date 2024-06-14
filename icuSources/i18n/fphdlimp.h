@@ -10,13 +10,13 @@
 #ifndef FPHDLIMP_H
 #define FPHDLIMP_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/fieldpos.h"
-#include "unicode/fpositer.h"
-#include "unicode/formattedvalue.h"
+#include <_foundation_unicode/fieldpos.h>
+#include <_foundation_unicode/fpositer.h>
+#include <_foundation_unicode/formattedvalue.h>
 
 U_NAMESPACE_BEGIN
 

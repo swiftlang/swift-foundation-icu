@@ -12,12 +12,12 @@
 #ifndef _TRANSREG_H
 #define _TRANSREG_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/translit.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/translit.h>
 #include "hash.h"
 #include "uvector.h"
 

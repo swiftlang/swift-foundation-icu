@@ -20,10 +20,10 @@
 *   that then do not depend on resource bundle code and this data.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
 #include "cstring.h"
 #include "ulocimp.h"
 #include "uresimp.h"

@@ -8,17 +8,17 @@
  */
 
 #define __STDC_LIMIT_MACROS 1
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION && U_PLATFORM_IS_DARWIN_BASED
 
 #include "brkeng.h"
 #include "dictbe.h"
 #include "aaplbfct.h"
-#include "unicode/uscript.h"
-#include "unicode/uniset.h"
-#include "unicode/ucnv.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/uchar.h>
 #include <limits.h>
 #include <unistd.h>
 #include <glob.h>

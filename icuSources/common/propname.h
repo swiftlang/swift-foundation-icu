@@ -14,9 +14,9 @@
 #ifndef PROPNAME_H
 #define PROPNAME_H
 
-#include "unicode/utypes.h"
-#include "unicode/bytestrie.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/uchar.h>
 #include "udataswp.h"
 #include "uprops.h"
 

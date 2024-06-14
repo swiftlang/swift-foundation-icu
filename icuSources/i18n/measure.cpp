@@ -12,12 +12,12 @@
 */
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/measure.h"
-#include "unicode/measunit.h"
+#include <_foundation_unicode/measure.h>
+#include <_foundation_unicode/measunit.h>
 
 U_NAMESPACE_BEGIN
 

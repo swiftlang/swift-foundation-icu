@@ -10,12 +10,12 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
 #include "quant.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 #include "util.h"
 
 U_NAMESPACE_BEGIN

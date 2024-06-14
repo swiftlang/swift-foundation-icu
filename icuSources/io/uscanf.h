@@ -21,11 +21,11 @@
 #ifndef USCANF_H
 #define USCANF_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/ustdio.h"
+#include <_foundation_unicode/ustdio.h>
 
 U_CFUNC int32_t
 u_scanf_parse(UFILE     *f,

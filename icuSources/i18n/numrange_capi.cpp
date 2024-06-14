@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -15,8 +15,8 @@
 #include "formattedval_impl.h"
 #include "numrange_impl.h"
 #include "number_decnum.h"
-#include "unicode/numberrangeformatter.h"
-#include "unicode/unumberrangeformatter.h"
+#include <_foundation_unicode/numberrangeformatter.h>
+#include <_foundation_unicode/unumberrangeformatter.h>
 
 using namespace icu;
 using namespace icu::number;

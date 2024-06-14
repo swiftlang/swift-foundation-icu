@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -12,12 +12,12 @@
 #include <cmath>
 #include <cstdlib>
 #include <stdlib.h>
-#include "unicode/errorcode.h"
-#include "unicode/decimfmt.h"
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/decimfmt.h>
 #if APPLE_ICU_CHANGES
 // rdar:/
-#include "unicode/ucurr.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ucurr.h>
+#include <_foundation_unicode/ustring.h>
 #endif  // APPLE_ICU_CHANGES
 #include "number_decimalquantity.h"
 #include "number_types.h"

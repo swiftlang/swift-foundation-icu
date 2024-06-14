@@ -21,23 +21,23 @@
  *   11/01/09    kirtig      Added SelectFormat
  ********************************************************************/
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/appendable.h"
-#include "unicode/choicfmt.h"
-#include "unicode/datefmt.h"
-#include "unicode/decimfmt.h"
-#include "unicode/localpointer.h"
-#include "unicode/msgfmt.h"
-#include "unicode/numberformatter.h"
-#include "unicode/plurfmt.h"
-#include "unicode/rbnf.h"
-#include "unicode/selfmt.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/umsg.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/appendable.h>
+#include <_foundation_unicode/choicfmt.h>
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/msgfmt.h>
+#include <_foundation_unicode/numberformatter.h>
+#include <_foundation_unicode/plurfmt.h>
+#include <_foundation_unicode/rbnf.h>
+#include <_foundation_unicode/selfmt.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/umsg.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "patternprops.h"
 #include "messageimpl.h"

@@ -44,7 +44,7 @@
 #include "uposixdefs.h"
 
 // First, the platform type. Need this for U_PLATFORM.
-#include "unicode/platform.h"
+#include <_foundation_unicode/platform.h>
 
 #if U_PLATFORM == U_PF_MINGW && defined __STRICT_ANSI__
 /* tzset isn't defined in strict ANSI on MinGW. */
@@ -61,8 +61,8 @@
 #endif
 
 /* include the rest of the ICU headers */
-#include "unicode/putil.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/ustring.h>
 #include "putilimp.h"
 #include "uassert.h"
 #include "umutex.h"
@@ -101,7 +101,7 @@
 #   define NOIME
 #   define NOMCX
 #   include <windows.h>
-#   include "unicode/uloc.h"
+#   include "_foundation_unicode/uloc.h"
 #   include "wintz.h"
 #elif U_PLATFORM == U_PF_OS400
 #   include <float.h>
@@ -110,7 +110,7 @@
 #   include <qliept.h>      /* EPT_CALL macro  - this include must be after all other "QSYSINCs" */
 #   include <mih/testptr.h> /* For uprv_maximumPtr */
 #elif U_PLATFORM == U_PF_OS390
-#   include "unicode/ucnv.h"   /* Needed for UCNV_SWAP_LFNL_OPTION_STRING */
+#   include "_foundation_unicode/ucnv.h"   /* Needed for UCNV_SWAP_LFNL_OPTION_STRING */
 #elif U_PLATFORM_IS_DARWIN_BASED || U_PLATFORM_IS_LINUX_BASED || U_PLATFORM == U_PF_BSD || U_PLATFORM == U_PF_SOLARIS
 #   include <limits.h>
 #   include <unistd.h>

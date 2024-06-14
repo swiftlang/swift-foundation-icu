@@ -16,10 +16,10 @@
 #define USPOOFIM_H
 
 #include "uassert.h"
-#include "unicode/utypes.h"
-#include "unicode/uspoof.h"
-#include "unicode/uscript.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uspoof.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/udata.h>
 #include "udataswp.h"
 #include "utrie2.h"
 

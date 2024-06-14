@@ -27,9 +27,9 @@
 #ifndef __STUBDATA_H__
 #define __STUBDATA_H__
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uversion.h>
 
 typedef struct {
     uint16_t headerSize;

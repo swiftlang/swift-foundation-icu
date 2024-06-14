@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __UNITS_CONVERTER_H__
@@ -9,9 +9,9 @@
 
 #include "cmemory.h"
 #include "measunit_impl.h"
-#include "unicode/errorcode.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uobject.h>
 #include "units_converter.h"
 #include "units_data.h"
 

@@ -15,11 +15,11 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/fmtable.h"
+#include <_foundation_unicode/fmtable.h>
 
 // *****************************************************************************
 // class Formattable

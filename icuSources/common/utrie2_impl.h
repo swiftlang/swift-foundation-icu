@@ -23,7 +23,7 @@
 #define __UTRIE2_IMPL_H__
 
 #ifdef UCPTRIE_DEBUG
-#include "unicode/umutablecptrie.h"
+#include <_foundation_unicode/umutablecptrie.h>
 #endif
 #include "utrie2.h"
 

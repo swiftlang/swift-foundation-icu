@@ -14,7 +14,7 @@
 #ifndef __WINTZIMPL
 #define __WINTZIMPL
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if U_PLATFORM_USES_ONLY_WIN32_API
 /**

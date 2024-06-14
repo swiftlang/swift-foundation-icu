@@ -8,8 +8,8 @@
 #define __CHARSTRMAP_H__
 
 #include <utility>
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 #include "uhash.h"
 
 U_NAMESPACE_BEGIN

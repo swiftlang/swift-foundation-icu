@@ -30,10 +30,10 @@
 #endif
 // #define UCPTRIE_DEBUG
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #ifdef UCPTRIE_DEBUG
-#include "unicode/ucptrie.h"
-#include "unicode/umutablecptrie.h"
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/umutablecptrie.h>
 #include "ucptrie_impl.h"
 #endif
 #include "cmemory.h"

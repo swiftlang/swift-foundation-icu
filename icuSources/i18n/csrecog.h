@@ -10,7 +10,7 @@
 #ifndef __CSRECOG_H
 #define __CSRECOG_H
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 
 #if !UCONFIG_NO_CONVERSION
 

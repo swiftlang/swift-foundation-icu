@@ -21,18 +21,18 @@
 *   06/20/2000  helena      OS/400 port changes; mostly typecast.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
 #include <memory>
 
-#include "unicode/ustring.h"
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_err.h"
-#include "unicode/uset.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_err.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "putilimp.h"
 #include "cmemory.h"
 #include "cstring.h"

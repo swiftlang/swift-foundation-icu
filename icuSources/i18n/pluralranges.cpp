@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -9,7 +9,7 @@
 // Helpful in toString methods and elsewhere.
 #define UNISTR_FROM_STRING_EXPLICIT
 
-#include "unicode/numberrangeformatter.h"
+#include <_foundation_unicode/numberrangeformatter.h>
 #include "pluralranges.h"
 #include "uresimp.h"
 #include "charstr.h"

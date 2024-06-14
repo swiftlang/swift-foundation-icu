@@ -21,11 +21,11 @@
 #ifndef UPRINTF_H
 #define UPRINTF_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ustdio.h"
+#include <_foundation_unicode/ustdio.h>
 #include "ufmt_cmn.h"
 #include "locbund.h"
 

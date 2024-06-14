@@ -17,8 +17,8 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/chariter.h"
-#include "unicode/schriter.h"
+#include <_foundation_unicode/chariter.h>
+#include <_foundation_unicode/schriter.h>
 
 U_NAMESPACE_BEGIN
 

@@ -9,14 +9,14 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/vtzone.h"
-#include "unicode/rbtz.h"
-#include "unicode/ucal.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/vtzone.h>
+#include <_foundation_unicode/rbtz.h>
+#include <_foundation_unicode/ucal.h>
+#include <_foundation_unicode/ures.h>
 #include "cmemory.h"
 #include "uvector.h"
 #include "gregoimp.h"

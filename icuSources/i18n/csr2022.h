@@ -10,7 +10,7 @@
 #ifndef __CSR2022_H
 #define __CSR2022_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 

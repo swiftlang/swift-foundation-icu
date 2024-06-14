@@ -3,15 +3,15 @@
 
 #include <utility>
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include <stdlib.h>
-#include "unicode/ucal.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/timezone.h"
+#include <_foundation_unicode/ucal.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/timezone.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "erarules.h"

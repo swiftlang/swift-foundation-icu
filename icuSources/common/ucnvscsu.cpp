@@ -21,13 +21,13 @@
 *   will result in callback calls.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_ONLY_HTML_CONVERSION
 
-#include "unicode/ucnv.h"
-#include "unicode/ucnv_cb.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ucnv_cb.h>
+#include <_foundation_unicode/utf16.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "cmemory.h"

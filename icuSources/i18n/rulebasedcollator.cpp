@@ -13,24 +13,24 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/coll.h"
-#include "unicode/coleitr.h"
-#include "unicode/localpointer.h"
-#include "unicode/locid.h"
-#include "unicode/sortkey.h"
-#include "unicode/tblcoll.h"
-#include "unicode/ucol.h"
-#include "unicode/uiter.h"
-#include "unicode/uloc.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/usetiter.h"
-#include "unicode/utf8.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/coleitr.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/sortkey.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/uiter.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/uversion.h>
 #include "bocsu.h"
 #include "charstr.h"
 #include "cmemory.h"

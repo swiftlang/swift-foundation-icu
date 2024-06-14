@@ -11,7 +11,7 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if U_PLATFORM_USES_ONLY_WIN32_API
 
@@ -20,8 +20,8 @@
 #include "cmemory.h"
 #include "cstring.h"
 
-#include "unicode/ures.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/unistr.h>
 #include "uresimp.h"
 
 #ifndef WIN32_LEAN_AND_MEAN

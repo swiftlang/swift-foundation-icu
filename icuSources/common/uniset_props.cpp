@@ -18,15 +18,15 @@
 *   Character property dependent functions moved here from uniset.cpp
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uniset.h"
-#include "unicode/parsepos.h"
-#include "unicode/uchar.h"
-#include "unicode/uscript.h"
-#include "unicode/symtable.h"
-#include "unicode/uset.h"
-#include "unicode/locid.h"
-#include "unicode/brkiter.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/symtable.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/brkiter.h>
 #include "uset_imp.h"
 #include "ruleiter.h"
 #include "cmemory.h"

@@ -28,13 +28,13 @@
 #ifndef UCOL_IMP_H
 #define UCOL_IMP_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
 // This part needs to compile as plain C code, for cintltst.
 
-#include "unicode/ucol.h"
+#include <_foundation_unicode/ucol.h>
 
 /** Check whether two collators are equal. Collators are considered equal if they
  *  will sort strings the same. This means that both the current attributes and the
@@ -54,8 +54,8 @@ ucol_equals(const UCollator *source, const UCollator *target);
 
 #ifdef __cplusplus
 
-#include "unicode/locid.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/ures.h>
 
 U_NAMESPACE_BEGIN
 

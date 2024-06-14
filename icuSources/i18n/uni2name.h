@@ -12,11 +12,11 @@
 #ifndef UNI2NAME_H
 #define UNI2NAME_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
+#include <_foundation_unicode/translit.h>
 
 U_NAMESPACE_BEGIN
 

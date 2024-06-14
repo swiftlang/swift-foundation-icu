@@ -18,11 +18,11 @@
 *   Character conversion functions moved here from uresbund.c
 */
 
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
-#include "unicode/ustring.h"
-#include "unicode/ucnv.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ures.h>
 #include "uinvchar.h"
 #include "ustr_cnv.h"
 

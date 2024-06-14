@@ -12,9 +12,9 @@
 */
 
 #include "dictionarydata.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/bytestrie.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/udata.h>
 #include "cmemory.h"
 
 #if !UCONFIG_NO_BREAK_ITERATION

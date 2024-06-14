@@ -14,12 +14,12 @@
 #ifndef __REGION_IMPL_H__
 #define __REGION_IMPL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
     
 #include "uvector.h"
-#include "unicode/strenum.h"
+#include <_foundation_unicode/strenum.h>
 
 U_NAMESPACE_BEGIN
 

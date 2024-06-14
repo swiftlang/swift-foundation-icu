@@ -16,15 +16,15 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/schriter.h"
-#include "unicode/uchriter.h"
-#include "unicode/udata.h"
-#include "unicode/uclean.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uclean.h>
+#include <_foundation_unicode/utext.h>
 #include "rbbidata57.h"
 #include "rbbirb57.h"
 #include "rbbi57.h"

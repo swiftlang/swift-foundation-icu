@@ -9,7 +9,7 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -18,15 +18,15 @@
 #include <stdlib.h> // Apple addition for uacal_getDayPeriod
 #endif  // APPLE_ICU_CHANGES
 
-#include "unicode/ucal.h"
-#include "unicode/uloc.h"
-#include "unicode/calendar.h"
-#include "unicode/timezone.h"
-#include "unicode/gregocal.h"
-#include "unicode/simpletz.h"
-#include "unicode/ustring.h"
-#include "unicode/strenum.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/ucal.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/gregocal.h>
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/localpointer.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "ustrenum.h"

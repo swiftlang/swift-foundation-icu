@@ -11,11 +11,11 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/ucol.h"
+#include <_foundation_unicode/ucol.h>
 #include "collationdata.h"
 #include "collationfastlatin.h"
 #include "collationsettings.h"

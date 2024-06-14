@@ -6,12 +6,12 @@
 #ifndef RBBI_CACHE_H
 #define RBBI_CACHE_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/rbbi.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/rbbi.h>
+#include <_foundation_unicode/uobject.h>
 
 #include "uvectr32.h"
 

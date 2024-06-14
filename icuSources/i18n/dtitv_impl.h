@@ -22,7 +22,7 @@
  
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 
 
 #define QUOTE             ((UChar)0x0027)

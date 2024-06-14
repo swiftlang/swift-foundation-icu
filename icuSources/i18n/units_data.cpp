@@ -1,7 +1,7 @@
 // © 2020 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -10,9 +10,9 @@
 #include "number_decimalquantity.h"
 #include "resource.h"
 #include "uassert.h"
-#include "unicode/locid.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
 #include "units_data.h"
 #include "uresimp.h"
 #include "util.h"

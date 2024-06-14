@@ -19,8 +19,8 @@
 #include "uassert.h"
 #include "ucln_in.h"
 #include "umutex.h"
-#include "unicode/rbtz.h"
-#include "unicode/tzrule.h"
+#include <_foundation_unicode/rbtz.h>
+#include <_foundation_unicode/tzrule.h>
 
 // --- The cache --
 static icu::TimeZone *gDangiCalendarZoneAstroCalc = NULL;

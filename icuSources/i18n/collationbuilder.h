@@ -14,12 +14,12 @@
 #ifndef __COLLATIONBUILDER_H__
 #define __COLLATIONBUILDER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
 #include "collationrootelements.h"
 #include "collationruleparser.h"
 #include "uvectr32.h"

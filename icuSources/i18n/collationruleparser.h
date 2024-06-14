@@ -14,13 +14,13 @@
 #ifndef __COLLATIONRULEPARSER_H__
 #define __COLLATIONRULEPARSER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/ucol.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
 
 struct UParseError;
 

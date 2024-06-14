@@ -14,9 +14,9 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/unistr.h>
 #include "uvectr32.h"
 
 U_NAMESPACE_BEGIN

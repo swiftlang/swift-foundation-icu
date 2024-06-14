@@ -7,17 +7,17 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/upluralrules.h"
-#include "unicode/plurrule.h"
-#include "unicode/locid.h"
-#include "unicode/unistr.h"
-#include "unicode/unum.h"
-#include "unicode/numfmt.h"
-#include "unicode/unumberformatter.h"
+#include <_foundation_unicode/upluralrules.h>
+#include <_foundation_unicode/plurrule.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/unumberformatter.h>
 #include "number_decimalquantity.h"
 #include "number_utypes.h"
 #include "numrange_impl.h"

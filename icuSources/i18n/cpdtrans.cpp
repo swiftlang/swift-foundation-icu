@@ -10,12 +10,12 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unifilt.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uniset.h>
 #include "cpdtrans.h"
 #include "uvector.h"
 #include "tridpars.h"

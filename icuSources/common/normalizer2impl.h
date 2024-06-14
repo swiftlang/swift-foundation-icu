@@ -19,16 +19,16 @@
 #ifndef __NORMALIZER2IMPL_H__
 #define __NORMALIZER2IMPL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/normalizer2.h"
-#include "unicode/ucptrie.h"
-#include "unicode/unistr.h"
-#include "unicode/unorm.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/unorm.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "mutex.h"
 #include "udataswp.h"
 #include "uset_imp.h"
@@ -798,7 +798,7 @@ unorm_getFCD16(UChar32 c);
  * cached already. Internally, Normalizer2Impl.load() reads the .nrm file.
  *
  * A .nrm file begins with a standard ICU data file header
- * (DataHeader, see ucmndata.h and unicode/udata.h).
+ * (DataHeader, see ucmndata.h and _foundation_unicode/udata.h).
  * The UDataInfo.dataVersion field usually contains the Unicode version
  * for which the data was generated.
  *

@@ -19,8 +19,8 @@
 *   for better modularization.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
 #include "udataswp.h"
 #include "cstring.h"
 #include "cmemory.h"

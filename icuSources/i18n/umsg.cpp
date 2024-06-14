@@ -21,15 +21,15 @@
 * 
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/umsg.h"
-#include "unicode/ustring.h"
-#include "unicode/fmtable.h"
-#include "unicode/msgfmt.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/umsg.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/fmtable.h>
+#include <_foundation_unicode/msgfmt.h>
+#include <_foundation_unicode/unistr.h>
 #include "cpputils.h"
 #include "uassert.h"
 #include "ustr_imp.h"

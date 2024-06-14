@@ -7,17 +7,17 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/ubrk.h"
+#include <_foundation_unicode/ubrk.h>
 
-#include "unicode/brkiter.h"
-#include "unicode/uloc.h"
-#include "unicode/ustring.h"
-#include "unicode/uchriter.h"
-#include "unicode/rbbi.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/rbbi.h>
 #include "rbbirb.h"
 #include "uassert.h"
 #include "cmemory.h"

@@ -10,12 +10,12 @@
 *****************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/uscript.h>
 
 #include "anytrans.h"
 #include "hash.h"

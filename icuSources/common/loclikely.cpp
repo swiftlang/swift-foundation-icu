@@ -19,15 +19,15 @@
 *   that then do not depend on resource bundle code and likely-subtags data.
 */
 
-#include "unicode/bytestream.h"
-#include "unicode/utypes.h"
-#include "unicode/localebuilder.h"
-#include "unicode/locid.h"
-#include "unicode/putil.h"
-#include "unicode/uchar.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localebuilder.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/uscript.h>
 #include "bytesinkutil.h"
 #include "charstr.h"
 #include "cmemory.h"

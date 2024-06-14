@@ -12,9 +12,9 @@
 */
 #include "utypeinfo.h"  // for 'typeid' to work 
 
-#include "unicode/ustring.h"
-#include "unicode/strenum.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/putil.h>
 #include "uenumimp.h"
 #include "ustrenum.h"
 #include "cstring.h"

@@ -12,14 +12,14 @@
 #ifndef RBT_PARS_H
 #define RBT_PARS_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 #ifdef __cplusplus
 
-#include "unicode/uobject.h"
-#include "unicode/parseerr.h"
-#include "unicode/unorm.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/unorm.h>
 #include "rbt.h"
 #include "hash.h"
 #include "uvector.h"

@@ -7,11 +7,11 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/basictz.h"
+#include <_foundation_unicode/basictz.h>
 #include "gregoimp.h"
 #include "uvector.h"
 #include "cmemory.h"

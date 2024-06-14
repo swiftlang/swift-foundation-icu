@@ -4,12 +4,12 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/udateintervalformat.h"
-#include "unicode/udatintv.h"
+#include <_foundation_unicode/udateintervalformat.h>
+#include <_foundation_unicode/udatintv.h>
 
 U_NAMESPACE_USE
 

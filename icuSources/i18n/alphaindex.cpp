@@ -7,21 +7,21 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/alphaindex.h"
-#include "unicode/coll.h"
-#include "unicode/localpointer.h"
-#include "unicode/normalizer2.h"
-#include "unicode/tblcoll.h"
-#include "unicode/uchar.h"
-#include "unicode/ulocdata.h"
-#include "unicode/uniset.h"
-#include "unicode/uobject.h"
-#include "unicode/usetiter.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/alphaindex.h>
+#include <_foundation_unicode/coll.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ulocdata.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/utf16.h>
 
 #include "cmemory.h"
 #include "cstring.h"

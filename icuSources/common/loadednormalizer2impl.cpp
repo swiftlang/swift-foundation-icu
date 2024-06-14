@@ -11,16 +11,16 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/udata.h"
-#include "unicode/localpointer.h"
-#include "unicode/normalizer2.h"
-#include "unicode/ucptrie.h"
-#include "unicode/unistr.h"
-#include "unicode/unorm.h"
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/unorm.h>
 #include "cstring.h"
 #include "mutex.h"
 #include "norm2allmodes.h"

@@ -12,15 +12,15 @@
 
 #include <utility>
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if  !UCONFIG_NO_TRANSLITERATION && !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/brkiter.h"
-#include "unicode/localpointer.h"
-#include "unicode/uchar.h"
-#include "unicode/unifilt.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uniset.h>
 
 #include "brktrans.h"
 #include "cmemory.h"

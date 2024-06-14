@@ -14,13 +14,13 @@
 #ifndef __COLLATIONDATABUILDER_H__
 #define __COLLATIONDATABUILDER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uversion.h>
 #include "collation.h"
 #include "collationdata.h"
 #include "collationsettings.h"

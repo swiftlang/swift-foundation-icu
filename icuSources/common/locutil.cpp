@@ -6,12 +6,12 @@
  * others. All Rights Reserved.
  *******************************************************************************
  */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_SERVICE || !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/resbund.h"
-#include "unicode/uenum.h"
+#include <_foundation_unicode/resbund.h>
+#include <_foundation_unicode/uenum.h>
 #include "cmemory.h"
 #include "ustrfmt.h"
 #include "locutil.h"

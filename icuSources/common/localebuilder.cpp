@@ -7,8 +7,8 @@
 #include "charstr.h"
 #include "cstring.h"
 #include "ulocimp.h"
-#include "unicode/localebuilder.h"
-#include "unicode/locid.h"
+#include <_foundation_unicode/localebuilder.h>
+#include <_foundation_unicode/locid.h>
 
 U_NAMESPACE_BEGIN
 

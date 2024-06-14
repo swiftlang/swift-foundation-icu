@@ -17,11 +17,11 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "cstring.h"
 #include "cwchar.h"
 #include "cmemory.h"

@@ -11,7 +11,7 @@
 *******************************************************************************
 */
 #include "sharedbreakiterator.h"
-#include "unicode/brkiter.h"
+#include <_foundation_unicode/brkiter.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 

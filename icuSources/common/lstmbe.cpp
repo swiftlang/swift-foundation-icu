@@ -4,7 +4,7 @@
 #include <complex>
 #include <utility>
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
@@ -19,12 +19,12 @@
 #include "uvectr32.h"
 #include "uvector.h"
 
-#include "unicode/brkiter.h"
-#include "unicode/resbund.h"
-#include "unicode/ubrk.h"
-#include "unicode/uniset.h"
-#include "unicode/ustring.h"
-#include "unicode/utf.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/resbund.h>
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf.h>
 
 U_NAMESPACE_BEGIN
 

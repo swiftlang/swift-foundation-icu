@@ -8,11 +8,11 @@
 #define __LOCLIKELYSUBTAGS_H__
 
 #include <utility>
-#include "unicode/utypes.h"
-#include "unicode/bytestrie.h"
-#include "unicode/locid.h"
-#include "unicode/uobject.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/ures.h>
 #include "charstrmap.h"
 #include "lsr.h"
 

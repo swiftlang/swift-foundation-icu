@@ -24,9 +24,9 @@
 #   define U_UTF8_IMPL
 #endif
 
-#include "unicode/utypes.h"
-#include "unicode/utf.h"
-#include "unicode/utf8.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf8.h>
 #include "uassert.h"
 
 /*
@@ -87,7 +87,7 @@ utf8_countTrailBytes[256]={
 static const UChar32
 utf8_errorValue[6]={
     // Same values as UTF8_ERROR_VALUE_1, UTF8_ERROR_VALUE_2, UTF_ERROR_VALUE,
-    // but without relying on the obsolete unicode/utf_old.h.
+    // but without relying on the obsolete _foundation_unicode/utf_old.h.
     0x15, 0x9f, 0xffff,
     0x10ffff
 };

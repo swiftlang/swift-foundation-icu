@@ -15,8 +15,8 @@
 */
 
 #include "utypeinfo.h"  // for 'typeid' to work
-#include "unicode/utypes.h"
-#include "unicode/stringtriebuilder.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/stringtriebuilder.h>
 #include "uassert.h"
 #include "uhash.h"
 

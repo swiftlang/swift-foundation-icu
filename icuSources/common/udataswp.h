@@ -24,7 +24,7 @@
 #define __UDATASWP_H__
 
 #include <stdarg.h>
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 /* forward declaration */
 

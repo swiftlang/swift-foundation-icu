@@ -48,8 +48,8 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/resbund.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/resbund.h>
 
 #include "cmemory.h"
 #include "mutex.h"

@@ -39,8 +39,8 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
 #include "uassert.h"
 #include "ustr_imp.h"
 
@@ -70,21 +70,21 @@ static char gStrBuf[256];
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/simpletz.h"
-#include "unicode/calendar.h"
-#include "unicode/gregocal.h"
-#include "unicode/ures.h"
-#include "unicode/tzfmt.h"
-#include "unicode/numfmt.h"
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/gregocal.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/tzfmt.h>
+#include <_foundation_unicode/numfmt.h>
 #include "gregoimp.h"
 #include "uresimp.h" // struct UResourceBundle
 #include "olsontz.h"
 #include "mutex.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/udata.h>
 #include "ucln_in.h"
 #include "cstring.h"
 #include "cmemory.h"
-#include "unicode/strenum.h"
+#include <_foundation_unicode/strenum.h>
 #include "uassert.h"
 #include "zonemeta.h"
 

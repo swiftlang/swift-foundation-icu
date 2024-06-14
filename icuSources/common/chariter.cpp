@@ -7,7 +7,7 @@
 **********************************************************************
 */
 
-#include "unicode/chariter.h"
+#include <_foundation_unicode/chariter.h>
 
 U_NAMESPACE_BEGIN
 

@@ -34,8 +34,8 @@
 #ifndef __RBBIDATA_H__
 #define __RBBIDATA_H__
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
 #include "udataswp.h"
 
 /**
@@ -49,10 +49,10 @@ ubrk_swap(const UDataSwapper *ds,
 
 #ifdef __cplusplus
 
-#include "unicode/ucptrie.h"
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uversion.h>
 #include "umutex.h"
 
 

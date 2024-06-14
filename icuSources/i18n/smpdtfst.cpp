@@ -13,12 +13,12 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uniset.h"
-#include "unicode/udat.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/udat.h>
 #include "cmemory.h"
 #include "uassert.h"
 #include "ucln_in.h"

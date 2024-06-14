@@ -6,9 +6,9 @@
 * Corporation and others.  All Rights Reserved.
 **********************************************************************
 */
-#include "unicode/usetiter.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
 #include "uvector.h"
 
 U_NAMESPACE_BEGIN

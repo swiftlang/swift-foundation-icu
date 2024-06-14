@@ -10,12 +10,12 @@
 #ifndef ASTRO_H
 #define ASTRO_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "gregoimp.h"  // for Math
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 
 U_NAMESPACE_BEGIN
 

@@ -9,7 +9,7 @@
 //  This file contains declarations for the class RegexStaticSets
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "unicode/regex.h"
+//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
 //
 //  RegexStaticSets groups together the common UnicodeSets that are needed
 //   for compiling or executing RegularExpressions.  This grouping simplifies
@@ -20,8 +20,8 @@
 #ifndef REGEXST_H
 #define REGEXST_H
 
-#include "unicode/utypes.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/utext.h>
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
 #include "regeximp.h"

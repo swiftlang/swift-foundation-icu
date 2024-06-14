@@ -7,7 +7,7 @@
  *******************************************************************************
  */ 
 
-#include "unicode/tmutamt.h"
+#include <_foundation_unicode/tmutamt.h>
 
 #if !UCONFIG_NO_FORMATTING
 

@@ -1,15 +1,15 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "cstring.h"
 #include "number_patternmodifier.h"
-#include "unicode/dcfmtsym.h"
-#include "unicode/ucurr.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/dcfmtsym.h>
+#include <_foundation_unicode/ucurr.h>
+#include <_foundation_unicode/unistr.h>
 #include "number_microprops.h"
 
 using namespace icu;

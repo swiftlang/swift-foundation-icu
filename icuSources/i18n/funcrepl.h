@@ -13,12 +13,12 @@
 #ifndef FUNCREPL_H
 #define FUNCREPL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unifunct.h"
-#include "unicode/unirepl.h"
+#include <_foundation_unicode/unifunct.h>
+#include <_foundation_unicode/unirepl.h>
 
 U_NAMESPACE_BEGIN
 

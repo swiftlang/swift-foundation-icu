@@ -14,11 +14,11 @@
 #ifndef __COLLATIONFCD_H__
 #define __COLLATIONFCD_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utf16.h>
 
 U_NAMESPACE_BEGIN
 

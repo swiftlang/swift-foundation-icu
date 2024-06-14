@@ -9,11 +9,11 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION && !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/stsearch.h"
+#include <_foundation_unicode/stsearch.h>
 #include "usrchimp.h"
 #include "cmemory.h"
 

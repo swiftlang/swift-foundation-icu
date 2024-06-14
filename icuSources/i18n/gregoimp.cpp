@@ -15,7 +15,7 @@
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ucal.h"
+#include <_foundation_unicode/ucal.h>
 #include "uresimp.h"
 #include "cstring.h"
 #include "uassert.h"

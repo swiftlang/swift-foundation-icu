@@ -19,12 +19,12 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "uprintf.h"
 #include "ufmt_cmn.h"
 #include "cmemory.h"

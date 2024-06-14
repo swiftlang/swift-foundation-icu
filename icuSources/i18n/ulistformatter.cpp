@@ -7,13 +7,13 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ulistformatter.h"
-#include "unicode/listformatter.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/ulistformatter.h>
+#include <_foundation_unicode/listformatter.h>
+#include <_foundation_unicode/localpointer.h>
 #include "cmemory.h"
 #include "formattedval_impl.h"
 

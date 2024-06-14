@@ -25,7 +25,7 @@
 
 #include <string.h>
 #include <stdlib.h>
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 /* Do this after utypes.h so that we have U_HAVE_WCHAR_H . */
 #if U_HAVE_WCHAR_H

@@ -28,15 +28,15 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/gregocal.h"
-#include "unicode/basictz.h"
-#include "unicode/simpletz.h"
-#include "unicode/rbtz.h"
-#include "unicode/vtzone.h"
+#include <_foundation_unicode/gregocal.h>
+#include <_foundation_unicode/basictz.h>
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/rbtz.h>
+#include <_foundation_unicode/vtzone.h>
 #include "gregoimp.h"
 #include "buddhcal.h"
 #include "taiwncal.h"
@@ -49,7 +49,7 @@
 #include "coptccal.h"
 #include "dangical.h"
 #include "ethpccal.h"
-#include "unicode/calendar.h"
+#include <_foundation_unicode/calendar.h>
 #include "cpputils.h"
 #include "servloc.h"
 #include "ucln_in.h"

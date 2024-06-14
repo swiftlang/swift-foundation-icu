@@ -8,17 +8,17 @@
  *************************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/chariter.h"
-#include "unicode/schriter.h"
-#include "unicode/uchriter.h"
-#include "unicode/normlzr.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/chariter.h>
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/normlzr.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "normalizer2impl.h"
 #include "uprops.h"  // for uniset_getUnicode32Instance()

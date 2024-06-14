@@ -22,8 +22,8 @@
 #ifndef MUTEX_H
 #define MUTEX_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 #include "umutex.h"
 
 U_NAMESPACE_BEGIN

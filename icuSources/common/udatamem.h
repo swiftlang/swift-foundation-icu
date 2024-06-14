@@ -21,7 +21,7 @@
 #ifndef __UDATAMEM_H__
 #define __UDATAMEM_H__
 
-#include "unicode/udata.h"
+#include <_foundation_unicode/udata.h>
 #include "ucmndata.h"
 
 struct UDataMemory {

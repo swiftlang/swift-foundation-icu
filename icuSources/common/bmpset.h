@@ -19,8 +19,8 @@
 #ifndef __BMPSET_H__
 #define __BMPSET_H__
 
-#include "unicode/utypes.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uniset.h>
 
 U_NAMESPACE_BEGIN
 

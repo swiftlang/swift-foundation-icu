@@ -14,11 +14,11 @@
 #ifndef __UITERCOLLATIONITERATOR_H__
 #define __UITERCOLLATIONITERATOR_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/uiter.h"
+#include <_foundation_unicode/uiter.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "collationdata.h"

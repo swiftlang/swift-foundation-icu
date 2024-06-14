@@ -18,14 +18,14 @@
 *   Internal classes for compiling confusable data into its binary (runtime) form.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uspoof.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uspoof.h>
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/unorm.h"
-#include "unicode/uregex.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/unorm.h>
+#include <_foundation_unicode/uregex.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "uspoof_impl.h"
 #include "uhash.h"

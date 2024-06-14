@@ -4,12 +4,12 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/upluralrules.h"
-#include "unicode/uplrule.h"
+#include <_foundation_unicode/upluralrules.h>
+#include <_foundation_unicode/uplrule.h>
 
 U_NAMESPACE_USE
 

@@ -14,15 +14,15 @@
 #ifndef __WINNMFMT
 #define __WINNMFMT
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if U_PLATFORM_USES_ONLY_WIN32_API
 
-#include "unicode/format.h"
-#include "unicode/datefmt.h"
-#include "unicode/calendar.h"
-#include "unicode/ustring.h"
-#include "unicode/locid.h"
+#include <_foundation_unicode/format.h>
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/locid.h>
 
 #if !UCONFIG_NO_FORMATTING
 

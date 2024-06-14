@@ -8,8 +8,8 @@
 // Author: wilsonh@google.com (Wilson Hsieh)
 //
 
-#include "unicode/utypes.h"
-#include "unicode/stringpiece.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/stringpiece.h>
 #include "cstring.h"
 #include "cmemory.h"
 

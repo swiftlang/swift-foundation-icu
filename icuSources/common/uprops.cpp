@@ -23,14 +23,14 @@
 *   including those for normalization and case mappings.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uchar.h"
-#include "unicode/ucptrie.h"
-#include "unicode/udata.h"
-#include "unicode/unorm2.h"
-#include "unicode/uscript.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/unorm2.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "cstring.h"
 #include "emojiprops.h"
 #include "mutex.h"

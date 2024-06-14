@@ -7,13 +7,13 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ufieldpositer.h"
-#include "unicode/fpositer.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/ufieldpositer.h>
+#include <_foundation_unicode/fpositer.h>
+#include <_foundation_unicode/localpointer.h>
 
 U_NAMESPACE_USE
 

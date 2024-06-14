@@ -15,17 +15,17 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include <cstdlib>
 #include <math.h>
-#include "unicode/fmtable.h"
-#include "unicode/ustring.h"
-#include "unicode/measure.h"
-#include "unicode/curramt.h"
-#include "unicode/uformattable.h"
+#include <_foundation_unicode/fmtable.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/measure.h>
+#include <_foundation_unicode/curramt.h>
+#include <_foundation_unicode/uformattable.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"
@@ -824,7 +824,7 @@ Formattable::setDecimalNumber(StringPiece numberString, UErrorCode &status) {
 #include <iostream>
 using namespace std;
 
-#include "unicode/datefmt.h"
+#include <_foundation_unicode/datefmt.h>
 #include "unistrm.h"
 
 class FormattableStreamer /* not : public UObject because all methods are static */ {

@@ -7,13 +7,13 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/locid.h"
-#include "unicode/tznames.h"
-#include "unicode/uenum.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/tznames.h>
+#include <_foundation_unicode/uenum.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "mutex.h"

@@ -14,11 +14,11 @@
 */
 
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 #include "rbbitblb57.h"
 #include "rbbirb57.h"
 #include "rbbisetb57.h"

@@ -14,13 +14,13 @@
 #ifndef __COLLATIONFASTLATINBUILDER_H__
 #define __COLLATIONFASTLATINBUILDER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/ucol.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/ucol.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
 #include "collation.h"
 #include "collationfastlatin.h"
 #include "uvectr64.h"

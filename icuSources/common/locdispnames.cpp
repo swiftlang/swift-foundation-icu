@@ -19,16 +19,16 @@
 *   that then do not depend on resource bundle code and display name data.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/brkiter.h"
-#include "unicode/locid.h"
-#include "unicode/uenum.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
 #if APPLE_ICU_CHANGES
 // rdar://51418203 finish support for pa_Aran; have uloc_getDisplayName call uldn function for special names
-#include "unicode/uldnames.h"
+#include <_foundation_unicode/uldnames.h>
 #endif // APPLE_ICU_CHANGES
 #include "bytesinkutil.h"
 #include "charstr.h"

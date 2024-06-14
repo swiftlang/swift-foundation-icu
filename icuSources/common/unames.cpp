@@ -16,12 +16,12 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/putil.h"
-#include "unicode/uchar.h"
-#include "unicode/udata.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "uassert.h"
 #include "ustr_imp.h"
 #include "umutex.h"

@@ -18,7 +18,7 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING && !UCONFIG_NO_CONVERSION
 
@@ -29,8 +29,8 @@
 #include "ucln_io.h"
 #include "mutex.h"
 #include "umutex.h"
-#include "unicode/ustring.h"
-#include "unicode/uloc.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uloc.h>
 
 static UNumberFormat *gPosixNumberFormat[ULOCALEBUNDLE_NUMBERFORMAT_COUNT];
 

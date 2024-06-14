@@ -7,14 +7,14 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uregion.h"
-#include "unicode/region.h"
-#include "unicode/uenum.h"
-#include "unicode/strenum.h"
+#include <_foundation_unicode/uregion.h>
+#include <_foundation_unicode/region.h>
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/strenum.h>
 
 U_NAMESPACE_USE
 

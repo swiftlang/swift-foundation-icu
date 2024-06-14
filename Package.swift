@@ -38,7 +38,15 @@ var buildSettings: [CXXSetting] = [
     // Where data are stored
     .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
     .define("USE_PACKAGE_DATA", to: "1"),
-    .define("APPLE_ICU_CHANGES", to: "1")
+    .define("APPLE_ICU_CHANGES", to: "1"),
+    
+    .headerSearchPath("common"),
+    .headerSearchPath("io"),
+    .headerSearchPath("i18n"),
+    .headerSearchPath("include"),
+    .define("U_I18N_IMPLEMENTATION"),
+    .define("SWIFT_PACKAGE", to: "1", .when(platforms: [.linux])),
+    .define("U_IO_IMPLEMENTATION"),
 ]
 
 #if os(Windows)
@@ -47,30 +55,6 @@ buildSettings.append(contentsOf: [
     .define("U_PLATFORM_USES_ONLY_WIN32_API"),
 ])
 #endif
-
-let commonBuildSettings: [CXXSetting] = buildSettings.appending([
-    .headerSearchPath("."),
-])
-
-let i18nBuildSettings: [CXXSetting] = buildSettings.appending([
-    .define("U_I18N_IMPLEMENTATION"),
-    .define("SWIFT_PACKAGE", to: "1", .when(platforms: [.linux])),
-    .headerSearchPath("../common"),
-    .headerSearchPath("."),
-])
-
-let ioBuildSettings: [CXXSetting] = buildSettings.appending([
-    .define("U_IO_IMPLEMENTATION"),
-    .headerSearchPath("../common"),
-    .headerSearchPath("../i18n"),
-    .headerSearchPath("."),
-])
-
-let stubDataBuildSettings: [CXXSetting] = buildSettings.appending([
-    .headerSearchPath("../common"),
-    .headerSearchPath("../i18n"),
-    .headerSearchPath("."),
-])
 
 let linkerSettings: [LinkerSetting] = [
     .linkedLibrary("wasi-emulated-signal", .when(platforms: [.wasi])),
@@ -82,62 +66,19 @@ let package = Package(
     products: [
         .library(
             name: "_FoundationICU",
-            targets: ["_FoundationICU"]),
-        .library(
-            name: "_FoundationICUCommon",
-            targets: ["_FoundationICUCommon"]),
-        .library(
-            name: "_FoundationICUI18N",
-            targets: ["_FoundationICUI18N"]),
-        .library(
-            name: "_FoundationICUIO",
-            targets: ["_FoundationICUIO"]),
+            targets: [
+                "_FoundationICU"
+            ]
+        )
     ],
     targets: [
         .target(
             name: "_FoundationICU",
-            dependencies: [
-                "_FoundationICUCommon",
-                "_FoundationICUI18N",
-                "_FoundationICUIO",
-                "_FoundationICUStubData"
-            ],
-            path: "swift/FoundationICU"),
-        .target(
-            name: "_FoundationICUCommon",
-            path: "icuSources/common",
-            publicHeadersPath: "include",
-            cxxSettings: commonBuildSettings),
-        .target(
-            name: "_FoundationICUI18N",
-            dependencies: ["_FoundationICUCommon"],
-            path: "icuSources/i18n",
-            publicHeadersPath: "include",
-            cxxSettings: i18nBuildSettings),
-        .target(
-            name: "_FoundationICUIO",
-            dependencies: ["_FoundationICUCommon", "_FoundationICUI18N"],
-            path: "icuSources/io",
-            publicHeadersPath: "include",
-            cxxSettings: ioBuildSettings),
-        .target(
-            name: "_FoundationICUStubData",
-            dependencies: ["_FoundationICUCommon"],
-            path: "icuSources/stubdata",
-            publicHeadersPath: ".",
-            cxxSettings: stubDataBuildSettings),
+            path: "icuSources",
+            exclude: ["stubdata"],
+            cxxSettings: buildSettings,
+            linkerSettings: linkerSettings
+        )
     ],
     cxxLanguageStandard: .cxx14
 )
-
-for target in package.targets {
-    target.linkerSettings = linkerSettings
-}
-
-fileprivate extension Array {
-    func appending(_ other: Self) -> Self {
-        var me = self
-        me.append(contentsOf: other)
-        return me
-    }
-}

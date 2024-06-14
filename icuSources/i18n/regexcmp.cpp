@@ -11,20 +11,20 @@
 //  is used by the match finding engine.
 //
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/ustring.h"
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
-#include "unicode/uchar.h"
-#include "unicode/uchriter.h"
-#include "unicode/parsepos.h"
-#include "unicode/parseerr.h"
-#include "unicode/regex.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/regex.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "patternprops.h"
 #include "putilimp.h"
 #include "cmemory.h"
@@ -3913,7 +3913,7 @@ void RegexCompile::error(UErrorCode e) {
     if (U_SUCCESS(*fStatus) || e == U_MEMORY_ALLOCATION_ERROR) {
         *fStatus = e;
         // Hmm. fParseErr (UParseError) line & offset fields are int32_t in public
-        // API (see common/unicode/parseerr.h), while fLineNum and fCharNum are
+        // API (see common/_foundation_unicode/parseerr.h), while fLineNum and fCharNum are
         // int64_t. If the values of the latter are out of range for the former,
         // set them to the appropriate "field not supported" values.
         if (fLineNum > 0x7FFFFFFF) {

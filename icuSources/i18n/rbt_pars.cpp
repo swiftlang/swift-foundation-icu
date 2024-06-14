@@ -10,18 +10,18 @@
  **********************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uobject.h"
-#include "unicode/parseerr.h"
-#include "unicode/parsepos.h"
-#include "unicode/putil.h"
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/uniset.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/utf16.h>
 #include "cstring.h"
 #include "funcrepl.h"
 #include "hash.h"
@@ -32,7 +32,7 @@
 #include "rbt_rule.h"
 #include "strmatch.h"
 #include "strrepl.h"
-#include "unicode/symtable.h"
+#include <_foundation_unicode/symtable.h>
 #include "tridpars.h"
 #include "uvector.h"
 #include "hash.h"

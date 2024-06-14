@@ -25,9 +25,9 @@
 #include <mutex>
 #include <type_traits>
 
-#include "unicode/utypes.h"
-#include "unicode/uclean.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uclean.h>
+#include <_foundation_unicode/uobject.h>
 
 #include "putilimp.h"
 

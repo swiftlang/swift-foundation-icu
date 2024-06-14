@@ -16,7 +16,7 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"  /* U_PLATFORM etc. */
+#include <_foundation_unicode/utypes.h>  /* U_PLATFORM etc. */
 
 #ifdef __GNUC__
 /* if gcc
@@ -25,9 +25,9 @@ might have to #include some other header
 */
 #endif
 
-#include "unicode/putil.h"
-#include "unicode/udata.h"
-#include "unicode/uversion.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uversion.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "cstring.h"
@@ -1149,16 +1149,6 @@ static UBool isTimeZoneFile(const char *name, const char *type) {
              uprv_strcmp(name, "metaZones") == 0));
 }
 
-
-#if defined(USE_PACKAGE_DATA)
-// Point commonData to the packaged data
-static void U_CALLCONV packagedDataPointerInitFn() {
-    udata_setFileAccess(UDATA_PACKAGES_FIRST, NULL);
-    UErrorCode error = U_ZERO_ERROR;
-    udata_setCommonData(&_ICUPackagedMainData, &error);
-}
-#endif // defined(USE_PACKAGE_DATA)
-
 /*
  *  A note on the ownership of Mapped Memory
  *
@@ -1196,13 +1186,6 @@ doOpenChoice(const char *path, const char *type, const char *name,
              UDataMemoryIsAcceptable *isAcceptable, void *context,
              UErrorCode *pErrorCode)
 {
-#if defined(USE_PACKAGE_DATA)
-    // Conventionally this method should be called at an app's main
-    // Since SwiftFoundationICU doesn't have a main, initialize the
-    // data pointers once when doOpenChoice is first called.
-    umtx_initOnce(gCommonICUDataInitOnce, &packagedDataPointerInitFn);
-#endif
-
     UDataMemory         *retVal = NULL;
 
     const char         *dataPath;

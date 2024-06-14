@@ -14,11 +14,11 @@
 #ifndef __COLLATIONDATAREADER_H__
 #define __COLLATIONDATAREADER_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/udata.h"
+#include <_foundation_unicode/udata.h>
 
 struct UDataMemory;
 
@@ -117,7 +117,7 @@ private:
  * Tailorings are stored inside .res resource bundle files, with a complete file header.
  *
  * Collation data begins with a standard ICU data file header
- * (DataHeader, see ucmndata.h and unicode/udata.h).
+ * (DataHeader, see ucmndata.h and _foundation_unicode/udata.h).
  * The UDataInfo.dataVersion field contains the UCA and other version numbers,
  * see the comments for CollationTailoring.version.
  *

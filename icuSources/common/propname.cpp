@@ -12,9 +12,9 @@
 **********************************************************************
 */
 #include "propname.h"
-#include "unicode/uchar.h"
-#include "unicode/udata.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/uscript.h>
 #include "umutex.h"
 #include "cmemory.h"
 #include "cstring.h"

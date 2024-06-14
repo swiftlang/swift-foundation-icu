@@ -25,9 +25,9 @@
 // We use the Resource prefix for C++ classes, as usual.
 // The UResource prefix would be used for C types.
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
 #include "restrace.h"
 
 struct ResourceData;

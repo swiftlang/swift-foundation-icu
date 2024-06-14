@@ -4,14 +4,14 @@
 #ifndef LSTMBE_H
 #define LSTMBE_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/uniset.h"
-#include "unicode/ures.h"
-#include "unicode/utext.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/utext.h>
+#include <_foundation_unicode/utypes.h>
 
 #include "brkeng.h"
 #include "dictbe.h"

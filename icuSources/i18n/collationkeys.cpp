@@ -11,11 +11,11 @@
 * created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/bytestream.h"
+#include <_foundation_unicode/bytestream.h>
 #include "collation.h"
 #include "collationiterator.h"
 #include "collationkeys.h"

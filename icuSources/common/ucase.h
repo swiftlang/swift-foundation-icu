@@ -21,8 +21,8 @@
 #ifndef __UCASE_H__
 #define __UCASE_H__
 
-#include "unicode/utypes.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uset.h>
 #include "putilimp.h"
 #include "uset_imp.h"
 #include "udataswp.h"

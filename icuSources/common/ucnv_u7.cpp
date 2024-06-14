@@ -16,12 +16,12 @@
 *   UTF-7 converter implementation. Used to be in ucnv_utf.c.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION && !UCONFIG_ONLY_HTML_CONVERSION
 
 #include "cmemory.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ucnv.h>
 #include "ucnv_bld.h"
 #include "ucnv_cnv.h"
 #include "uassert.h"

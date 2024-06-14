@@ -15,9 +15,9 @@
 #ifndef __SCRIPTSET_H__
 #define __SCRIPTSET_H__
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/uscript.h>
 
 #include "uelement.h"
 

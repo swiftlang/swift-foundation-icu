@@ -17,15 +17,15 @@
 *   06/29/2000  helena      Major rewrite of the callback APIs.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv_err.h"
-#include "unicode/ucnv_cb.h"
+#include <_foundation_unicode/ucnv_err.h>
+#include <_foundation_unicode/ucnv_cb.h>
 #include "ucnv_cnv.h"
 #include "cmemory.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ucnv.h>
 #include "ustrfmt.h"
 
 #define VALUE_STRING_LENGTH 48

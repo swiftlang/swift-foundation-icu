@@ -11,15 +11,15 @@
 ********************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if U_PLATFORM_USES_ONLY_WIN32_API && !UCONFIG_NO_FORMATTING 
 
 #include "wintzimpl.h"
 
-#include "unicode/unistr.h"
-#include "unicode/timezone.h"
-#include "unicode/basictz.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/timezone.h>
+#include <_foundation_unicode/basictz.h>
 #include "putilimp.h"
 #include "uassert.h"
 #include "cmemory.h"

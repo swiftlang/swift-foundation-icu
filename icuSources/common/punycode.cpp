@@ -44,13 +44,13 @@ Disclaimer and license
  * - UTF-16 handling
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_IDNA
 
-#include "unicode/ustring.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_imp.h"
 #include "cstring.h"
 #include "cmemory.h"

@@ -14,10 +14,10 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/bytestream.h"
-#include "unicode/bytestrie.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 #include "uassert.h"
 

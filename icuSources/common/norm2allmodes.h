@@ -14,14 +14,14 @@
 #ifndef __NORM2ALLMODES_H__
 #define __NORM2ALLMODES_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/edits.h"
-#include "unicode/normalizer2.h"
-#include "unicode/stringoptions.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/unistr.h>
 #include "cpputils.h"
 #include "normalizer2impl.h"
 

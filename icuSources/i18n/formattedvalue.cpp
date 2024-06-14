@@ -1,11 +1,11 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/formattedvalue.h"
+#include <_foundation_unicode/formattedvalue.h>
 #include "formattedval_impl.h"
 #include "capi_helper.h"
 

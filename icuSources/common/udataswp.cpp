@@ -21,8 +21,8 @@
 */
 
 #include <stdarg.h>
-#include "unicode/utypes.h"
-#include "unicode/udata.h" /* UDataInfo */
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h> /* UDataInfo */
 #include "ucmndata.h" /* DataHeader */
 #include "cmemory.h"
 #include "udataswp.h"

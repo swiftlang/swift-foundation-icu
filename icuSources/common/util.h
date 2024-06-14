@@ -14,9 +14,9 @@
 #define ICU_UTIL_H
 
 #include "charstr.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utypes.h>
 //--------------------------------------------------------------------
 // class ICU_Utility
 // i18n utility functions, scoped into the class ICU_Utility.

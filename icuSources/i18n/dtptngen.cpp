@@ -11,28 +11,28 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/datefmt.h"
-#include "unicode/decimfmt.h"
-#include "unicode/dtfmtsym.h"
-#include "unicode/dtptngen.h"
-#include "unicode/localpointer.h"
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/decimfmt.h>
+#include <_foundation_unicode/dtfmtsym.h>
+#include <_foundation_unicode/dtptngen.h>
+#include <_foundation_unicode/localpointer.h>
 #if APPLE_ICU_CHANGES
 // rdar:/
-#include "unicode/schriter.h"
+#include <_foundation_unicode/schriter.h>
 #endif  // APPLE_ICU_CHANGES
-#include "unicode/simpleformatter.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/udat.h"
-#include "unicode/udatpg.h"
-#include "unicode/uniset.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/rep.h"
-#include "unicode/region.h"
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/udat.h>
+#include <_foundation_unicode/udatpg.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/rep.h>
+#include <_foundation_unicode/region.h>
 #include "cpputils.h"
 #include "mutex.h"
 #include "umutex.h"
@@ -58,7 +58,7 @@
 
 #if defined(U_USE_ASCII_BUNDLE_ITERATOR)
 
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ustring.h>
 #include "uarrsort.h"
 
 struct UResAEntry {

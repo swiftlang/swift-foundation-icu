@@ -22,8 +22,8 @@
 #ifndef __UPROPS_H__
 #define __UPROPS_H__
 
-#include "unicode/utypes.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uset.h>
 #include "uset_imp.h"
 #include "udataswp.h"
 

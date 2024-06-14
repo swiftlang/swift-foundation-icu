@@ -1,14 +1,14 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include <cstdlib>
 
-#include "unicode/simpleformatter.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/ures.h>
 #include "ureslocs.h"
 #include "charstr.h"
 #include "uresimp.h"

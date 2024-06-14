@@ -19,15 +19,15 @@
  ********************************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ures.h"
-#include "unicode/datefmt.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/dtptngen.h"
-#include "unicode/udisplaycontext.h"
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/dtptngen.h>
+#include <_foundation_unicode/udisplaycontext.h>
 #include "reldtfmt.h"
 #include "sharedobject.h"
 #include "unifiedcache.h"

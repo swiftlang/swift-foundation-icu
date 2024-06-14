@@ -16,7 +16,7 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "cmemory.h"
 
 U_NAMESPACE_BEGIN

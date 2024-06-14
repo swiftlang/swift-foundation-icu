@@ -19,17 +19,17 @@
  ******************************************************************************
  */
 
-#include "unicode/ustdio.h"
+#include <_foundation_unicode/ustdio.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/putil.h"
+#include <_foundation_unicode/putil.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "ufile.h"
 #include "ufmt_cmn.h"
-#include "unicode/ucnv.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ustring.h>
 
 #include <string.h>
 

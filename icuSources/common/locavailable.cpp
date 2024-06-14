@@ -19,11 +19,11 @@
 *   that then do not depend on resource bundle code and res_index bundles.
 */
 
-#include "unicode/errorcode.h"
-#include "unicode/utypes.h"
-#include "unicode/locid.h"
-#include "unicode/uloc.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/errorcode.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ures.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "ucln_cmn.h"

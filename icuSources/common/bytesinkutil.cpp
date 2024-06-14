@@ -4,12 +4,12 @@
 // bytesinkutil.cpp
 // created: 2017sep14 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/bytestream.h"
-#include "unicode/edits.h"
-#include "unicode/stringoptions.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestream.h>
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "bytesinkutil.h"
 #include "charstr.h"
 #include "cmemory.h"
@@ -80,7 +80,7 @@ ByteSinkUtil::appendCodePoint(int32_t length, UChar32 c, ByteSink &sink, Edits *
 
 namespace {
 
-// See unicode/utf8.h U8_APPEND_UNSAFE().
+// See _foundation_unicode/utf8.h U8_APPEND_UNSAFE().
 inline uint8_t getTwoByteLead(UChar32 c) { return (uint8_t)((c >> 6) | 0xc0); }
 inline uint8_t getTwoByteTrail(UChar32 c) { return (uint8_t)((c & 0x3f) | 0x80); }
 

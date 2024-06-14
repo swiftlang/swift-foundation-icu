@@ -7,20 +7,20 @@
  ************************************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/uchar.h"
-#include "unicode/uniset.h"
-#include "unicode/chariter.h"
-#include "unicode/ures.h"
-#include "unicode/udata.h"
-#include "unicode/putil.h"
-#include "unicode/ustring.h"
-#include "unicode/uscript.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/bytestrie.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/chariter.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/bytestrie.h>
 
 #include "brkeng.h"
 #include "cmemory.h"

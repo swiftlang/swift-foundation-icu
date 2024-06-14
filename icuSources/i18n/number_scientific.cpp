@@ -1,7 +1,7 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -9,7 +9,7 @@
 #include "number_scientific.h"
 #include "number_utils.h"
 #include "formatted_string_builder.h"
-#include "unicode/unum.h"
+#include <_foundation_unicode/unum.h>
 #include "number_microprops.h"
 
 using namespace icu;

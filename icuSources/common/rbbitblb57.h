@@ -17,8 +17,8 @@
 #ifndef RBBITBLB57_H
 #define RBBITBLB57_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 #include "uvectr32.h"
 #include "rbbitblb.h"
 #include "rbbi57.h"

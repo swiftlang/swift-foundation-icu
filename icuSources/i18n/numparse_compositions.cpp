@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
@@ -12,7 +12,7 @@
 #include "numparse_types.h"
 #include "numparse_compositions.h"
 #include "string_segment.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/uniset.h>
 
 using namespace icu;
 using namespace icu::numparse;

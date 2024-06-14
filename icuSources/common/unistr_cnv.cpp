@@ -18,16 +18,16 @@
 *   Character conversion functions moved here from unistr.cpp
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/putil.h"
+#include <_foundation_unicode/putil.h>
 #include "cstring.h"
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/unistr.h"
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ucnv.h>
 #include "ucnv_imp.h"
 #include "putilimp.h"
 #include "ustr_cnv.h"

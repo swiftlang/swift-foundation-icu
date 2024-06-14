@@ -16,18 +16,18 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/udatpg.h"
-#include "unicode/uenum.h"
-#include "unicode/strenum.h"
-#include "unicode/dtptngen.h"
+#include <_foundation_unicode/udatpg.h>
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/dtptngen.h>
 #if APPLE_ICU_CHANGES
 // rdar://
-#include "unicode/unistr.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uchar.h>
 #endif  // APPLE_ICU_CHANGES
 #include "ustrenum.h"
 #if APPLE_ICU_CHANGES

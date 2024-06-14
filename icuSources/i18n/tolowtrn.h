@@ -12,11 +12,11 @@
 #ifndef TOLOWTRN_H
 #define TOLOWTRN_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
+#include <_foundation_unicode/translit.h>
 #include "casetrn.h"
 
 U_NAMESPACE_BEGIN

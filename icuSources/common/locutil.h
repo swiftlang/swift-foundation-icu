@@ -11,7 +11,7 @@
 #ifndef LOCUTIL_H
 #define LOCUTIL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "hash.h"
 
 #if !UCONFIG_NO_SERVICE || !UCONFIG_NO_TRANSLITERATION

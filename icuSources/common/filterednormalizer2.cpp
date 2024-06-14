@@ -16,16 +16,16 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_NORMALIZATION
 
-#include "unicode/edits.h"
-#include "unicode/normalizer2.h"
-#include "unicode/stringoptions.h"
-#include "unicode/uniset.h"
-#include "unicode/unistr.h"
-#include "unicode/unorm.h"
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/unorm.h>
 #include "cpputils.h"
 
 U_NAMESPACE_BEGIN

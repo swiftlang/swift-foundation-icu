@@ -4,13 +4,13 @@
 // emojiprops.cpp
 // created: 2021sep04 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/uchar.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/ucptrie.h"
-#include "unicode/udata.h"
-#include "unicode/ustringtrie.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/ustringtrie.h>
+#include <_foundation_unicode/utf16.h>
 #include "emojiprops.h"
 #include "ucln.h"
 #include "ucln_cmn.h"

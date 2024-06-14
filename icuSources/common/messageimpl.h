@@ -17,11 +17,11 @@
 #ifndef __MESSAGEIMPL_H__
 #define __MESSAGEIMPL_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/messagepattern.h"
+#include <_foundation_unicode/messagepattern.h>
 
 U_NAMESPACE_BEGIN
 

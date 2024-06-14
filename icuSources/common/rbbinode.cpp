@@ -17,14 +17,14 @@
 //         Code using it is expected to directly access fields much of the time.
 //
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
-#include "unicode/uchar.h"
-#include "unicode/parsepos.h"
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/parsepos.h>
 
 #include "cstr.h"
 #include "uvector.h"

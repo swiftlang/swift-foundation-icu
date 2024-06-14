@@ -15,11 +15,11 @@
 *
 *   Unicode Spoof Detection
 */
-#include "unicode/utypes.h"
-#include "unicode/normalizer2.h"
-#include "unicode/uspoof.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/normalizer2.h>
+#include <_foundation_unicode/uspoof.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "mutex.h"

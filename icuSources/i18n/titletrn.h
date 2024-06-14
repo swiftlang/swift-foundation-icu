@@ -12,11 +12,11 @@
 #ifndef TITLETRN_H
 #define TITLETRN_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/translit.h"
+#include <_foundation_unicode/translit.h>
 #include "ucase.h"
 #include "casetrn.h"
 

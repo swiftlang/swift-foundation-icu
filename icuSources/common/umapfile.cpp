@@ -21,8 +21,8 @@
  * Must be before any other #includes. */
 #include "uposixdefs.h"
 
-#include "unicode/putil.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/ustring.h>
 #include "udatamem.h"
 #include "umapfile.h"
 
@@ -82,7 +82,7 @@ typedef HANDLE MemoryMap;
 #       include <dll.h>
 #       include "cstring.h"
 #       include "cmemory.h"
-#       include "unicode/udata.h"
+#       include "_foundation_unicode/udata.h"
 #       define LIB_PREFIX "lib"
 #       define LIB_SUFFIX ".dll"
         /* This is inconvenient until we figure out what to do with U_ICUDATA_NAME in utypes.h */

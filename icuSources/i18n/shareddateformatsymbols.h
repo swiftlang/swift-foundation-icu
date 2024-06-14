@@ -11,12 +11,12 @@
 #ifndef __SHARED_DATEFORMATSYMBOLS_H__
 #define __SHARED_DATEFORMATSYMBOLS_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "sharedobject.h"
-#include "unicode/dtfmtsym.h"
+#include <_foundation_unicode/dtfmtsym.h>
 #include "unifiedcache.h"
 
 U_NAMESPACE_BEGIN

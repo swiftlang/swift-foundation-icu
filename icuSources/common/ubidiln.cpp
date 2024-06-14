@@ -17,10 +17,10 @@
 */
 
 #include "cmemory.h"
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
-#include "unicode/ubidi.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ubidi.h>
 #include "ubidiimp.h"
 #include "uassert.h"
 

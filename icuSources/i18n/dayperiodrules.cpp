@@ -13,7 +13,7 @@
 
 #include "dayperiodrules.h"
 
-#include "unicode/ures.h"
+#include <_foundation_unicode/ures.h>
 #include "charstr.h"
 #include "cstring.h"
 #include "ucln_in.h"

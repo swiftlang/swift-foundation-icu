@@ -25,13 +25,13 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/simpletz.h"
-#include "unicode/gregocal.h"
-#include "unicode/smpdtfmt.h"
+#include <_foundation_unicode/simpletz.h>
+#include <_foundation_unicode/gregocal.h>
+#include <_foundation_unicode/smpdtfmt.h>
 
 #include "cmemory.h"
 #include "gregoimp.h"

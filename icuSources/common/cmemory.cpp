@@ -20,7 +20,7 @@
 *
 ******************************************************************************
 */
-#include "unicode/uclean.h"
+#include <_foundation_unicode/uclean.h>
 #include "cmemory.h"
 #include "putilimp.h"
 #include "uassert.h"

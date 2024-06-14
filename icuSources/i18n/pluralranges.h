@@ -4,13 +4,13 @@
 #ifndef __PLURALRANGES_H__
 #define __PLURALRANGES_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uobject.h"
-#include "unicode/locid.h"
-#include "unicode/plurrule.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/plurrule.h>
 #include "standardplural.h"
 #include "cmemory.h"
 

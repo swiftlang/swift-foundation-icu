@@ -1,7 +1,7 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMBER_MODIFIERS_H__
@@ -9,8 +9,8 @@
 
 #include <algorithm>
 #include <cstdint>
-#include "unicode/uniset.h"
-#include "unicode/simpleformatter.h"
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/simpleformatter.h>
 #include "standardplural.h"
 #include "formatted_string_builder.h"
 #include "number_types.h"

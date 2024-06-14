@@ -13,8 +13,8 @@
 #ifndef LOCBASED_H
 #define LOCBASED_H
 
-#include "unicode/locid.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/uobject.h>
 
 /**
  * Macro to declare a locale LocaleBased wrapper object for the given

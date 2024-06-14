@@ -7,17 +7,17 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/locdspnm.h"
-#include "unicode/simpleformatter.h"
-#include "unicode/ucasemap.h"
-#include "unicode/ures.h"
-#include "unicode/udisplaycontext.h"
-#include "unicode/brkiter.h"
-#include "unicode/ucurr.h"
+#include <_foundation_unicode/locdspnm.h>
+#include <_foundation_unicode/simpleformatter.h>
+#include <_foundation_unicode/ucasemap.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/udisplaycontext.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/ucurr.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "mutex.h"

@@ -12,16 +12,16 @@
  * \brief C API: VTimeZone classes
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "vzone.h"
-#include "unicode/vtzone.h"
+#include <_foundation_unicode/vtzone.h>
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/parsepos.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/parsepos.h>
 
 U_NAMESPACE_USE
 

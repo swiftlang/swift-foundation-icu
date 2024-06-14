@@ -1,7 +1,7 @@
 // © 2018 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 #ifndef __NUMPARSE_SCIENTIFIC_H__
@@ -10,7 +10,7 @@
 #include "numparse_types.h"
 #include "numparse_decimal.h"
 #include "numparse_symbols.h"
-#include "unicode/numberformatter.h"
+#include <_foundation_unicode/numberformatter.h>
 
 using icu::number::impl::Grouper;
 

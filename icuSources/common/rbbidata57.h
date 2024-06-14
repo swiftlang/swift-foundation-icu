@@ -37,15 +37,15 @@
 #ifndef __RBBIDATA57_H__
 #define __RBBIDATA57_H__
 
-#include "unicode/utypes.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/udata.h>
 #include "udataswp.h"
 #include "rbbidata.h"
 
 #ifdef __cplusplus
 
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
 #include "umutex.h"
 #include "utrie.h"
 

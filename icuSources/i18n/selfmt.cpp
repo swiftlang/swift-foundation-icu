@@ -18,14 +18,14 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/messagepattern.h"
-#include "unicode/rbnf.h"
-#include "unicode/selfmt.h"
-#include "unicode/uchar.h"
-#include "unicode/ucnv_err.h"
-#include "unicode/umsg.h"
-#include "unicode/ustring.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/messagepattern.h>
+#include <_foundation_unicode/rbnf.h>
+#include <_foundation_unicode/selfmt.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ucnv_err.h>
+#include <_foundation_unicode/umsg.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include "messageimpl.h"
 #include "patternprops.h"

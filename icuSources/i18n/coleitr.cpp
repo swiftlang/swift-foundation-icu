@@ -25,14 +25,14 @@
 * 2012-2014  markus      Rewritten in C++ again.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 
-#include "unicode/chariter.h"
-#include "unicode/coleitr.h"
-#include "unicode/tblcoll.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/chariter.h>
+#include <_foundation_unicode/coleitr.h>
+#include <_foundation_unicode/tblcoll.h>
+#include <_foundation_unicode/ustring.h>
 #include "cmemory.h"
 #include "collation.h"
 #include "collationdata.h"

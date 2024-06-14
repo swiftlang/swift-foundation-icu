@@ -11,14 +11,14 @@
 //  This file contains utility code for supporting UText in the regular expression engine.
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "unicode/regex.h"
+//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
 //
 
 #ifndef _REGEXTXT_H
 #define _REGEXTXT_H
 
-#include "unicode/utypes.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/utext.h>
 
 U_NAMESPACE_BEGIN
 

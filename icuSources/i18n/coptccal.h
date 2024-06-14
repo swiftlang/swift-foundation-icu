@@ -10,11 +10,11 @@
 #ifndef COPTCCAL_H
 #define COPTCCAL_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
+#include <_foundation_unicode/calendar.h>
 #include "cecal.h"
 
 U_NAMESPACE_BEGIN

@@ -10,19 +10,19 @@
  *******************************************************************************
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/utrans.h"
-#include "unicode/putil.h"
-#include "unicode/rep.h"
-#include "unicode/translit.h"
-#include "unicode/unifilt.h"
-#include "unicode/uniset.h"
-#include "unicode/ustring.h"
-#include "unicode/uenum.h"
-#include "unicode/uset.h"
+#include <_foundation_unicode/utrans.h>
+#include <_foundation_unicode/putil.h>
+#include <_foundation_unicode/rep.h>
+#include <_foundation_unicode/translit.h>
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uenum.h>
+#include <_foundation_unicode/uset.h>
 #include "uenumimp.h"
 #include "cpputils.h"
 #include "rbt.h"

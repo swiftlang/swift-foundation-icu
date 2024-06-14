@@ -19,11 +19,11 @@
 #ifndef __UCNVMBCS_H__
 #define __UCNVMBCS_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_CONVERSION
 
-#include "unicode/ucnv.h"
+#include <_foundation_unicode/ucnv.h>
 #include "ucnv_cnv.h"
 #include "ucnv_ext.h"
 

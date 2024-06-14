@@ -10,13 +10,13 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unifilt.h"
-#include "unicode/uchar.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/unifilt.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/utf16.h>
 #include "uni2name.h"
 #include "cstring.h"
 #include "cmemory.h"

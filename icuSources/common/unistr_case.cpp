@@ -18,16 +18,16 @@
 *   Case-mapping functions moved here from unistr.cpp
 */
 
-#include "unicode/utypes.h"
-#include "unicode/brkiter.h"
-#include "unicode/casemap.h"
-#include "unicode/edits.h"
-#include "unicode/putil.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/casemap.h>
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/putil.h>
 #include "cstring.h"
 #include "cmemory.h"
-#include "unicode/ustring.h"
-#include "unicode/unistr.h"
-#include "unicode/uchar.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uchar.h>
 #include "uassert.h"
 #include "ucasemap_imp.h"
 #include "uelement.h"

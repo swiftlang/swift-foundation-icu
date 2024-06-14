@@ -14,11 +14,11 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/appendable.h"
-#include "unicode/ucharstrie.h"
-#include "unicode/uobject.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/appendable.h>
+#include <_foundation_unicode/ucharstrie.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "uassert.h"
 

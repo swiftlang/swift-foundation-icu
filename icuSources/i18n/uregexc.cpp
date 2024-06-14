@@ -11,8 +11,8 @@
 *       dependency on codepage conversion, which reduces the overhead of 
 */
 
-#include "unicode/uregex.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/uregex.h>
+#include <_foundation_unicode/unistr.h>
 
 U_NAMESPACE_USE
 

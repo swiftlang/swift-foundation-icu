@@ -20,7 +20,7 @@
 #ifndef RBTOK_H
 #define RBTOK_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 /**
  * \file
@@ -29,8 +29,8 @@
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/urbtok.h"
-#include "unicode/parseerr.h"
+#include <_foundation_unicode/urbtok.h>
+#include <_foundation_unicode/parseerr.h>
 #include "rbbidata57.h"
 #include "rbbi57.h"
 

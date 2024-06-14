@@ -7,22 +7,22 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/ucurr.h"
-#include "unicode/locid.h"
-#include "unicode/ures.h"
-#include "unicode/ustring.h"
-#include "unicode/parsepos.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/ucurr.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/ures.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/uniset.h>
 #if APPLE_ICU_CHANGES
 // rdar://77347002 #222 (iOS: Sky: English/SA: Currency placement is incorrect in system and settings example.)
-#include "unicode/uscript.h"
+#include <_foundation_unicode/uscript.h>
 #endif // APPLE_ICU_CHANGES
-#include "unicode/usetiter.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/usetiter.h>
+#include <_foundation_unicode/utf16.h>
 #include "ustr_imp.h"
 #include "charstr.h"
 #include "cmemory.h"

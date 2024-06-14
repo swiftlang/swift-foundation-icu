@@ -10,7 +10,7 @@
 #ifndef RELDTFMT_H
 #define RELDTFMT_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 /**
  * \file
@@ -19,9 +19,9 @@
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/datefmt.h"
-#include "unicode/smpdtfmt.h"
-#include "unicode/brkiter.h"
+#include <_foundation_unicode/datefmt.h>
+#include <_foundation_unicode/smpdtfmt.h>
+#include <_foundation_unicode/brkiter.h>
 
 U_NAMESPACE_BEGIN
 

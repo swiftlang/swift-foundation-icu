@@ -17,13 +17,13 @@
 *   were moved here to break dependency cycles among parts of the common library.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "uassert.h"
-#include "unicode/brkiter.h"
-#include "unicode/casemap.h"
-#include "unicode/ucasemap.h"
-#include "unicode/uloc.h"
-#include "unicode/ustring.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/casemap.h>
+#include <_foundation_unicode/ucasemap.h>
+#include <_foundation_unicode/uloc.h>
+#include <_foundation_unicode/ustring.h>
 #include "ucase.h"
 #include "ucasemap_imp.h"
 

@@ -4,7 +4,7 @@
 // utrie_swap.cpp
 // created: 2018aug08 Markus W. Scherer
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "cmemory.h"
 #include "ucptrie_impl.h"
 #include "udataswp.h"

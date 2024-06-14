@@ -29,7 +29,7 @@
  *
  *    Remove a few compiler warnings.
  */
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "putilimp.h"
 
 /*                                                                    */

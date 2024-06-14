@@ -26,17 +26,17 @@
  * stores all encodings a codepoint can map to
  */
 
-#include "unicode/ucnvsel.h"
+#include <_foundation_unicode/ucnvsel.h>
 
 #if !UCONFIG_NO_CONVERSION
 
 #include <string.h>
 
-#include "unicode/uchar.h"
-#include "unicode/uniset.h"
-#include "unicode/ucnv.h"
-#include "unicode/ustring.h"
-#include "unicode/uchriter.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/ucnv.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchriter.h>
 #include "utrie2.h"
 #include "propsvec.h"
 #include "uassert.h"

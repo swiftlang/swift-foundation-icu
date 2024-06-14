@@ -12,12 +12,12 @@
 #ifndef QUANT_H
 #define QUANT_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/unifunct.h"
-#include "unicode/unimatch.h"
+#include <_foundation_unicode/unifunct.h>
+#include <_foundation_unicode/unimatch.h>
 
 U_NAMESPACE_BEGIN
 

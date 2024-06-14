@@ -9,13 +9,13 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION && !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/brkiter.h"
-#include "unicode/schriter.h"
-#include "unicode/search.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/search.h>
 #include "usrchimp.h"
 #include "cmemory.h"
 

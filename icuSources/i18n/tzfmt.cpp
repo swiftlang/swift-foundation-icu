@@ -7,18 +7,18 @@
 *******************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/calendar.h"
-#include "unicode/tzfmt.h"
-#include "unicode/numsys.h"
-#include "unicode/strenum.h"
-#include "unicode/uchar.h"
-#include "unicode/udat.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/calendar.h>
+#include <_foundation_unicode/tzfmt.h>
+#include <_foundation_unicode/numsys.h>
+#include <_foundation_unicode/strenum.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/udat.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
 #include "bytesinkutil.h"
 #include "charstr.h"
 #include "tzgnames.h"

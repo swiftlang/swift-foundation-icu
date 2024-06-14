@@ -13,11 +13,11 @@
 #ifndef OLSONTZ_H
 #define OLSONTZ_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/basictz.h"
+#include <_foundation_unicode/basictz.h>
 #include "umutex.h"
 
 struct UResourceBundle;

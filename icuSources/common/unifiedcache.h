@@ -15,10 +15,10 @@
 
 #include "utypeinfo.h"  // for 'typeid' to work
 
-#include "unicode/uobject.h"
-#include "unicode/locid.h"
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/locid.h>
 #include "sharedobject.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 #include "cstring.h"
 #include "ustr_imp.h"
 

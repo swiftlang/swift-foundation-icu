@@ -14,11 +14,11 @@
  * \brief C API: Time zone transition classes
  */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 
 /**
  * A TimeZoneTransition.  Use the ztrans_* API to manipulate.  Create with

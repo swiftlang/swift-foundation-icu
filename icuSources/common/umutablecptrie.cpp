@@ -9,11 +9,11 @@
 #   include <stdio.h>
 #endif
 
-#include "unicode/utypes.h"
-#include "unicode/ucptrie.h"
-#include "unicode/umutablecptrie.h"
-#include "unicode/uobject.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ucptrie.h>
+#include <_foundation_unicode/umutablecptrie.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "uassert.h"
 #include "ucptrie_impl.h"

@@ -14,10 +14,10 @@
 #ifndef DAYPERIODRULES_H
 #define DAYPERIODRULES_H
 
-#include "unicode/locid.h"
-#include "unicode/unistr.h"
-#include "unicode/uobject.h"
-#include "unicode/utypes.h"
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utypes.h>
 #include "resource.h"
 #include "uhash.h"
 

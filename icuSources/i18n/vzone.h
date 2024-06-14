@@ -17,11 +17,11 @@
 #ifndef __VZONE_H
 #define __VZONE_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "ztrans.h"
 
 struct VZone;

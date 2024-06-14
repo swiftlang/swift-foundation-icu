@@ -20,16 +20,16 @@
 *   to the Unicode Character Database (uprops.dat).
 */
 
-#include "unicode/utypes.h"
-#include "unicode/brkiter.h"
-#include "unicode/casemap.h"
-#include "unicode/edits.h"
-#include "unicode/stringoptions.h"
-#include "unicode/ustring.h"
-#include "unicode/ucasemap.h"
-#include "unicode/ubrk.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/casemap.h>
+#include <_foundation_unicode/edits.h>
+#include <_foundation_unicode/stringoptions.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/ucasemap.h>
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "ucase.h"
 #include "ucasemap_imp.h"

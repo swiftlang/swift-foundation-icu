@@ -10,12 +10,12 @@
 **********************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/rep.h"
-#include "unicode/uniset.h"
+#include <_foundation_unicode/rep.h>
+#include <_foundation_unicode/uniset.h>
 #include "rbt_pars.h"
 #include "rbt_data.h"
 #include "rbt_rule.h"

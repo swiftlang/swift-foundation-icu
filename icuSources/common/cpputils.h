@@ -16,8 +16,8 @@
 #ifndef CPPUTILS_H
 #define CPPUTILS_H
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
 #include "cmemory.h"
 
 /*==========================================================================*/

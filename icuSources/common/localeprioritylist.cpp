@@ -4,11 +4,11 @@
 // localeprioritylist.cpp
 // created: 2019jul11 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/localpointer.h"
-#include "unicode/locid.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uobject.h>
 #include "charstr.h"
 #include "cmemory.h"
 #include "localeprioritylist.h"

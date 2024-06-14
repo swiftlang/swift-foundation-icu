@@ -4,22 +4,22 @@
 *****************************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include <stdlib.h>
-#include "unicode/uameasureformat.h"
-#include "unicode/fieldpos.h"
-#include "unicode/localpointer.h"
-#include "unicode/numfmt.h"
-#include "unicode/measunit.h"
-#include "unicode/measure.h"
-#include "unicode/measfmt.h"
-#include "unicode/unistr.h"
-#include "unicode/unum.h"
-#include "unicode/umisc.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/uameasureformat.h>
+#include <_foundation_unicode/fieldpos.h>
+#include <_foundation_unicode/localpointer.h>
+#include <_foundation_unicode/numfmt.h>
+#include <_foundation_unicode/measunit.h>
+#include <_foundation_unicode/measure.h>
+#include <_foundation_unicode/measfmt.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/unum.h>
+#include <_foundation_unicode/umisc.h>
+#include <_foundation_unicode/ures.h>
 #include "uresimp.h"
 #include "ustr_imp.h"
 #include "cstring.h"

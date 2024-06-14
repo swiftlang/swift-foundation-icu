@@ -15,7 +15,7 @@
 ******************************************************************************
 */
 
-#include "unicode/uscript.h"
+#include <_foundation_unicode/uscript.h>
 #include "usc_impl.h"
 #include "cmemory.h"
 

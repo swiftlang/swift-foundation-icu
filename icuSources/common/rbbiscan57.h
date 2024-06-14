@@ -18,13 +18,13 @@
 #ifndef RBBISCAN57_H
 #define RBBISCAN57_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/uniset.h"
-#include "unicode/parseerr.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/parseerr.h>
 #include "uhash.h"
 #include "uvector.h"
-#include "unicode/symtable.h"// For UnicodeSet parsing, is the interface that
+#include <_foundation_unicode/symtable.h>// For UnicodeSet parsing, is the interface that
                           //    looks up references to $variables within a set.
 #include "rbbi57.h"
 #include "rbbinode.h"

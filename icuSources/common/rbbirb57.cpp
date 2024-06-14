@@ -10,18 +10,18 @@
 //  urbtok57 interfaces for access via RBT, and better tests
 //*********************************************************************
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/brkiter.h"
-#include "unicode/ubrk.h"
-#include "unicode/unistr.h"
-#include "unicode/uniset.h"
-#include "unicode/uchar.h"
-#include "unicode/uchriter.h"
-#include "unicode/parsepos.h"
-#include "unicode/parseerr.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/ubrk.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uniset.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uchriter.h>
+#include <_foundation_unicode/parsepos.h>
+#include <_foundation_unicode/parseerr.h>
 #include "cmemory.h"
 #include "cstring.h"
 

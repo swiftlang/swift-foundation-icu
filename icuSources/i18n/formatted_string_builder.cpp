@@ -1,15 +1,15 @@
 // © 2017 and later: Unicode, Inc. and others.
 // License & terms of use: http://www.unicode.org/copyright.html
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
 #include "formatted_string_builder.h"
 #include "putilimp.h"
-#include "unicode/ustring.h"
-#include "unicode/utf16.h"
-#include "unicode/unum.h" // for UNumberFormatFields literals
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf16.h>
+#include <_foundation_unicode/unum.h> // for UNumberFormatFields literals
 
 namespace {
 

@@ -21,7 +21,7 @@
 #ifndef __UCOL_SWP_H__
 #define __UCOL_SWP_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_COLLATION
 

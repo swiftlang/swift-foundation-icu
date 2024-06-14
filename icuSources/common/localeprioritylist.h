@@ -7,10 +7,10 @@
 #ifndef __LOCALEPRIORITYLIST_H__
 #define __LOCALEPRIORITYLIST_H__
 
-#include "unicode/utypes.h"
-#include "unicode/locid.h"
-#include "unicode/stringpiece.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/stringpiece.h>
+#include <_foundation_unicode/uobject.h>
 
 struct UHashtable;
 

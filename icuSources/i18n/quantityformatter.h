@@ -11,8 +11,8 @@
 #ifndef __QUANTITY_FORMATTER_H__
 #define __QUANTITY_FORMATTER_H__
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 
 #if !UCONFIG_NO_FORMATTING
 

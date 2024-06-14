@@ -10,12 +10,12 @@
 ***************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/regex.h"
-#include "unicode/uclean.h"
+#include <_foundation_unicode/regex.h>
+#include <_foundation_unicode/uclean.h>
 #include "cmemory.h"
 #include "cstr.h"
 #include "uassert.h"

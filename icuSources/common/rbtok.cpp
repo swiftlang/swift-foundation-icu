@@ -7,12 +7,12 @@
 ***************************************************************************
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/ustring.h"
-#include "unicode/utext.h"
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utext.h>
 #include "rbbidata57.h"
 #include "rbbi57.h"
 #include "rbtok.h"

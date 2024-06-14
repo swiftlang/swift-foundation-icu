@@ -19,7 +19,7 @@
 #ifndef __UCLN_IO_H__
 #define __UCLN_IO_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #include "ucln.h"
 
 /*

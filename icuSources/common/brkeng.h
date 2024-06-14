@@ -10,10 +10,10 @@
 #ifndef BRKENG_H
 #define BRKENG_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/utext.h"
-#include "unicode/uscript.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utext.h>
+#include <_foundation_unicode/uscript.h>
 
 U_NAMESPACE_BEGIN
 

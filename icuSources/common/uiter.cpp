@@ -16,14 +16,14 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
-#include "unicode/ustring.h"
-#include "unicode/chariter.h"
-#include "unicode/rep.h"
-#include "unicode/uiter.h"
-#include "unicode/utf.h"
-#include "unicode/utf8.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/chariter.h>
+#include <_foundation_unicode/rep.h>
+#include <_foundation_unicode/uiter.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf8.h>
+#include <_foundation_unicode/utf16.h>
 #include "cstring.h"
 
 U_NAMESPACE_USE

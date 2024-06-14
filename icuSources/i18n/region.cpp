@@ -20,11 +20,11 @@
  * \brief C++ API: Region classes (territory containment)
  */
 
-#include "unicode/region.h"
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
-#include "unicode/unistr.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/region.h>
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ures.h>
 #include "ucln_in.h"
 #include "cstring.h"
 #include "mutex.h"

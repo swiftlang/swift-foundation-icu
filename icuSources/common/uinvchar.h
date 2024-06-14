@@ -22,9 +22,9 @@
 #ifndef __UINVCHAR_H__
 #define __UINVCHAR_H__
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 #ifdef __cplusplus
-#include "unicode/unistr.h"
+#include <_foundation_unicode/unistr.h>
 #endif
 
 /**

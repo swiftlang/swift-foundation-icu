@@ -4,12 +4,12 @@
 // locdistance.cpp
 // created: 2019may08 Markus W. Scherer
 
-#include "unicode/utypes.h"
-#include "unicode/bytestrie.h"
-#include "unicode/localematcher.h"
-#include "unicode/locid.h"
-#include "unicode/uobject.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/bytestrie.h>
+#include <_foundation_unicode/localematcher.h>
+#include <_foundation_unicode/locid.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/ures.h>
 #include "cstring.h"
 #include "locdistance.h"
 #include "loclikelysubtags.h"

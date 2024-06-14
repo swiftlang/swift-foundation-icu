@@ -21,10 +21,10 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/uchar.h"
-#include "unicode/uscript.h"
-#include "unicode/udata.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uscript.h>
+#include <_foundation_unicode/udata.h>
 #include "uassert.h"
 #include "cmemory.h"
 #include "ucln_cmn.h"

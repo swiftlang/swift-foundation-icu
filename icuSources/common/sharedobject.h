@@ -12,7 +12,7 @@
 #define __SHAREDOBJECT_H__
 
 
-#include "unicode/uobject.h"
+#include <_foundation_unicode/uobject.h>
 #include "umutex.h"
 
 U_NAMESPACE_BEGIN

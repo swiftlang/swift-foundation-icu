@@ -14,13 +14,13 @@
 *   created by: Markus W. Scherer
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_FORMATTING
 
-#include "unicode/messagepattern.h"
-#include "unicode/unistr.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/messagepattern.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "cstring.h"
 #include "messageimpl.h"

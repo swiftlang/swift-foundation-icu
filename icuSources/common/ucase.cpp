@@ -19,10 +19,10 @@
 *   Much code moved here (and modified) from uchar.c.
 */
 
-#include "unicode/utypes.h"
-#include "unicode/unistr.h"
-#include "unicode/uset.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/uset.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "uassert.h"
 #include "ucase.h"

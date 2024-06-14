@@ -18,14 +18,14 @@
 *   Implementation class for lower-/upper-/title-casing transliterators.
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_TRANSLITERATION
 
-#include "unicode/uchar.h"
-#include "unicode/ustring.h"
-#include "unicode/utf.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/utf.h>
+#include <_foundation_unicode/utf16.h>
 #include "tolowtrn.h"
 #include "ucase.h"
 #include "cpputils.h"

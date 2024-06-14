@@ -7,9 +7,9 @@
 #ifndef __UCPTRIE_IMPL_H__
 #define __UCPTRIE_IMPL_H__
 
-#include "unicode/ucptrie.h"
+#include <_foundation_unicode/ucptrie.h>
 #ifdef UCPTRIE_DEBUG
-#include "unicode/umutablecptrie.h"
+#include <_foundation_unicode/umutablecptrie.h>
 #endif
 
 // UCPTrie signature values, in platform endianness and opposite endianness.

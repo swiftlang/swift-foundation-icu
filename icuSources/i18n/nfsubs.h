@@ -18,14 +18,14 @@
 #ifndef NFSUBS_H
 #define NFSUBS_H
 
-#include "unicode/utypes.h"
-#include "unicode/uobject.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/uobject.h>
 #include "nfrule.h"
 
 #if U_HAVE_RBNF
 
-#include "unicode/utypes.h"
-#include "unicode/decimfmt.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/decimfmt.h>
 #include "nfrs.h"
 #include <float.h>
 

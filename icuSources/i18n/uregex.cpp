@@ -8,17 +8,17 @@
 *   file name:  uregex.cpp
 */
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 #if !UCONFIG_NO_REGULAR_EXPRESSIONS
 
-#include "unicode/regex.h"
-#include "unicode/uregex.h"
-#include "unicode/unistr.h"
-#include "unicode/ustring.h"
-#include "unicode/uchar.h"
-#include "unicode/uobject.h"
-#include "unicode/utf16.h"
+#include <_foundation_unicode/regex.h>
+#include <_foundation_unicode/uregex.h>
+#include <_foundation_unicode/unistr.h>
+#include <_foundation_unicode/ustring.h>
+#include <_foundation_unicode/uchar.h>
+#include <_foundation_unicode/uobject.h>
+#include <_foundation_unicode/utf16.h>
 #include "cmemory.h"
 #include "uassert.h"
 #include "uhash.h"

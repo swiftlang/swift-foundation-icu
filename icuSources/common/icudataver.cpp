@@ -9,9 +9,9 @@
 ******************************************************************************
 */
 
-#include "unicode/utypes.h"
-#include "unicode/icudataver.h"
-#include "unicode/ures.h"
+#include <_foundation_unicode/utypes.h>
+#include <_foundation_unicode/icudataver.h>
+#include <_foundation_unicode/ures.h>
 #include "uresimp.h" /* for ures_getVersionByKey */
 
 U_CAPI void U_EXPORT2 u_getDataVersion(UVersionInfo dataVersionFillin, UErrorCode *status) {

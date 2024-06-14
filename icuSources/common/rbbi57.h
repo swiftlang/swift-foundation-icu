@@ -17,7 +17,7 @@
 #ifndef RBBI57_H
 #define RBBI57_H
 
-#include "unicode/utypes.h"
+#include <_foundation_unicode/utypes.h>
 
 /**
  * \file
@@ -26,11 +26,11 @@
 
 #if !UCONFIG_NO_BREAK_ITERATION
 
-#include "unicode/brkiter.h"
-#include "unicode/udata.h"
-#include "unicode/parseerr.h"
-#include "unicode/schriter.h"
-#include "unicode/uchriter.h"
+#include <_foundation_unicode/brkiter.h>
+#include <_foundation_unicode/udata.h>
+#include <_foundation_unicode/parseerr.h>
+#include <_foundation_unicode/schriter.h>
+#include <_foundation_unicode/uchriter.h>
 #include "rbbidata57.h"
 #include "rbbirb57.h"
 
