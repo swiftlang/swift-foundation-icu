@@ -30,6 +30,12 @@ endif()
 set_target_properties(_FoundationICU PROPERTIES
     INSTALL_RPATH "$ORIGIN")
 
+# Copy Headers to known directory for direct client (XCTest) test builds
+file(COPY
+        include/
+    DESTINATION
+        ${CMAKE_BINARY_DIR}/_CModulesForClients)
+
 # Install binary
 install(TARGETS _FoundationICU
     ARCHIVE DESTINATION lib/${install_directory}/${SWIFT_SYSTEM_NAME}
