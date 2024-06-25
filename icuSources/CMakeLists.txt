@@ -22,7 +22,6 @@ add_subdirectory(common)
 add_subdirectory(i18n)
 add_subdirectory(io)
 
-target_link_libraries(_FoundationICU PRIVATE stdc++)
 target_compile_definitions(_FoundationICU PRIVATE U_I18N_IMPLEMENTATION U_IO_IMPLEMENTATION)
 if(CMAKE_SYSTEM_NAME STREQUAL Linux)
     target_compile_definitions(_FoundationICU PRIVATE SWIFT_PACKAGE=1)
