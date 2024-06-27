@@ -5,7 +5,6 @@ import PackageDescription
 
 var buildSettings: [CXXSetting] = [
     .define("DEBUG", to: "1", .when(configuration: .debug)),
-    .define("U_ATTRIBUTE_DEPRECATED", to: ""),
     .define("U_SHOW_CPLUSPLUS_API", to: "1"),
     .define("U_SHOW_INTERNAL_API", to: "1"),
     .define("U_STATIC_IMPLEMENTATION"),
@@ -34,7 +33,10 @@ var buildSettings: [CXXSetting] = [
     .define("U_HAVE_XLOCALE_H", to: "1"),
     .define("U_HAVE_STRING_VIEW", to: "1"),
     .define("U_DISABLE_RENAMING", to: "1"),
+    .define("U_COMBINED_IMPLEMENTATION"),
     .define("U_COMMON_IMPLEMENTATION"),
+    .define("U_I18N_IMPLEMENTATION"),
+    .define("U_IO_IMPLEMENTATION"),
     // Where data are stored
     .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
     .define("USE_PACKAGE_DATA", to: "1"),
@@ -43,10 +45,7 @@ var buildSettings: [CXXSetting] = [
     .headerSearchPath("common"),
     .headerSearchPath("io"),
     .headerSearchPath("i18n"),
-    .headerSearchPath("include"),
-    .define("U_I18N_IMPLEMENTATION"),
     .define("SWIFT_PACKAGE", to: "1", .when(platforms: [.linux])),
-    .define("U_IO_IMPLEMENTATION"),
 ]
 
 #if os(Windows)
