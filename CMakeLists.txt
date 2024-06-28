@@ -17,6 +17,8 @@ cmake_minimum_required(VERSION 3.24)
 project(SwiftFoundationICU
     LANGUAGES CXX Swift)
 
+option(BUILD_SHARED_LIBS "build shared libraries" ON)
+
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -30,6 +32,7 @@ set(CMAKE_Swift_MODULE_DIRECTORY ${CMAKE_BINARY_DIR}/swift)
 
 # Build flags
 add_compile_definitions(
+    $<$<COMPILE_LANGUAGE:C,CXX>:U_ATTRIBUTE_DEPRECATED=>
     $<$<COMPILE_LANGUAGE:C,CXX>:U_SHOW_CPLUSPLUS_API=1>
     $<$<COMPILE_LANGUAGE:C,CXX>:U_SHOW_INTERNAL_API=1>
     $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE_PACKAGE="icutz44l">
