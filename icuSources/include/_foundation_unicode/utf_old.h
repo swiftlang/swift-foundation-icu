@@ -294,7 +294,7 @@ typedef int32_t UTextOffset;
 // No forward declaration if compiling utf_impl.cpp, which defines utf8_countTrailBytes.
 #elif APPLE_ICU_CHANGES
 // rdar://86727185 Please adopt InstallAPI & enable Deadstripping...
-U_CAPI const uint8_t U_EXPORT2 utf8_countTrailBytes[];
+U_CAPI const uint8_t U_EXPORT utf8_countTrailBytes[];
 #elif defined(U_STATIC_IMPLEMENTATION) || defined(U_COMMON_IMPLEMENTATION)
 U_CAPI const uint8_t utf8_countTrailBytes[];
 #else
