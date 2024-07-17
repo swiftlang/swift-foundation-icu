@@ -5,6 +5,7 @@ import PackageDescription
 
 var buildSettings: [CXXSetting] = [
     .define("DEBUG", to: "1", .when(configuration: .debug)),
+    .define("U_ATTRIBUTE_DEPRECATED", to: ""),
     .define("U_SHOW_CPLUSPLUS_API", to: "1"),
     .define("U_SHOW_INTERNAL_API", to: "1"),
     .define("U_STATIC_IMPLEMENTATION"),
