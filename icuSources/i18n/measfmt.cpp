@@ -1064,7 +1064,7 @@ UnicodeString &MeasureFormat::formatNumeric(
     }
     number::LocalizedNumberFormatter numberFormatter2;
     if (auto* lnf = numberFormatter->toNumberFormatter(status)) {
-        numberFormatter2 = lnf->integerWidth(number::IntegerWidth::zeroFillTo(2));
+        numberFormatter2 = lnf->_integerWidth(number::IntegerWidth::zeroFillTo(2));
     } else {
         return appendTo;
     }

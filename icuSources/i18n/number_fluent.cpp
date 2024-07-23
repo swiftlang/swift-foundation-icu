@@ -177,14 +177,14 @@ Derived NumberFormatterSettings<Derived>::grouping(UNumberGroupingStrategy strat
 }
 
 template<typename Derived>
-Derived NumberFormatterSettings<Derived>::integerWidth(const IntegerWidth& style) const& {
+Derived NumberFormatterSettings<Derived>::_integerWidth(const IntegerWidth& style) const& {
     Derived copy(*this);
     copy.fMacros.integerWidth = style;
     return copy;
 }
 
 template<typename Derived>
-Derived NumberFormatterSettings<Derived>::integerWidth(const IntegerWidth& style)&& {
+Derived NumberFormatterSettings<Derived>::_integerWidth(const IntegerWidth& style)&& {
     Derived move(std::move(*this));
     move.fMacros.integerWidth = style;
     return move;
@@ -362,14 +362,14 @@ Derived NumberFormatterSettings<Derived>::threshold(int32_t threshold)&& {
 // rdar://107351099 SimpleDateFormat perf
 
 template<typename Derived>
-Derived NumberFormatterSettings<Derived>::forDateFormat(bool forDateFormat) const& {
+Derived NumberFormatterSettings<Derived>::_forDateFormat(bool forDateFormat) const& {
     Derived copy(*this);
     copy.fMacros.forDateFormat = forDateFormat;
     return copy;
 }
 
 template<typename Derived>
-Derived NumberFormatterSettings<Derived>::forDateFormat(bool forDateFormat)&& {
+Derived NumberFormatterSettings<Derived>::_forDateFormat(bool forDateFormat)&& {
     Derived move(std::move(*this));
     move.fMacros.forDateFormat = forDateFormat;
     return move;
@@ -408,12 +408,12 @@ Derived NumberFormatterSettings<Derived>::macros(impl::MacroProps&& macros)&& {
 // Note: toSkeleton defined in number_skeletons.cpp
 
 template<typename Derived>
-LocalPointer<Derived> NumberFormatterSettings<Derived>::clone() const & {
+LocalPointer<Derived> NumberFormatterSettings<Derived>::_clone() const & {
     return LocalPointer<Derived>(new Derived(*this));
 }
 
 template<typename Derived>
-LocalPointer<Derived> NumberFormatterSettings<Derived>::clone() && {
+LocalPointer<Derived> NumberFormatterSettings<Derived>::_clone() && {
     return LocalPointer<Derived>(new Derived(std::move(*this)));
 }
 

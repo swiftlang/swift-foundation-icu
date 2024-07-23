@@ -1992,7 +1992,7 @@ class U_I18N_API NumberFormatterSettings {
      * @see IntegerWidth
      * @stable ICU 60
      */
-    Derived integerWidth(const IntegerWidth &style) const &;
+    Derived _integerWidth(const IntegerWidth &style) const &;
 
     /**
      * Overload of integerWidth() for use on an rvalue reference.
@@ -2003,7 +2003,7 @@ class U_I18N_API NumberFormatterSettings {
      * @see #integerWidth
      * @stable ICU 62
      */
-    Derived integerWidth(const IntegerWidth &style) &&;
+    Derived _integerWidth(const IntegerWidth &style) &&;
 
     /**
      * Specifies the symbols (decimal separator, grouping separator, percent sign, numerals, etc.) to use when rendering
@@ -2386,10 +2386,10 @@ class U_I18N_API NumberFormatterSettings {
      *
      * @internal: This API is ICU internal only.
      */
-    Derived forDateFormat(bool forDateFormat) const &;
+    Derived _forDateFormat(bool forDateFormat) const &;
 
     /** @internal */
-    Derived forDateFormat(bool forDateFormat) &&;
+    Derived _forDateFormat(bool forDateFormat) &&;
 
 #endif  // APPLE_ICU_CHANGES
 
@@ -2441,7 +2441,7 @@ class U_I18N_API NumberFormatterSettings {
      *         nullptr on failure.
      * @stable ICU 64
      */
-    LocalPointer<Derived> clone() const &;
+    LocalPointer<Derived> _clone() const &;
 
     /**
      * Overload of clone for use on an rvalue reference.
@@ -2450,7 +2450,7 @@ class U_I18N_API NumberFormatterSettings {
      *         nullptr on failure.
      * @stable ICU 64
      */
-    LocalPointer<Derived> clone() &&;
+    LocalPointer<Derived> _clone() &&;
 
     /**
      * Sets the UErrorCode if an error occurred in the fluent chain.

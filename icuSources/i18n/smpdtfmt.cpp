@@ -1738,13 +1738,13 @@ createFastFormatter(const DecimalFormat* df, int32_t minInt, int32_t maxInt, UEr
     }
 #if APPLE_ICU_CHANGES
 // rdar://107351099 SimpleDateFormat perf+
-   return lnfBase->integerWidth(
+   return lnfBase->_integerWidth(
         number::IntegerWidth::zeroFillTo(minInt).truncateAt(maxInt)
-    ).forDateFormat(true).clone().orphan();
+    )._forDateFormat(true)._clone().orphan();
 #else
-    return lnfBase->integerWidth(
+    return lnfBase->_integerWidth(
         number::IntegerWidth::zeroFillTo(minInt).truncateAt(maxInt)
-    ).clone().orphan();
+    )._clone().orphan();
 #endif  // APPLE_ICU_CHANGES
 }
 
