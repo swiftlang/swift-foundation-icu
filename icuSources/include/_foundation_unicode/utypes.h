@@ -354,13 +354,31 @@ typedef double UDate;
 #endif
 
 #if defined(U_COMBINED_IMPLEMENTATION)
-#define U_DATA_API     U_EXPORT
-#define U_COMMON_API   U_EXPORT
-#define U_I18N_API     U_EXPORT
-#define U_LAYOUT_API   U_EXPORT
-#define U_LAYOUTEX_API U_EXPORT
-#define U_IO_API       U_EXPORT
-#define U_TOOLUTIL_API U_EXPORT
+// SwiftFoundationICU Changes: hide all C++ public symbols
+// Rationale: When FoundationInternationalization tests are executed,
+// we effectively load two ICU instances into memory:
+//
+// 1) The system ICU loaded by XCTest via system Foundation;
+// 2) The package ICU SwiftFoundation utilizes.
+//
+// These two ICUs cause symbol collisions for dyld due to the fact that
+// all public C++ symbols share a global namespace and coalesce across all loaded dylibs.
+// Consequently, we encounter sporadic test failures in SwiftFoundation as dyld
+// arbitrarily selects ICU symbols and occasionally chooses the system one.
+//
+// To address this issue, we resolved to hide all C++ APIs,
+// ensuring they are not weakly referenced and potentially bound to
+// the system ICU implementation.
+//
+// This solution proves effective for SwiftFoundation,
+// as it does not actually utilize the C++ APIs.
+#define U_DATA_API     __attribute__((visibility("hidden")))
+#define U_COMMON_API   __attribute__((visibility("hidden")))
+#define U_I18N_API     __attribute__((visibility("hidden")))
+#define U_LAYOUT_API   __attribute__((visibility("hidden")))
+#define U_LAYOUTEX_API __attribute__((visibility("hidden")))
+#define U_IO_API       __attribute__((visibility("hidden")))
+#define U_TOOLUTIL_API __attribute__((visibility("hidden")))
 #elif defined(U_STATIC_IMPLEMENTATION)
 #define U_DATA_API
 #define U_COMMON_API
