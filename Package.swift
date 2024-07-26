@@ -38,6 +38,10 @@ var buildSettings: [CXXSetting] = [
     .define("U_COMMON_IMPLEMENTATION"),
     .define("U_I18N_IMPLEMENTATION"),
     .define("U_IO_IMPLEMENTATION"),
+    .define("HAVE_DLFCN_H", to: "0", .when(platforms: [.wasi])),
+    .define("HAVE_DLOPEN", to: "0", .when(platforms: [.wasi])),
+    .define("U_ENABLE_DYLOAD", to: "0", .when(platforms: [.wasi])),
+
     // Where data are stored
     .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
     .define("USE_PACKAGE_DATA", to: "1"),
