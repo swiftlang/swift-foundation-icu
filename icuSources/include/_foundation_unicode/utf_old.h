@@ -149,7 +149,7 @@
 /**
  * \def U_HIDE_OBSOLETE_UTF_OLD_H
  *
- * Hides the obsolete definitions in _foundation_unicode/utf_old.h.
+ * Hides the obsolete definitions in unicode/utf_old.h.
  * Recommended to be set to 1 at compile time to make sure
  * the long-deprecated macros are no longer used.
  *
@@ -292,9 +292,9 @@ typedef int32_t UTextOffset;
 */
 #ifdef U_UTF8_IMPL
 // No forward declaration if compiling utf_impl.cpp, which defines utf8_countTrailBytes.
-#elif APPLE_ICU_CHANGES
+#elif APPLE_ICU_CHANGES && U_PLATFORM_IS_DARWIN_BASED
 // rdar://86727185 Please adopt InstallAPI & enable Deadstripping...
-U_CAPI const uint8_t U_EXPORT utf8_countTrailBytes[];
+U_CAPI const uint8_t U_EXPORT2 utf8_countTrailBytes[];
 #elif defined(U_STATIC_IMPLEMENTATION) || defined(U_COMMON_IMPLEMENTATION)
 U_CAPI const uint8_t utf8_countTrailBytes[];
 #else
@@ -786,7 +786,7 @@ U_CFUNC U_IMPORT const uint8_t utf8_countTrailBytes[];
 *   This file defines macros to deal with UTF-32 code units and code points.
 *   Signatures and semantics are the same as for the similarly named macros
 *   in utf16.h.
-*   utf32.h is included by utf.h after _foundation_unicode/umachine.h</p>
+*   utf32.h is included by utf.h after unicode/umachine.h</p>
 *   and some common definitions.
 *   <p><b>Usage:</b>  ICU coding guidelines for if() statements should be followed when using these macros.
 *                  Compound statements (curly braces {}) must be used  for if-else-while...

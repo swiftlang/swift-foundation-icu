@@ -48,7 +48,7 @@
 #endif // APPLE_ICU_CHANGES
 
 #if !U_NO_DEFAULT_INCLUDE_UTF_HEADERS
-#   include "_foundation_unicode/utf.h"
+#   include <_foundation_unicode/utf.h>
 #endif
 
 /*!
@@ -472,7 +472,7 @@ typedef double UDate;
  *         // An error occurred. Handle it here.
  *     }
  *
- * C++ code should use icu::ErrorCode, available in _foundation_unicode/errorcode.h, or a
+ * C++ code should use icu::ErrorCode, available in unicode/errorcode.h, or a
  * suitable subclass.
  *
  * For more information, see:

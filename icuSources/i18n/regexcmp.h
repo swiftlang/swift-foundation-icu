@@ -9,7 +9,7 @@
 //  This file contains declarations for the class RegexCompile
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
+//  For the public Regular Expression API, see the file <_foundation_unicode/regex.h>
 //
 
 

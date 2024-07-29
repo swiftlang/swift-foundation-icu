@@ -13,7 +13,6 @@
 ##===----------------------------------------------------------------------===##
 
 target_include_directories(_FoundationICU PRIVATE .)
-
 target_sources(_FoundationICU
     PRIVATE
         aaplbfct.cpp
@@ -31,7 +30,6 @@ target_sources(_FoundationICU
         chariter.cpp
         charstr.cpp
         cmemory.cpp
-        cpputils.h
         cstr.cpp
         cstring.cpp
         cwchar.cpp
@@ -43,9 +41,9 @@ target_sources(_FoundationICU
         errorcode.cpp
         filteredbrk.cpp
         filterednormalizer2.cpp
+        icu_packaged_data.cpp
         icudataver.cpp
         icuplug.cpp
-        icu_packaged_data.cpp
         loadednormalizer2impl.cpp
         localebuilder.cpp
         localematcher.cpp
@@ -65,6 +63,7 @@ target_sources(_FoundationICU
         lsr.cpp
         lstmbe.cpp
         messagepattern.cpp
+        mlbe.cpp
         normalizer2.cpp
         normalizer2impl.cpp
         normlzr.cpp
@@ -169,6 +168,8 @@ target_sources(_FoundationICU
         uloc.cpp
         uloc_keytype.cpp
         uloc_tag.cpp
+        ulocale.cpp
+        ulocbuilder.cpp
         ulocdata.cpp
         umapfile.cpp
         umath.cpp
