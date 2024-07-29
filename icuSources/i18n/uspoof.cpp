@@ -781,13 +781,13 @@ uspoof_getRecommendedSet(UErrorCode *status) {
     return gRecommendedSet->toUSet();
 }
 
-U_I18N_API const UnicodeSet * U_EXPORT2
+U_CAPI const UnicodeSet * U_EXPORT2
 uspoof_getInclusionUnicodeSet(UErrorCode *status) {
     umtx_initOnce(gSpoofInitStaticsOnce, &initializeStatics, *status);
     return gInclusionSet;
 }
 
-U_I18N_API const UnicodeSet * U_EXPORT2
+U_CAPI const UnicodeSet * U_EXPORT2
 uspoof_getRecommendedUnicodeSet(UErrorCode *status) {
     umtx_initOnce(gSpoofInitStaticsOnce, &initializeStatics, *status);
     return gRecommendedSet;
