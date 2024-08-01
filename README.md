@@ -12,7 +12,8 @@ See the following version matrix:
 | `FoundationICU` version | `ICU` version |
 | --- | --- |
 | `0.0.2` and below | `70.1` |
-| `0.0.3` and above | `72.1` |
+| `0.0.3` ~ `0.0.9`  | `72.1` |
+| `0.0.10` and above | `74.0` |
 
 
 ## Adding FoundationICU as a Dependency

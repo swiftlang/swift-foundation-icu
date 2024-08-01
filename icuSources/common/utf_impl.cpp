@@ -87,7 +87,7 @@ utf8_countTrailBytes[256]={
 static const UChar32
 utf8_errorValue[6]={
     // Same values as UTF8_ERROR_VALUE_1, UTF8_ERROR_VALUE_2, UTF_ERROR_VALUE,
-    // but without relying on the obsolete _foundation_unicode/utf_old.h.
+    // but without relying on the obsolete unicode/utf_old.h.
     0x15, 0x9f, 0xffff,
     0x10ffff
 };
@@ -213,7 +213,7 @@ utf8_appendCharSafeBody(uint8_t *s, int32_t i, int32_t length, UChar32 c, UBool 
         }
     }
     /* c>0x10ffff or not enough space, write an error value */
-    if(pIsError!=NULL) {
+    if(pIsError!=nullptr) {
         *pIsError=true;
     } else {
         length-=i;

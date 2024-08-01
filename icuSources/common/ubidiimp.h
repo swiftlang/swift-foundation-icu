@@ -239,17 +239,17 @@ enum {
 
 /* InsertPoints structure for noting where to put BiDi marks ---------------- */
 
-typedef struct _Point {
+typedef struct Point {
     int32_t pos;            /* position in text */
     int32_t flag;           /* flag for LRM/RLM, before/after */
-} _Point;
+} Point;
 
 typedef struct InsertPoints {
     int32_t capacity;       /* number of points allocated */
     int32_t size;           /* number of points used */
     int32_t confirmed;      /* number of points confirmed */
     UErrorCode errorCode;   /* for eventual memory shortage */
-    _Point *points;          /* pointer to array of points */
+    Point *points;          /* pointer to array of points */
 } InsertPoints;
 
 
