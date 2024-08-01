@@ -80,7 +80,7 @@ struct U_I18N_API CollationDataReader /* all static */ {
 
         /** Byte offset to uint32_t rootElements[]. */
         IX_ROOT_ELEMENTS_OFFSET,  // 12
-        /** Byte offset to UChar *contexts[]. */
+        /** Byte offset to char16_t *contexts[]. */
         IX_CONTEXTS_OFFSET,
         /** Byte offset to uint16_t [] with serialized unsafeBackwardSet. */
         IX_UNSAFE_BWD_OFFSET,
@@ -117,7 +117,7 @@ private:
  * Tailorings are stored inside .res resource bundle files, with a complete file header.
  *
  * Collation data begins with a standard ICU data file header
- * (DataHeader, see ucmndata.h and _foundation_unicode/udata.h).
+ * (DataHeader, see ucmndata.h and unicode/udata.h).
  * The UDataInfo.dataVersion field contains the UCA and other version numbers,
  * see the comments for CollationTailoring.version.
  *
@@ -198,7 +198,7 @@ private:
  *      Compact storage for all of the CEs that occur in the root collation.
  *      See the CollationRootElements class.
  *
- * UChar *contexts[];
+ * char16_t *contexts[];
  *      Serialized UCharsTrie structures with prefix (pre-context) and contraction mappings.
  *
  * uint16_t unsafeBackwardSet[]; -- see UnicodeSet::serialize()

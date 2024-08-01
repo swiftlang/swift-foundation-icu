@@ -9,7 +9,7 @@
 //  This file contains class RegexStaticSets
 //
 //  This class is internal to the regular expression implementation.
-//  For the public Regular Expression API, see the file "_foundation_unicode/regex.h"
+//  For the public Regular Expression API, see the file <_foundation_unicode/regex.h>
 //
 //  RegexStaticSets groups together the common UnicodeSets that are needed
 //   for compiling or executing RegularExpressions.  This grouping simplifies
@@ -143,7 +143,7 @@ RegexStaticSets::~RegexStaticSets() {
 
 U_CDECL_BEGIN
 static UBool U_CALLCONV
-regex_cleanup(void) {
+regex_cleanup() {
     delete RegexStaticSets::gStaticSets;
     RegexStaticSets::gStaticSets = nullptr;
     gStaticSetsInitOnce.reset();

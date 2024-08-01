@@ -61,7 +61,7 @@
 
 /**
  * USet is the C API type corresponding to C++ class UnicodeSet.
- * It is forward-declared here to avoid including _foundation_unicode/uset.h file if related
+ * It is forward-declared here to avoid including unicode/uset.h file if related
  * conversion APIs are not used.
  *
  * @see ucnv_getUnicodeSet

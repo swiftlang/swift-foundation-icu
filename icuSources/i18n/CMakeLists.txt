@@ -13,9 +13,9 @@
 ##===----------------------------------------------------------------------===##
 
 target_include_directories(_FoundationICU PRIVATE .)
-
 target_sources(_FoundationICU
     PRIVATE
+        alphaindex.cpp
         anytrans.cpp
         astro.cpp
         basictz.cpp
@@ -104,6 +104,7 @@ target_sources(_FoundationICU
         indiancal.cpp
         inputext.cpp
         islamcal.cpp
+        iso8601cal.cpp
         japancal.cpp
         listformatter.cpp
         measfmt.cpp
@@ -139,6 +140,7 @@ target_sources(_FoundationICU
         number_patternstring.cpp
         number_rounding.cpp
         number_scientific.cpp
+        number_simple.cpp
         number_skeletons.cpp
         number_symbolswrapper.cpp
         number_usageprefs.cpp
