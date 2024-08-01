@@ -37,7 +37,7 @@
 #include <stdbool.h>
 #include <_foundation_unicode/umachine.h>
 #ifndef __UTF_H__
-#   include "_foundation_unicode/utf.h"
+#   include <_foundation_unicode/utf.h>
 #endif
 
 /* internal definitions ----------------------------------------------------- */

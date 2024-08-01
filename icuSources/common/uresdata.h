@@ -327,7 +327,7 @@ enum {
  * Most resources have their values stored at four-byte offsets from the start
  * of the resource data. These values are at least 4-aligned.
  * Some resource values are stored directly in the offset field of the Resource itself.
- * See UResType in _foundation_unicode/ures.h for enumeration constants for Resource types.
+ * See UResType in unicode/ures.h for enumeration constants for Resource types.
  *
  * Some resources have their values stored as sequences of 16-bit units,
  * at 2-byte offsets from the start of a contiguous 16-bit-unit array between
@@ -482,7 +482,7 @@ U_CFUNC Resource res_findResource(const ResourceData *pResData, Resource r,
 
 U_NAMESPACE_BEGIN
 
-inline const UChar* res_getString(const ResourceTracer& traceInfo,
+inline const char16_t* res_getString(const ResourceTracer& traceInfo,
         const ResourceData *pResData, Resource res, int32_t *pLength) {
     traceInfo.trace("string");
     return res_getStringNoTrace(pResData, res, pLength);
@@ -536,8 +536,8 @@ public:
     UResourceDataEntry *getValidLocaleDataEntry() const { return validLocaleDataEntry; }
     Resource getResource() const { return res; }
     virtual UResType getType() const override;
-    virtual const UChar *getString(int32_t &length, UErrorCode &errorCode) const override;
-    virtual const UChar *getAliasString(int32_t &length, UErrorCode &errorCode) const override;
+    virtual const char16_t *getString(int32_t &length, UErrorCode &errorCode) const override;
+    virtual const char16_t *getAliasString(int32_t &length, UErrorCode &errorCode) const override;
     virtual int32_t getInt(UErrorCode &errorCode) const override;
     virtual uint32_t getUInt(UErrorCode &errorCode) const override;
     virtual const int32_t *getIntVector(int32_t &length, UErrorCode &errorCode) const override;

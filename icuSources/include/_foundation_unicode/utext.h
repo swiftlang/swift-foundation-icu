@@ -148,7 +148,7 @@
 
 
 #if APPLE_ICU_CHANGES
-// rdar://71262794 Cannot include _foundation_unicode/utext.h and unicode/umutablecptrie.h together
+// rdar://71262794 Cannot include unicode/utext.h and unicode/umutablecptrie.h together
 #else
 U_CDECL_BEGIN
 #endif // APPLE_ICU_CHANGES
@@ -234,8 +234,8 @@ utext_openUChars(UText *ut, const UChar *s, int64_t length, UErrorCode *status);
 /**
  * Open a writable UText for a non-const UnicodeString. 
  * 
- * @param ut      Pointer to a UText struct.  If NULL, a new UText will be created.
- *                 If non-NULL, must refer to an initialized UText struct, which will then
+ * @param ut      Pointer to a UText struct.  If nullptr, a new UText will be created.
+ *                 If non-nullptr, must refer to an initialized UText struct, which will then
  *                 be reset to reference the specified input string.
  * @param s       A UnicodeString.
  * @param status Errors are returned here.
@@ -250,8 +250,8 @@ utext_openUnicodeString(UText *ut, icu::UnicodeString *s, UErrorCode *status);
 /**
  * Open a UText for a const UnicodeString.   The resulting UText will not be writable.
  * 
- * @param ut    Pointer to a UText struct.  If NULL, a new UText will be created.
- *               If non-NULL, must refer to an initialized UText struct, which will then
+ * @param ut    Pointer to a UText struct.  If nullptr, a new UText will be created.
+ *               If non-nullptr, must refer to an initialized UText struct, which will then
  *               be reset to reference the specified input string.
  * @param s      A const UnicodeString to be wrapped.
  * @param status Errors are returned here.
@@ -265,8 +265,8 @@ utext_openConstUnicodeString(UText *ut, const icu::UnicodeString *s, UErrorCode 
 
 /**
  * Open a writable UText implementation for an ICU Replaceable object.
- * @param ut    Pointer to a UText struct.  If NULL, a new UText will be created.
- *               If non-NULL, must refer to an already existing UText, which will then
+ * @param ut    Pointer to a UText struct.  If nullptr, a new UText will be created.
+ *               If non-nullptr, must refer to an already existing UText, which will then
  *               be reset to reference the specified replaceable text.
  * @param rep    A Replaceable text object.
  * @param status Errors are returned here.
@@ -280,8 +280,8 @@ utext_openReplaceable(UText *ut, icu::Replaceable *rep, UErrorCode *status);
 
 /**
  * Open a  UText implementation over an ICU CharacterIterator.
- * @param ut    Pointer to a UText struct.  If NULL, a new UText will be created.
- *               If non-NULL, must refer to an already existing UText, which will then
+ * @param ut    Pointer to a UText struct.  If nullptr, a new UText will be created.
+ *               If non-nullptr, must refer to an already existing UText, which will then
  *               be reset to reference the specified replaceable text.
  * @param ci     A Character Iterator.
  * @param status Errors are returned here.
@@ -948,7 +948,7 @@ enum {
 };
 
 #if APPLE_ICU_CHANGES
-// rdar://71262794 Cannot include _foundation_unicode/utext.h and unicode/umutablecptrie.h together
+// rdar://71262794 Cannot include unicode/utext.h and unicode/umutablecptrie.h together
 // move U_CDECL_BEGIN down here from above
 U_CDECL_BEGIN
 #endif // APPLE_ICU_CHANGES

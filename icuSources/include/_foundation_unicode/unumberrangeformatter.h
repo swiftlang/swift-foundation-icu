@@ -20,7 +20,7 @@
  * \brief C API: Localized number range formatting
  *
  * This is the C-compatible version of the NumberRangeFormatter API. C++ users
- * should include _foundation_unicode/numberrangeformatter.h and use the proper C++ APIs.
+ * should include unicode/numberrangeformatter.h and use the proper C++ APIs.
  *
  * First create a UNumberRangeFormatter, which is immutable, and then format to
  * a UFormattedNumberRange.

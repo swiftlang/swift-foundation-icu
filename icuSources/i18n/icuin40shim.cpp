@@ -11,7 +11,7 @@
 
 /*
  * imp: i18n/ucol_res.cpp
- * hdr: i18n/_foundation_unicode/ucol.h
+ * hdr: i18n/unicode/ucol.h
  * @stable ICU 2.0
  */
 U_CAPI UCollator* U_EXPORT2
@@ -22,7 +22,7 @@ ucol_open_4_0(const char *loc, UErrorCode *status)
 
 /*
  * imp: i18n/ucol.cpp
- * hdr: i18n/_foundation_unicode/ucol.h
+ * hdr: i18n/unicode/ucol.h
  * @stable ICU 2.0
  */
 U_CAPI void U_EXPORT2
@@ -33,7 +33,7 @@ ucol_close_4_0(UCollator *coll)
 
 /*
  * imp: i18n/ucol.cpp
- * hdr: i18n/_foundation_unicode/ucol.h
+ * hdr: i18n/unicode/ucol.h
  * @stable ICU 2.1
  */
 U_CAPI int32_t U_EXPORT2
@@ -50,7 +50,7 @@ ucol_getBound_4_0(const uint8_t *source,
 
 /*
  * imp: i18n/ucol.cpp
- * hdr: i18n/_foundation_unicode/ucol.h
+ * hdr: i18n/unicode/ucol.h
  * @stable ICU 2.0
  */
 U_CAPI int32_t U_EXPORT2
@@ -65,7 +65,7 @@ ucol_getSortKey_4_0(const UCollator *coll,
 
 /*
  * imp: i18n/ucol.cpp
- * hdr: i18n/_foundation_unicode/ucol.h
+ * hdr: i18n/unicode/ucol.h
  * @stable ICU 2.0
  */
 U_CAPI void  U_EXPORT2
@@ -76,7 +76,7 @@ ucol_setAttribute_4_0(UCollator *coll, UColAttribute attr, UColAttributeValue va
 
 /*
  * imp: i18n/utrans.cpp
- * hdr: i18n/_foundation_unicode/utrans.h
+ * hdr: i18n/unicode/utrans.h
  * @stable ICU 2.8
  */
 U_CAPI UTransliterator* U_EXPORT2
@@ -93,7 +93,7 @@ utrans_openU_4_0(const UChar *id,
 
 /*
  * imp: i18n/utrans.cpp
- * hdr: i18n/_foundation_unicode/utrans.h
+ * hdr: i18n/unicode/utrans.h
  * @stable ICU 2.0
  */
 U_CAPI void U_EXPORT2
@@ -104,7 +104,7 @@ utrans_close_4_0(UTransliterator* trans)
 
 /*
  * imp: i18n/utrans.cpp
- * hdr: i18n/_foundation_unicode/utrans.h
+ * hdr: i18n/unicode/utrans.h
  * @stable ICU 2.0
  */
 U_CAPI void U_EXPORT2

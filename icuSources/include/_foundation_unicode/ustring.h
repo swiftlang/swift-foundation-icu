@@ -29,7 +29,7 @@
 
 #ifndef UBRK_TYPEDEF_UBREAK_ITERATOR
 #   define UBRK_TYPEDEF_UBREAK_ITERATOR
-/** Simple declaration for u_strToTitle() to avoid including _foundation_unicode/ubrk.h. @stable ICU 2.1*/
+/** Simple declaration for u_strToTitle() to avoid including unicode/ubrk.h. @stable ICU 2.1*/
     typedef struct UBreakIterator UBreakIterator;
 #endif
 
@@ -931,12 +931,8 @@ u_memrchr32(const UChar *s, UChar32 c, int32_t count);
 #   define U_STRING_DECL(var, cs, length) static const UChar *var=(const UChar *)U_DECLARE_UTF16(cs)
     /**@stable ICU 2.0 */
 #   define U_STRING_INIT(var, cs, length)
-#elif U_SIZEOF_WCHAR_T==U_SIZEOF_UCHAR && (U_CHARSET_FAMILY==U_ASCII_FAMILY || (U_SIZEOF_UCHAR == 2 && defined(U_WCHAR_IS_UTF16)))
+#elif U_SIZEOF_WCHAR_T==U_SIZEOF_UCHAR && (U_CHARSET_FAMILY==U_ASCII_FAMILY || defined(U_WCHAR_IS_UTF16))
 #   define U_STRING_DECL(var, cs, length) static const UChar var[(length)+1]=L ## cs
-    /**@stable ICU 2.0 */
-#   define U_STRING_INIT(var, cs, length)
-#elif U_SIZEOF_UCHAR==1 && U_CHARSET_FAMILY==U_ASCII_FAMILY
-#   define U_STRING_DECL(var, cs, length) static const UChar var[(length)+1]=cs
     /**@stable ICU 2.0 */
 #   define U_STRING_INIT(var, cs, length)
 #else
