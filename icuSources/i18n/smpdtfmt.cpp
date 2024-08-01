@@ -1341,6 +1341,8 @@ SimpleDateFormat::initialize(const Locale& locale,
         fUsePlainSpaces = true;
         os_log(OS_LOG_DEFAULT, "ICU using compatibility space for date formatting");
     }
+#else
+    fUsePlainSpaces = false;
 #endif  // APPLE_ICU_CHANGES && U_PLATFORM_IS_DARWIN_BASED
 
     parsePattern(); // Need this before initNumberFormatters(), to set fHasHanYearChar
