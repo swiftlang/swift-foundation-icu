@@ -347,6 +347,19 @@
 #   define U_HAVE_INTTYPES_H U_HAVE_STDINT_H
 #endif
 
+/**
+ * \def U_HAVE_ATOMICS
+ * Defines whether the platform supports atomic operations.
+ */
+#ifdef U_HAVE_ATOMICS
+    /* Use the predefined value. */
+#elif defined(__wasi__) && !defined(_REENTRANT)
+    /* WASI does not support atomics when wasi-threads feature is not enabled */
+#   define U_HAVE_ATOMICS 0
+#else
+#   define U_HAVE_ATOMICS 1
+#endif
+
 /*===========================================================================*/
 /** @{ Compiler and environment features                                     */
 /*===========================================================================*/
