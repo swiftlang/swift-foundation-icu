@@ -57,20 +57,22 @@ if(CMAKE_SYSTEM_NAME STREQUAL Windows)
         $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=_timezone>
         $<$<COMPILE_LANGUAGE:C,CXX>:_CRT_SECURE_NO_DEPRECATE>
         $<$<COMPILE_LANGUAGE:C,CXX>:U_PLATFORM_USES_ONLY_WIN32_API>)
-else()
-    add_compile_definitions(
-        $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=timezone>)
-endif()
-# WASI specific settings
-if(CMAKE_SYSTEM_NAME STREQUAL WASI)
+elseif(CMAKE_SYSTEM_NAME STREQUAL WASI)
+    # WASI specific settings
     add_compile_definitions(
         $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TZSET=0>
         $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TZNAME=0>
         $<$<COMPILE_LANGUAGE:C,CXX>:U_HAVE_TIMEZONE=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:HAVE_DLFCN_H=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:HAVE_DLOPEN=0>
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_ENABLE_DYLOAD=0>
         $<$<COMPILE_LANGUAGE:C,CXX>:_WASI_EMULATED_SIGNAL>
         $<$<COMPILE_LANGUAGE:C,CXX>:_WASI_EMULATED_MMAN>)
     add_link_options("-Lwasi-emulated-signal")
     add_link_options("-Lwasi-emulated-mman")
+else()
+    add_compile_definitions(
+        $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=timezone>)
 endif()
 
 if(BUILD_SHARED_LIBS)
