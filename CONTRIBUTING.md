@@ -4,9 +4,6 @@ The C++ code in this repository mirror a specific version of the [upstream Apple
 
 The Swift code is intended for use only by [Swift Foundation](https://github.com/swift/swift-foundation). The Swift API here is not intended to be a full Swift wrapper for ICU. Foundation is the preferred API to use for clients that wish to take advantage of ICU's functionality, as that API is available on all platforms including Darwin. Therefore, most pull requests should be targeted at Foundation and not at this repository.
 
-## Licensing
-
-By submitting a pull request, you represent that you have the right to license your contribution to Apple and the community, and agree by submitting the patch that your contributions are licensed under the [Swift license](https://swift.org/LICENSE.txt).
 
 ## Bug reports
 
