@@ -70,6 +70,7 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "WASI")
         $<$<COMPILE_LANGUAGE:C,CXX>:_WASI_EMULATED_MMAN>)
     add_link_options("-Lwasi-emulated-signal")
     add_link_options("-Lwasi-emulated-mman")
+elseif(CMAKE_SYSTEM_NAME STREQUAL FreeBSD)
 else()
     add_compile_definitions(
         $<$<COMPILE_LANGUAGE:C,CXX>:U_TIMEZONE=timezone>)
