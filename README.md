@@ -48,4 +48,4 @@ extension UCalendarAttribute {
 
 ## Future Improvements
 
-- **Data file handling**: currently, the data file is embedded in the embedded in the binary itself as `[uint8_t]` (see `icu_packaged_data.h`). In the future, we would like to check in the source files instead and build the data as a shared library to avoid the need to maintain and load a separate data file.
+- **Data file handling**: currently, the data file is embedded into the binary itself as `[uint8_t]` (see `icu_packaged_data.h`). In the future, we would like to check in the source files instead and build the data as a shared library to avoid the need to maintain and load a separate data file.
