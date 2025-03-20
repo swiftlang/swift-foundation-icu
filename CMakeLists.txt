@@ -51,6 +51,14 @@ add_compile_definitions(
     $<$<COMPILE_LANGUAGE:C,CXX>:USE_PACKAGE_DATA=1>
     $<$<COMPILE_LANGUAGE:C,CXX>:APPLE_ICU_CHANGES=1>)
 
+# Linux specific settings
+if(CMAKE_SYSTEM_NAME STREQUAL Linux)
+    # Pass -fno-omit-frame-pointer while compiling for better backtraces
+    add_compile_options(
+        "$<$<COMPILE_LANGUAGE:Swift>:SHELL:-Xcc -fno-omit-frame-pointer>"
+        "$<$<COMPILE_LANGUAGE:C,CXX>:-fno-omit-frame-pointer>")
+endif()
+
 # Window specific settings
 if(CMAKE_SYSTEM_NAME STREQUAL Windows)
     add_compile_definitions(
