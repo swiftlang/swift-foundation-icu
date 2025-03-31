@@ -701,9 +701,8 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
             if(gCommonICUDataArray[commonDataIndex] != nullptr) {
                 return gCommonICUDataArray[commonDataIndex];
             }
-#if !defined(ICU_DATA_DIR_WINDOWS)
+#if defined(USE_PACKAGE_DATA) && !defined(ICU_DATA_DIR_WINDOWS)
 // When using the Windows system data, we expect only a single data file.
-#if defined(USE_PACKAGE_DATA)
             int32_t i;
             for(i = 0; i < commonDataIndex; ++i) {
                 if(gCommonICUDataArray[i]->pHeader == &U_ICUDATA_ENTRY_POINT) {
@@ -728,15 +727,13 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
             setCommonICUDataPointer(uprv_getICUData_conversion(), false, pErrorCode);
         }
         */
-#if !defined(ICU_DATA_DIR_WINDOWS)
+#if defined(USE_PACKAGE_DATA) && !defined(ICU_DATA_DIR_WINDOWS)
 // When using the Windows system data, we expect only a single data file.
-#if defined(USE_PACKAGE_DATA)
         setCommonICUDataPointer(&U_ICUDATA_ENTRY_POINT, false, pErrorCode);
         {
             Mutex lock;
             return gCommonICUDataArray[commonDataIndex];
         }
-#endif
 #endif
     }
 
