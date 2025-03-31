@@ -711,7 +711,6 @@ openCommonData(const char *path,          /*  Path from OpenChoice?          */
                 }
             }
 #endif
-#endif
         }
 
         /* Add the linked-in data to the list. */
