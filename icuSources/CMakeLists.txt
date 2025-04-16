@@ -31,6 +31,10 @@ endif()
 set_target_properties(_FoundationICU PROPERTIES
     INSTALL_RPATH "$ORIGIN")
 
+if(LINKER_SUPPORTS_BUILD_ID)
+  target_link_options(_FoundationICU PRIVATE "LINKER:--build-id=sha1")
+endif()
+
 # Copy Headers to known directory for direct client (XCTest) test builds
 file(COPY
         include/

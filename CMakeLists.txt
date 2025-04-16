@@ -22,6 +22,9 @@ option(BUILD_SHARED_LIBS "build shared libraries" ON)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include(CheckLinkerFlag)
+check_linker_flag(CXX "LINKER:--build-id=sha1" LINKER_SUPPORTS_BUILD_ID)
+
 include(GNUInstallDirs)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules)
