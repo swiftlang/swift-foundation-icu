@@ -101,7 +101,11 @@
 #ifndef U_DISABLE_RENAMING
 #if APPLE_ICU_CHANGES
 //rdar://60884991 #58 Replace installsrc patching with changes directly in header files
+#if defined(__APPLE__)
 #define U_DISABLE_RENAMING 1
+#else
+#define U_DISABLE_RENAMING 0
+#endif
 #else
 #define U_DISABLE_RENAMING 0
 #endif // APPLE_ICU_CHANGES
