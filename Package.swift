@@ -34,7 +34,23 @@ var buildSettings: [CXXSetting] = [
   .define("U_HAVE_STRTOD_L", to: "1"),
   .define("U_HAVE_XLOCALE_H", to: "1"),
   .define("U_HAVE_STRING_VIEW", to: "1"),
-  .define("U_DISABLE_RENAMING", to: "1"),
+  .define(
+    "U_DISABLE_RENAMING", to: "1",
+    .when(platforms: [
+      .macOS,
+      .iOS,
+      .tvOS,
+      .watchOS,
+      .visionOS,
+    ])),
+  .define(
+    "U_DISABLE_RENAMING", to: "0",
+    .when(platforms: [
+      .linux,
+      .windows,
+      .android,
+      .wasi,
+    ])),
   .define("U_COMBINED_IMPLEMENTATION"),
   .define("U_COMMON_IMPLEMENTATION"),
   .define("U_I18N_IMPLEMENTATION"),
