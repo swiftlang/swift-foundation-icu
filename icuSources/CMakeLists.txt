@@ -18,8 +18,10 @@ target_include_directories(_FoundationICU
     PUBLIC
         include/)
 
-target_compile_options(_FoundationICU INTERFACE
-  "$<$<COMPILE_LANGUAGE:Swift>:SHELL:-Xcc -fmodule-map-file=${CMAKE_CURRENT_SOURCE_DIR}/include/_foundation_unicode/module.modulemap>")
+if(NOT CMAKE_SYSTEM_NAME STREQUAL "Windows")
+  target_compile_options(_FoundationICU INTERFACE
+    "$<$<COMPILE_LANGUAGE:Swift>:SHELL:-Xcc -fmodule-map-file=${CMAKE_CURRENT_SOURCE_DIR}/include/_foundation_unicode/module.modulemap>")
+endif()
 
 add_subdirectory(common)
 add_subdirectory(i18n)
