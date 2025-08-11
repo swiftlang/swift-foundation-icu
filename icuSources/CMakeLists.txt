@@ -35,6 +35,10 @@ if(LINKER_SUPPORTS_BUILD_ID)
   target_link_options(_FoundationICU PRIVATE "LINKER:--build-id=sha1")
 endif()
 
+if(ANDROID)
+  target_link_options(_FoundationICU PRIVATE "LINKER:-z,max-page-size=16384")
+endif()
+
 # Copy Headers to known directory for direct client (XCTest) test builds
 file(COPY
         include/
