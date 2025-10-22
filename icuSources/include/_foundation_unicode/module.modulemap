@@ -128,6 +128,7 @@ module _FoundationICU {
     header "symtable.h"
     header "ucasemap.h"
     header "ucoleitr.h"
+    header "messageformat2_arguments.h"
     header "messageformat2_function_registry.h"
     header "compactdecimalformat.h"
     header "unum.h"
