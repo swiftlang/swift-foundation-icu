@@ -3,6 +3,18 @@
 
 import PackageDescription
 
+let allPlatforms: [Platform] = [
+    .iOS,
+    .macOS,
+    .tvOS,
+    .watchOS,
+    .macCatalyst,
+    .driverKit,
+    .android,
+    .linux,
+    .windows,
+  ]
+
 var buildSettings: [CXXSetting] = [
   .define("DEBUG", to: "1", .when(configuration: .debug)),
   .define("U_ATTRIBUTE_DEPRECATED", to: ""),
@@ -10,18 +22,7 @@ var buildSettings: [CXXSetting] = [
   .define("U_SHOW_INTERNAL_API", to: "1"),
   .define("U_STATIC_IMPLEMENTATION"),
   .define("U_TIMEZONE", to: "_timezone", .when(platforms: [.windows])),
-  .define(
-    "U_TIMEZONE", to: "timezone",
-    .when(platforms: [
-      .iOS,
-      .macOS,
-      .tvOS,
-      .watchOS,
-      .macCatalyst,
-      .driverKit,
-      .android,
-      .linux,
-    ])),
+  .define("U_TIMEZONE", to: "timezone", .when(platforms: allPlatforms.filter({ $0 != .windows }))),
   .define("U_TIMEZONE_PACKAGE", to: "\"icutz44l\""),
   .define("U_HAVE_TZSET", to: "0", .when(platforms: [.wasi])),
   .define("U_HAVE_TZNAME", to: "0", .when(platforms: [.wasi])),
@@ -61,7 +62,8 @@ var buildSettings: [CXXSetting] = [
 
   // Where data are stored
   .define("ICU_DATA_DIR", to: "\"/usr/share/icu/\""),
-  .define("USE_PACKAGE_DATA", to: "1"),
+  .define("ICU_DATA_DIR_PREFIX_ENV_VAR", to: "\"ICU_DATA_DIR_PREFIX\""),
+  .define("USE_PACKAGE_DATA", to: "1", .when(platforms: allPlatforms.filter({ $0 != .android }))),
   .define("APPLE_ICU_CHANGES", to: "1"),
   .define("UCHAR_TYPE", to: "char16_t"),
   .define("U_PLATFORM_IS_DARWIN_BASED", to: "0"),
