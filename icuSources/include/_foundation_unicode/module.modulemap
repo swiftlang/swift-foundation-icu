@@ -52,7 +52,6 @@ module _FoundationICU {
     header "schriter.h"
     header "msgfmt.h"
     header "fieldpos.h"
-    header "messageformat2_data_model.h"
     header "simpletz.h"
     header "ucpmap.h"
     header "uldnames.h"
@@ -113,7 +112,6 @@ module _FoundationICU {
     header "ulocdata.h"
     header "idna.h"
     header "unorm2.h"
-    header "messageformat2.h"
     header "localebuilder.h"
     header "dtptngen.h"
     header "dbbi.h"
@@ -128,7 +126,6 @@ module _FoundationICU {
     header "symtable.h"
     header "ucasemap.h"
     header "ucoleitr.h"
-    header "messageformat2_function_registry.h"
     header "compactdecimalformat.h"
     header "unum.h"
     header "udisplaycontext.h"
@@ -150,11 +147,9 @@ module _FoundationICU {
     header "uchar.h"
     header "unorm.h"
     header "ushape.h"
-    header "messageformat2_formattable.h"
     header "unifunct.h"
     header "ugender.h"
     header "selfmt.h"
-    header "messageformat2_arguments.h"
     header "uformattable.h"
     header "ustream.h"
     header "simpleformatter.h"
@@ -209,7 +204,6 @@ module _FoundationICU {
     header "uameasureunit.h"
     header "measfmt.h"
     header "unifilt.h"
-    header "messageformat2_data_model_names.h"
 
     export *
 }

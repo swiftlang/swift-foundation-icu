@@ -411,6 +411,9 @@ extension ICUExport {
         let namespacePatch = Bundle.module.path(
             forResource: "namespace", ofType: "patch"
         )!
+        let revertPatch = Bundle.module.path(
+            forResource: "revert", ofType: "patch"
+        )!
         // Before applying, commit everything we have so far
         print("Commiting all current changes before applying...")
         let addAll = try await Subprocess.run(
@@ -458,6 +461,19 @@ extension ICUExport {
         guard namespaceResult.terminationStatus.isSuccess else {
             throw Error.commandFailed("git am --empty=drop \(namespacePatch)")
         }
+
+        print("Applying patch: \(revertPatch)")
+        let revertResult = try await Subprocess.run(
+            .name("git"),
+            arguments: ["am", "--empty=drop", revertPatch],
+            workingDirectory: workingDirectory,
+            output: .standardOutput,
+            error: .standardError
+        )
+        guard revertResult.terminationStatus.isSuccess else {
+            throw Error.commandFailed("git am --empty=drop \(revertPatch)")
+        }
+
         print("[STEP ✅]: Applying patches")
     }
 
