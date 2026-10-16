@@ -37,6 +37,10 @@ endif()
 
 if(ANDROID)
   target_link_options(_FoundationICU PRIVATE "LINKER:-z,max-page-size=16384")
+  # The NDK links the C++ runtime statically by default (ANDROID_STL=c++_static).
+  # Keep it internal so the library does not export libc++ and libc++abi symbols
+  # that clash with libc++_shared.so used by the Swift runtime.
+  target_link_options(_FoundationICU PRIVATE "LINKER:--exclude-libs,libc++_static.a:libc++abi.a")
 endif()
 
 # Copy Headers to known directory for direct client (XCTest) test builds
