@@ -57,4 +57,14 @@ install(DIRECTORY
         DESTINATION
             lib/${install_directory})
 
+# Install parent modulemap so it's always resolvable via standard search paths.
+file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/_FoundationICU.modulemap
+    "extern module _FoundationICU \"../_foundation_unicode/module.modulemap\"\n")
+install(FILES
+            ${CMAKE_CURRENT_BINARY_DIR}/_FoundationICU.modulemap
+        DESTINATION
+            lib/${install_directory}/_FoundationICU
+        RENAME
+            module.modulemap)
+
 set_property(GLOBAL APPEND PROPERTY SWIFT_FOUNDATION_ICU_EXPORTS _FoundationICU)
