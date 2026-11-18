@@ -17,7 +17,7 @@ jobs:
       windows_build_command: "Invoke-Program swift build"
       windows_swift_versions: '["nightly-main"]'
       enable_macos_checks: true
-      macos_xcode_versions: '["16.3"]'
+      macos_xcode_versions: '["swift_6.4"]'
       macos_build_command: "xcrun swift build"
       macos_versions: '["goldengate"]'
       enable_wasm_sdk_build: true
