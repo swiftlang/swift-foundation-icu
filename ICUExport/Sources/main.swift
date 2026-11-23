@@ -74,8 +74,8 @@ extension ICUExport {
             .name("make"),
             arguments: ["CPPFLAGS=\"-DU_PLATFORM_IS_DARWIN_BASED=1 -DU_DISABLE_RENAMING=1\""],
             workingDirectory: icuDirectory,
-            output: .standardOutput,
-            error: .standardError
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
 
         guard result.terminationStatus.isSuccess else {
@@ -420,8 +420,8 @@ extension ICUExport {
             .name("git"),
             arguments: ["add", "*"],
             workingDirectory: workingDirectory,
-            output: .standardOutput,
-            error: .standardError
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
         guard addAll.terminationStatus.isSuccess else {
             throw Error.commandFailed("git add * @ \(workingDirectory)")
@@ -430,9 +430,9 @@ extension ICUExport {
             .name("git"),
             arguments: ["commit", "-m", "Initial import"],
             workingDirectory: workingDirectory,
-            input: .standardInput,
-            output: .standardOutput,
-            error: .standardError
+            input: .currentStandardInput,
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
         guard commit.terminationStatus.isSuccess else {
             throw Error.commandFailed("git commit @ \(workingDirectory)")
@@ -443,8 +443,8 @@ extension ICUExport {
             .name("git"),
             arguments: ["am", "--empty=drop", putilPatch],
             workingDirectory: workingDirectory,
-            output: .standardOutput,
-            error: .standardError
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
         guard putilResult.terminationStatus.isSuccess else {
             throw Error.commandFailed("git am --empty=drop \(putilPatch)")
@@ -455,8 +455,8 @@ extension ICUExport {
             .name("git"),
             arguments: ["am", "--empty=drop", namespacePatch],
             workingDirectory: workingDirectory,
-            output: .standardOutput,
-            error: .standardError
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
         guard namespaceResult.terminationStatus.isSuccess else {
             throw Error.commandFailed("git am --empty=drop \(namespacePatch)")
@@ -467,8 +467,8 @@ extension ICUExport {
             .name("git"),
             arguments: ["am", "--empty=drop", revertPatch],
             workingDirectory: workingDirectory,
-            output: .standardOutput,
-            error: .standardError
+            output: .currentStandardOutput,
+            error: .currentStandardError
         )
         guard revertResult.terminationStatus.isSuccess else {
             throw Error.commandFailed("git am --empty=drop \(revertPatch)")
