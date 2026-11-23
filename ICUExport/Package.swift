@@ -22,6 +22,7 @@ let package = Package(
             resources: [
                 .process("Patches/putil.patch"),
                 .process("Patches/namespace.patch"),
+                .process("Patches/revert.patch"),
             ]
         ),
     ]
